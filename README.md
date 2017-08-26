@@ -1,3 +1,5 @@
+![Markright](https://rawgit.com/markright/markright/master/artwork/Markright-mark.svg)
+
 # Markright
 
 A new plain text formatting syntax
