@@ -1,0 +1,62 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Setup"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Read the docs first."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Back up your data."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "warning",
+      "type": "admonition"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Use the latest version."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "tip",
+      "type": "admonition"
+    }
+  ]
+}

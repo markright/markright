@@ -1,0 +1,16 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Text here."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: Numeric Test\nversion: 2\nweight: 3.14"
+  }
+}

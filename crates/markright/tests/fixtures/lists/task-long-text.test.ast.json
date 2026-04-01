@@ -1,0 +1,23 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "This is a task with a very long description to make sure the parser handles longer task content correctly"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\frac{\\partial f}{\\partial x}",
+      "type": "math_block"
+    }
+  ]
+}

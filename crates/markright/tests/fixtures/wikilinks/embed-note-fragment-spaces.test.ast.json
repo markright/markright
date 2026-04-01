@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "fragment": "My Section",
+          "target": "My Note",
+          "type": "wiki_embed"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

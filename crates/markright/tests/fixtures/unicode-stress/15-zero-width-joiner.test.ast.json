@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Text with zero-width joiner: a‍b and non-joiner: a‌b here."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

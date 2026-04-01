@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "path": "file.md",
+      "type": "include"
+    }
+  ]
+}

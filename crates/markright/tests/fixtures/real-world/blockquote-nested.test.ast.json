@@ -1,0 +1,212 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Famous Quotes on Software Engineering"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "On Simplicity"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Simplicity is the ultimate sophistication."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "There are two ways of constructing a software design: one way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "On Debugging"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "On Planning"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The best time to plant a tree was 20 years ago. The second best time is now."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Plans are worthless, but planning is everything."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "These quotes are commonly attributed but may be paraphrased from their original sources."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "On Testing"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Program testing can be used to show the presence of bugs, but never to show their absence."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Summary"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The common thread across all these quotes is a preference for "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "clarity"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " over "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "cleverness"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": ", and "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "humility"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " in the face of complexity."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

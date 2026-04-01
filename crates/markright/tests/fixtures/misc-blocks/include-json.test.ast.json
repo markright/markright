@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "path": "config.json",
+      "type": "include"
+    }
+  ]
+}

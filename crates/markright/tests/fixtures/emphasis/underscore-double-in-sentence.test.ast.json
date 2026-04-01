@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "word __double__ word"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

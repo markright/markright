@@ -1,0 +1,13 @@
+[package]
+name = "markright-wasm"
+version = "0.1.0"
+edition = "2024"
+description = "MarkRight parser compiled to WebAssembly"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+markright = { path = "../markright" }
+wasm-bindgen = "0.2"
+serde_json = "1"

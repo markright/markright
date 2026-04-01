@@ -1,0 +1,67 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Title"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "max_level": 6,
+      "min_level": 1,
+      "type": "toc"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Introduction"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Hello world"
+        },
+        {
+          "label": "1",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "type": "thematic_break"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Greeting."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "1",
+      "type": "footnote_def"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: Full Doc"
+  }
+}

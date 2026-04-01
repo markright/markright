@@ -1,0 +1,43 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "A definition with "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "italic"
+                  }
+                ],
+                "type": "italic"
+              },
+              {
+                "type": "text",
+                "value": " text."
+              }
+            ]
+          ],
+          "term": [
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Bold Term"
+                }
+              ],
+              "type": "bold"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    }
+  ]
+}

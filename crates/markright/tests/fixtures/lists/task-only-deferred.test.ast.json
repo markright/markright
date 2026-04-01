@@ -1,0 +1,37 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Deferred A"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "deferred"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Deferred B"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "deferred"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

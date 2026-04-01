@@ -1,0 +1,50 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Steps"
+            }
+          ],
+          "level": 2,
+          "type": "heading"
+        },
+        {
+          "items": [
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Do this"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Do that"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            }
+          ],
+          "type": "unordered_list"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

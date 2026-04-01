@@ -1,0 +1,26 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Normal text."
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "bold text"
+            }
+          ],
+          "type": "bold"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

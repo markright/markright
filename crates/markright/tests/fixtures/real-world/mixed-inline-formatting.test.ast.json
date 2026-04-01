@@ -1,0 +1,521 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Inline Formatting Showcase"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Emphasis Varieties"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "This text has "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "bold"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "italic"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "bold italic"
+            }
+          ],
+          "type": "bold_italic"
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "strikethrough"
+            }
+          ],
+          "type": "strikethrough"
+        },
+        {
+          "type": "text",
+          "value": ", and "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "highlighted"
+            }
+          ],
+          "type": "highlight"
+        },
+        {
+          "type": "text",
+          "value": " content all in one paragraph."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "You can nest them: "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "this is bold with "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "italic inside"
+                }
+              ],
+              "type": "italic"
+            },
+            {
+              "type": "text",
+              "value": " it"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Code and Math"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Use "
+        },
+        {
+          "type": "inline_code",
+          "value": "console.log()"
+        },
+        {
+          "type": "text",
+          "value": " for debugging. The time complexity is "
+        },
+        {
+          "type": "inline_math",
+          "value": "O(n \\log n)"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Inline code with backticks: "
+        },
+        {
+          "type": "inline_code",
+          "value": "let x = 42;"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Inline math: the quadratic formula is "
+        },
+        {
+          "type": "inline_math",
+          "value": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Links and Images"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Visit "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "the homepage"
+            }
+          ],
+          "type": "link",
+          "url": "https://example.com"
+        },
+        {
+          "type": "text",
+          "value": " or "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "the docs"
+            }
+          ],
+          "title": "Documentation",
+          "type": "link",
+          "url": "https://docs.example.com"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Here is an image: "
+        },
+        {
+          "alt": "Alt text",
+          "title": "An example image",
+          "type": "image",
+          "url": "https://example.com/image.png"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Superscript and Subscript"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Water is H"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "2"
+            }
+          ],
+          "type": "subscript"
+        },
+        {
+          "type": "text",
+          "value": "O. Einstein's equation is E "
+        },
+        {
+          "type": "text",
+          "value": "= mc"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "2"
+            }
+          ],
+          "type": "superscript"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The formula for caffeine is C"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "8"
+            }
+          ],
+          "type": "subscript"
+        },
+        {
+          "type": "text",
+          "value": "H"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "10"
+            }
+          ],
+          "type": "subscript"
+        },
+        {
+          "type": "text",
+          "value": "N"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "4"
+            }
+          ],
+          "type": "subscript"
+        },
+        {
+          "type": "text",
+          "value": "O"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "2"
+            }
+          ],
+          "type": "subscript"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Footnote reference here"
+        },
+        {
+          "label": "note1",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": " and another"
+        },
+        {
+          "label": "note2",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "WikiLinks"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "See "
+        },
+        {
+          "target": "Related Page",
+          "type": "wiki_link"
+        },
+        {
+          "type": "text",
+          "value": " for more information. Or check "
+        },
+        {
+          "alias": "this page",
+          "target": "Another Page",
+          "type": "wiki_link"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Embed an image: "
+        },
+        {
+          "target": "diagram.png",
+          "type": "wiki_embed"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Citations"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "According to recent research"
+        },
+        {
+          "keys": [
+            {
+              "key": "smith2025"
+            }
+          ],
+          "type": "citation"
+        },
+        {
+          "type": "text",
+          "value": ", this approach is effective. Multiple sources agree"
+        },
+        {
+          "keys": [
+            {
+              "key": "jones2024"
+            },
+            {
+              "key": "williams2026"
+            }
+          ],
+          "type": "citation"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "This is the first footnote."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "note1",
+      "type": "footnote_def"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "This is the second footnote."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "note2",
+      "type": "footnote_def"
+    }
+  ]
+}

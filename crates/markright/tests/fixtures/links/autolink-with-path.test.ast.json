@@ -1,0 +1,27 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "See "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "https://example.com/path/to/page"
+            }
+          ],
+          "type": "link",
+          "url": "https://example.com/path/to/page"
+        },
+        {
+          "type": "text",
+          "value": " for details."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

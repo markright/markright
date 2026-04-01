@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The answer is "
+        },
+        {
+          "type": "inline_math",
+          "value": "42"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

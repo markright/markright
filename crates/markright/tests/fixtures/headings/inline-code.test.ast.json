@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_code",
+          "value": "code here"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    }
+  ]
+}

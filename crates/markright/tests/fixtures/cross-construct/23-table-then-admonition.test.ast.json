@@ -1,0 +1,71 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Feature"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Status"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Auth"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Done"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "API"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "WIP"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The API is not yet stable."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "warning",
+      "type": "admonition"
+    }
+  ]
+}

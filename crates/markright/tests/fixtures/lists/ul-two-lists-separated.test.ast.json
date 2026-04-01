@@ -1,0 +1,61 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "List A item 1"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "List A item 2"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "List B item 1"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "List B item 2"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    }
+  ]
+}

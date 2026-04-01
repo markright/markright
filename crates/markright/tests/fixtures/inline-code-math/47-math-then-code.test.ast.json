@@ -1,0 +1,21 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_math",
+          "value": "x = 1"
+        },
+        {
+          "type": "text",
+          "value": " means "
+        },
+        {
+          "type": "inline_code",
+          "value": "x = 1"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

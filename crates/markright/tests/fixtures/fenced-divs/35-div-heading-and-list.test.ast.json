@@ -1,0 +1,51 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Subsection"
+            }
+          ],
+          "level": 2,
+          "type": "heading"
+        },
+        {
+          "items": [
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Item A"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Item B"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            }
+          ],
+          "type": "unordered_list"
+        }
+      ],
+      "name": "section",
+      "type": "fenced_div"
+    }
+  ]
+}

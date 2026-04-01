@@ -1,0 +1,31 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "E equals mc"
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "2"
+                    }
+                  ],
+                  "type": "superscript"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    }
+  ]
+}

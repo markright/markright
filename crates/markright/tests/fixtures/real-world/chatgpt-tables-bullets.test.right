@@ -1,0 +1,52 @@
+# Comparing JavaScript Frameworks
+
+Here is a comparison of the most popular JavaScript frameworks for building web applications.
+
+## Feature Comparison
+
+| Feature | React | Vue | Svelte | Angular |
+| --- | :---: | :---: | :---: | :---: |
+| Virtual DOM | Yes | Yes | No | No |
+| Bundle Size | Medium | Small | Tiny | Large |
+| Learning Curve | Moderate | Easy | Easy | Steep |
+| TypeScript | Optional | Optional | Optional | Built-in |
+| SSR Support | Next.js | Nuxt | SvelteKit | Angular Universal |
+
+## Key Differences
+
+### React
+
+- Component-based architecture with **JSX**
+- Huge ecosystem and community
+- Backed by *Meta*
+- Uses a virtual DOM for efficient updates
+
+### Vue
+
+- Progressive framework
+- Template-based with **single-file components**
+- Gentle learning curve
+- Great documentation
+
+### Svelte
+
+- Compile-time framework (no virtual DOM)
+- **Smallest bundle size** among major frameworks
+- Reactive by default
+- Growing ecosystem
+
+### Angular
+
+- Full-featured framework with *batteries included*
+- Uses **TypeScript** by default
+- Dependency injection built in
+- Best for large enterprise applications
+
+## When to Choose What
+
+1. Choose **React** if you need a large ecosystem and community support
+2. Choose **Vue** if you want an approachable framework with great docs
+3. Choose **Svelte** if performance and bundle size are critical
+4. Choose **Angular** if building a large enterprise application
+
+T> Start with the framework your team already knows. Switching costs often outweigh theoretical benefits.

@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "日本語のテキストです。これはパラグラフです。"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

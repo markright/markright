@@ -1,0 +1,22 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "not"
+            },
+            {
+              "type": "text",
+              "value": "~sub"
+            }
+          ],
+          "type": "strikethrough"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

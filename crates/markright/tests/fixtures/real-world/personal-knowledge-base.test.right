@@ -1,0 +1,60 @@
+# Spaced Repetition and Memory
+
+Spaced repetition is a learning technique that reviews information at ==increasing intervals== to exploit the psychological spacing effect[^ebbinghaus].
+
+## The Forgetting Curve
+
+Without review, memories decay exponentially. Ebbinghaus showed that retention drops to about **21%** after 31 days without reinforcement.
+
+The forgetting curve follows approximately:
+
+$$
+R(t) = e^{-t/S}
+$$
+
+Where $R$ is retention, $t$ is time, and $S$ is the stability of the memory.
+
+## Optimal Review Schedule
+
+| Review | Interval | Expected Retention |
+| :---: | ---: | :---: |
+| 1st | 1 day | 90% |
+| 2nd | 3 days | 90% |
+| 3rd | 7 days | 90% |
+| 4th | 14 days | 90% |
+| 5th | 30 days | 90% |
+| 6th | 90 days | 90% |
+
+## Tools
+
+- [[Anki]] -- the gold standard for spaced repetition
+- [[Mochi]] -- modern alternative with Markdown support
+- [[RemNote]] -- combines note-taking and SRS
+
+## Card Design Principles
+
+> Make each card test exactly one thing. Avoid "What do you know about X?" cards.
+
+### Good Card Examples
+
+Atomic question
+: What is the time complexity of binary search?
+: $O(\log n)$
+
+### Bad Card Examples
+
+W> Cards that are too broad lead to inconsistent recall and wasted review time.
+
+## My Workflow
+
+1. Take notes while reading ([[Progressive Summarization]])
+2. Extract key concepts into atomic cards
+3. Review daily in [[Anki]]
+4. Monthly review of card quality
+
+- [x] Set up Anki sync across devices
+- [x] Create deck for current book
+- [~] Process highlighted passages
+- [ ] Review and cull low-quality cards
+
+[^ebbinghaus]: Ebbinghaus, H. (1885). Memory: A Contribution to Experimental Psychology.

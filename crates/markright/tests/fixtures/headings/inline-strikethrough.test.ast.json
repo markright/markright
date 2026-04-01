@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "struck"
+            }
+          ],
+          "type": "strikethrough"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    }
+  ]
+}

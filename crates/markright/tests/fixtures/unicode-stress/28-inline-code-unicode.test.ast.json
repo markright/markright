@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_code",
+          "value": "console.log(\"你好\")"
+        },
+        {
+          "type": "text",
+          "value": " outputs Chinese text."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

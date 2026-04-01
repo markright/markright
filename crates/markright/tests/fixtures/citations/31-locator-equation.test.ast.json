@@ -1,0 +1,18 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "keys": [
+            {
+              "key": "doe2024",
+              "locator": "eq. 12"
+            }
+          ],
+          "type": "citation"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

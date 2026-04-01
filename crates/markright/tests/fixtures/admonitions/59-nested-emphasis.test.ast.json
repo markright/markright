@@ -1,0 +1,33 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Use "
+            },
+            {
+              "children": [
+                {
+                  "type": "inline_code",
+                  "value": "important_function()"
+                }
+              ],
+              "type": "bold"
+            },
+            {
+              "type": "text",
+              "value": " carefully."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "tip",
+      "type": "admonition"
+    }
+  ]
+}

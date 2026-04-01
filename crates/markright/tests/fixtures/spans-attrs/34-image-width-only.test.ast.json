@@ -1,0 +1,20 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "alt": "logo",
+          "attrs": [
+            [
+              "w",
+              "120"
+            ]
+          ],
+          "type": "image",
+          "url": "logo.svg"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

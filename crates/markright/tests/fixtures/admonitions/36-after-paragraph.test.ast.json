@@ -1,0 +1,29 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "This is a normal paragraph."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "This is a note after a paragraph."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    }
+  ]
+}

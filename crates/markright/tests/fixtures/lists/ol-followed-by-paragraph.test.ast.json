@@ -1,0 +1,45 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Step one"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Step two"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "start": 1,
+      "type": "ordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "All steps complete."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

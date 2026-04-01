@@ -1,0 +1,252 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Onboarding Guide"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Welcome to the team"
+        },
+        {
+          "type": "text",
+          "value": "! This guide will help you get started."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Make sure you have your laptop set up before your first day. Contact IT at support@example.com if you need help."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "First Day Checklist"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Pick up badge from reception"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Complete HR paperwork"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Set up development environment"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Join team Slack channels"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Use the "
+            },
+            {
+              "type": "inline_code",
+              "value": "setup.sh"
+            },
+            {
+              "type": "text",
+              "value": " script to automate most of the environment setup."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "tip",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Important Policies"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "All code must be reviewed by at least two team members before merging."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "warning",
+      "type": "admonition"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Never commit secrets or API keys to the repository. Use the vault service for all sensitive configuration."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "important",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Resources"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Internal Wiki"
+                    }
+                  ],
+                  "type": "link",
+                  "url": "https://wiki.example.com"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Design System"
+                    }
+                  ],
+                  "type": "link",
+                  "url": "https://design.example.com"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "API Documentation"
+                    }
+                  ],
+                  "type": "link",
+                  "url": "https://api.example.com/docs"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    }
+  ]
+}

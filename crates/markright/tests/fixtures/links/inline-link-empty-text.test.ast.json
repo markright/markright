@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [],
+          "type": "link",
+          "url": "https://example.com"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

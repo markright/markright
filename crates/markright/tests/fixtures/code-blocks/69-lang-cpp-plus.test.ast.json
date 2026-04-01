@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "int main() { return 0; }",
+      "lang": "c++",
+      "type": "code_block"
+    }
+  ]
+}

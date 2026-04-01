@@ -1,0 +1,48 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "x"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "2"
+            }
+          ],
+          "type": "superscript"
+        },
+        {
+          "type": "text",
+          "value": "+y"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "2"
+            }
+          ],
+          "type": "superscript"
+        },
+        {
+          "type": "text",
+          "value": "=r"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "2"
+            }
+          ],
+          "type": "superscript"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

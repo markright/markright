@@ -1,0 +1,16 @@
+{
+  "children": [
+    {
+      "body": "a = 1",
+      "type": "math_block"
+    },
+    {
+      "body": "b = 2",
+      "type": "math_block"
+    },
+    {
+      "body": "c = 3",
+      "type": "math_block"
+    }
+  ]
+}

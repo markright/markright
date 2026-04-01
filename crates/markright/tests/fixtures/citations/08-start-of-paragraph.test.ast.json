@@ -1,0 +1,21 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "keys": [
+            {
+              "key": "doe2024"
+            }
+          ],
+          "type": "citation"
+        },
+        {
+          "type": "text",
+          "value": " is a key reference."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

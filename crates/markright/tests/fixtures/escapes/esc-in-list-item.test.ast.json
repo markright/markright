@@ -1,0 +1,30 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Item with "
+                },
+                {
+                  "type": "text",
+                  "value": "*"
+                },
+                {
+                  "type": "text",
+                  "value": " escaped"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[extension]
+id = "markright"
+name = "MarkRight"
+version = "0.0.1"
+schema_version = 1
+description = "MarkRight language support for Zed"
+repository = "https://github.com/markright/markright"
+
+[grammars.markright]
+repository = "https://github.com/markright/markright"
+path = "tree-sitter-markright"
+
+[language.markright]
+path = "languages/markright"

@@ -1,0 +1,119 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "caption": [
+        {
+          "type": "text",
+          "value": "Wide table with five columns"
+        }
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Col1"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Col2"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Col3"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Col4"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Col5"
+          }
+        ]
+      ],
+      "id": "tbl-wide",
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "a"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "b"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "c"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "d"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "e"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "f"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "g"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "h"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "i"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "j"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

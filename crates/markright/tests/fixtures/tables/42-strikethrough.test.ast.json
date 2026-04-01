@@ -1,0 +1,60 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Task"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Status"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Feature A"
+            }
+          ],
+          [
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "cancelled"
+                }
+              ],
+              "type": "strikethrough"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Feature B"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "done"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

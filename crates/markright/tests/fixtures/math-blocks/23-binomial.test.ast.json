@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\binom{n}{k} = \\frac{n!}{k!(n-k)!}",
+      "type": "math_block"
+    }
+  ]
+}

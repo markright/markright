@@ -1,0 +1,37 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "First paragraph."
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Second paragraph."
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Third paragraph."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "section",
+      "type": "fenced_div"
+    }
+  ]
+}

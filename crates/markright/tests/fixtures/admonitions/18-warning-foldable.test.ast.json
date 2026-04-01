@@ -1,0 +1,20 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Click to expand this warning."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": true,
+      "kind": "warning",
+      "type": "admonition"
+    }
+  ]
+}

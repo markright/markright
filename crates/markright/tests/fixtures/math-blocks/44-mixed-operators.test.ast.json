@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "a \\times b \\cdot c \\div d \\pm e",
+      "type": "math_block"
+    }
+  ]
+}

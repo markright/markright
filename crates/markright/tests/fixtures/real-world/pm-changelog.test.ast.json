@@ -1,0 +1,580 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Changelog"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "All notable changes to this project will be documented in this file."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "2.3.0 (2026-03-10)"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Added"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Support for 8 task list states: "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "[ ]"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "[x]"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "[~]"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "[@]"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "[-]"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "[!]"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "[>]"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "[?]"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "WikiLink syntax with aliases: "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "[[Page|Display Text]]"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Foldable admonitions with "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "-"
+                },
+                {
+                  "type": "text",
+                  "value": " modifier"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Changed"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Math blocks now use "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "$$"
+                },
+                {
+                  "type": "text",
+                  "value": " delimiters exclusively"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Table parser handles uneven column counts gracefully"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Fixed"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Inline code spans with backtick escaping"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Footnote definitions with multi-line content"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Empty heading content no longer causes a panic"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "2.2.0 (2026-02-15)"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Added"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Front matter parsing (YAML between "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "---"
+                },
+                {
+                  "type": "text",
+                  "value": " fences)"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Definition lists with "
+                },
+                {
+                  "type": "inline_code",
+                  "value": ": "
+                },
+                {
+                  "type": "text",
+                  "value": " prefix"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "inline_code",
+                  "value": "[TOC]"
+                },
+                {
+                  "type": "text",
+                  "value": " directive with optional level range"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Changed"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Improved paragraph continuation logic"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Better error messages for unclosed fences"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Deprecated"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "The "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "\\("
+                },
+                {
+                  "type": "text",
+                  "value": " math delimiter is no longer supported (use "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "$"
+                },
+                {
+                  "type": "text",
+                  "value": " instead)"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "2.1.0 (2026-01-20)"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Added"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Admonition blocks: "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "N>"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "T>"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "W>"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "!>"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "X>"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Fenced divs with "
+                },
+                {
+                  "type": "inline_code",
+                  "value": ":::"
+                },
+                {
+                  "type": "text",
+                  "value": " syntax"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Superscript and subscript support"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Fixed"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Link parsing with nested brackets"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Blockquote continuation across blank lines"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    }
+  ]
+}

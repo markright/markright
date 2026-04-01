@@ -1,0 +1,39 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "A statement"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "see "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Smith 2024"
+                }
+              ],
+              "type": "bold"
+            },
+            {
+              "type": "text",
+              "value": " for details"
+            }
+          ],
+          "type": "inline_footnote"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

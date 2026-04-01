@@ -1,0 +1,32 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "range with "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "bold text"
+                }
+              ],
+              "type": "bold"
+            }
+          ],
+          "label": "1",
+          "type": "range_footnote"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

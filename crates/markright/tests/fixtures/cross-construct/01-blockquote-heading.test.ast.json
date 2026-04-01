@@ -1,0 +1,28 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Important Title"
+            }
+          ],
+          "level": 1,
+          "type": "heading"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Some content below the heading."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Text"
+        }
+      ],
+      "id": "id-with-CAPS",
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "alt": "thumb",
+          "attrs": [
+            [
+              "h",
+              "150"
+            ]
+          ],
+          "type": "image",
+          "url": "thumb.jpg"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

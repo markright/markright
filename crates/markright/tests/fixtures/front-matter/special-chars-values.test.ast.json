@@ -1,0 +1,16 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Body text."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: \"Colons: and dashes - in values\"\ndescription: \"Quotes 'inside' quotes\""
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "marked"
+            }
+          ],
+          "type": "highlight"
+        },
+        {
+          "type": "text",
+          "value": " then normal text"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

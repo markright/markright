@@ -1,0 +1,46 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "First paragraph "
+        },
+        {
+          "keys": [
+            {
+              "key": "a"
+            }
+          ],
+          "type": "citation"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Second paragraph "
+        },
+        {
+          "keys": [
+            {
+              "key": "b"
+            }
+          ],
+          "type": "citation"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

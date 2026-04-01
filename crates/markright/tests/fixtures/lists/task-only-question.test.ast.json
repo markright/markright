@@ -1,0 +1,37 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Is this right"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "question"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Should we do this"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "question"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

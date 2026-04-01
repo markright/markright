@@ -1,0 +1,16 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Content."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: Null Test\nsubtitle:\nextra: more"
+  }
+}

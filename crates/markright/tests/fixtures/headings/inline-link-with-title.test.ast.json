@@ -1,0 +1,21 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "text"
+            }
+          ],
+          "title": "title",
+          "type": "link",
+          "url": "https://x.com"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    }
+  ]
+}

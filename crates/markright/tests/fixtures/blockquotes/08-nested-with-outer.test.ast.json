@@ -1,0 +1,32 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Outer text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Inner text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "type": "blockquote"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

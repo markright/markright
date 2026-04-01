@@ -1,0 +1,23 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "text "
+            },
+            {
+              "type": "text",
+              "value": "[with] brackets"
+            }
+          ],
+          "type": "link",
+          "url": "https://example.com"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

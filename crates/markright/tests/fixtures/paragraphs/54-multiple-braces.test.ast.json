@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Text {#first} and"
+        }
+      ],
+      "id": "second",
+      "type": "paragraph"
+    }
+  ]
+}

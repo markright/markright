@@ -1,0 +1,24 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "bold text"
+                }
+              ],
+              "type": "bold"
+            }
+          ],
+          "type": "link",
+          "url": "https://example.com"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

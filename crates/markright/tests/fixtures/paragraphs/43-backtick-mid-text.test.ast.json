@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Use the "
+        },
+        {
+          "type": "text",
+          "value": "`"
+        },
+        {
+          "type": "text",
+          "value": "`"
+        },
+        {
+          "type": "text",
+          "value": "` syntax for code blocks."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

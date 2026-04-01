@@ -1,0 +1,30 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Configuration"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Make sure to back up your config first."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    }
+  ]
+}

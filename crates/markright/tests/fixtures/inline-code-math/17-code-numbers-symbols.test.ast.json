@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_code",
+          "value": "x = 42 + 3.14 * (y - 1)"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

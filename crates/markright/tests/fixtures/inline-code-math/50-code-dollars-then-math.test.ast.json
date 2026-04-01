@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_code",
+          "value": "$x$"
+        },
+        {
+          "type": "text",
+          "value": " is not math but "
+        },
+        {
+          "type": "inline_math",
+          "value": "x"
+        },
+        {
+          "type": "text",
+          "value": " is."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

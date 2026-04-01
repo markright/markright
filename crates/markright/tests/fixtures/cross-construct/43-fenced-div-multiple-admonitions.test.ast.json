@@ -1,0 +1,58 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "First note."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "foldable": false,
+          "kind": "note",
+          "type": "admonition"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Then a warning."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "foldable": false,
+          "kind": "warning",
+          "type": "admonition"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "And a tip."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "foldable": false,
+          "kind": "tip",
+          "type": "admonition"
+        }
+      ],
+      "name": "info",
+      "type": "fenced_div"
+    }
+  ]
+}

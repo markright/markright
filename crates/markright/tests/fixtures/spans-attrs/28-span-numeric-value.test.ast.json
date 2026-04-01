@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "attrs": "data-count=42",
+          "children": [
+            {
+              "type": "text",
+              "value": "text"
+            }
+          ],
+          "type": "bracketed_span"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

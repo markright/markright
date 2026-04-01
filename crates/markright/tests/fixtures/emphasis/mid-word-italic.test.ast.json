@@ -1,0 +1,26 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "foo"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "bar"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": "baz"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

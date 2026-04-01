@@ -1,0 +1,18 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "123"
+            }
+          ],
+          "type": "italic"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

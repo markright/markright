@@ -1,0 +1,52 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## 2.3.0 (2026-03-10)
+
+### Added
+
+- Support for 8 task list states: `[ ]`, `[x]`, `[~]`, `[@]`, `[-]`, `[!]`, `[>]`, `[?]`
+- WikiLink syntax with aliases: `[[Page|Display Text]]`
+- Foldable admonitions with `-` modifier
+
+### Changed
+
+- Math blocks now use `$$` delimiters exclusively
+- Table parser handles uneven column counts gracefully
+
+### Fixed
+
+- Inline code spans with backtick escaping
+- Footnote definitions with multi-line content
+- Empty heading content no longer causes a panic
+
+## 2.2.0 (2026-02-15)
+
+### Added
+
+- Front matter parsing (YAML between `---` fences)
+- Definition lists with `: ` prefix
+- `[TOC]` directive with optional level range
+
+### Changed
+
+- Improved paragraph continuation logic
+- Better error messages for unclosed fences
+
+### Deprecated
+
+- The `\(` math delimiter is no longer supported (use `$` instead)
+
+## 2.1.0 (2026-01-20)
+
+### Added
+
+- Admonition blocks: `N>`, `T>`, `W>`, `!>`, `X>`
+- Fenced divs with `:::` syntax
+- Superscript and subscript support
+
+### Fixed
+
+- Link parsing with nested brackets
+- Blockquote continuation across blank lines

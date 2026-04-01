@@ -1,0 +1,18 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "multiple words here"
+            }
+          ],
+          "type": "bold_italic"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

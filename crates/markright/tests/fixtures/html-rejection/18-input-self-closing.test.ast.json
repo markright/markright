@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "<input type"
+        },
+        {
+          "type": "text",
+          "value": "=\"text\"/>"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Important finding"
+        },
+        {
+          "label": "study",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Published in Nature 2024."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "study",
+      "type": "footnote_def"
+    }
+  ]
+}

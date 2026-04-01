@@ -1,0 +1,22 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Before "
+        },
+        {
+          "alt": "img",
+          "type": "image",
+          "url": "https://example.com/i.png"
+        },
+        {
+          "type": "text",
+          "value": " after."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

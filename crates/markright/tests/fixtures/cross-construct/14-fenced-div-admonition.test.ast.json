@@ -1,0 +1,26 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Important note inside a div."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "foldable": false,
+          "kind": "note",
+          "type": "admonition"
+        }
+      ],
+      "name": "wrapper",
+      "type": "fenced_div"
+    }
+  ]
+}

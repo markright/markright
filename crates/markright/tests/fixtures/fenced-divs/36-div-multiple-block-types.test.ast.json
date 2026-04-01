@@ -1,0 +1,51 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Title"
+            }
+          ],
+          "level": 1,
+          "type": "heading"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "A paragraph."
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "items": [
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "List item"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            }
+          ],
+          "type": "unordered_list"
+        },
+        {
+          "body": "code",
+          "type": "code_block"
+        }
+      ],
+      "name": "mixed",
+      "type": "fenced_div"
+    }
+  ]
+}

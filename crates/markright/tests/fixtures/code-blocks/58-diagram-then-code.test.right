@@ -1,0 +1,7 @@
+```dot
+digraph { A -> B }
+```
+
+```rust
+fn main() {}
+```

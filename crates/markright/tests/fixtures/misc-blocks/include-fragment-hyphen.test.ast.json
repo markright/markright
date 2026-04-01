@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "fragment": "my-section",
+      "path": "chapter.right",
+      "type": "include"
+    }
+  ]
+}

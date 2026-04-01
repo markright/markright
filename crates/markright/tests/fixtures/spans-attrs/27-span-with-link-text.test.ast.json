@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "attrs": ".cta",
+          "children": [
+            {
+              "type": "text",
+              "value": "click here"
+            }
+          ],
+          "type": "bracketed_span"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

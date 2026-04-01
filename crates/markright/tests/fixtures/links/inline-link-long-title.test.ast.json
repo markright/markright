@@ -1,0 +1,20 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "link"
+            }
+          ],
+          "title": "This is a very long title for a link",
+          "type": "link",
+          "url": "https://example.com"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

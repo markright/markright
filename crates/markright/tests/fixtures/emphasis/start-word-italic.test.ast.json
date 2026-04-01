@@ -1,0 +1,22 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "bar"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": "baz"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

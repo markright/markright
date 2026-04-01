@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "keys": [
+            {
+              "key": "key1"
+            },
+            {
+              "key": "key2",
+              "suppress_author": true
+            },
+            {
+              "key": "key3",
+              "suppress_author": true
+            }
+          ],
+          "type": "citation"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

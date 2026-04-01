@@ -1,0 +1,63 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "body": "import os",
+          "lang": "python",
+          "type": "code_block"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Use the "
+            },
+            {
+              "type": "inline_code",
+              "value": "os"
+            },
+            {
+              "type": "text",
+              "value": " module for file operations."
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "items": [
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "inline_code",
+                      "value": "os.path.join()"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "inline_code",
+                      "value": "os.listdir()"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            }
+          ],
+          "type": "unordered_list"
+        }
+      ],
+      "name": "tutorial",
+      "type": "fenced_div"
+    }
+  ]
+}

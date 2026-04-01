@@ -1,0 +1,28 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "left"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Name"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Alice"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Unordered"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Apple"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Banana"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Ordered"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "First"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Second"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "start": 1,
+      "type": "ordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Tasks"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Todo"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Done"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

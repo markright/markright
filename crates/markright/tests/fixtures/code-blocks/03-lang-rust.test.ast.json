@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "fn main() {\n    println!(\"hello\");\n}",
+      "lang": "rust",
+      "type": "code_block"
+    }
+  ]
+}

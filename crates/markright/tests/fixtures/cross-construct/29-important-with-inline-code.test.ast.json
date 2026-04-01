@@ -1,0 +1,28 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Do not call "
+            },
+            {
+              "type": "inline_code",
+              "value": "rm -rf /"
+            },
+            {
+              "type": "text",
+              "value": " under any circumstances."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "important",
+      "type": "admonition"
+    }
+  ]
+}

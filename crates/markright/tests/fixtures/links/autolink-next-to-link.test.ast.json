@@ -1,0 +1,41 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Auto: "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "https://auto.com"
+            }
+          ],
+          "type": "link",
+          "url": "https://auto.com"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "manual"
+            }
+          ],
+          "type": "link",
+          "url": "https://manual.com"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

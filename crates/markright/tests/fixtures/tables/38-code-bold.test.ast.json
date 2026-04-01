@@ -1,0 +1,46 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Syntax"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Description"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "inline_code",
+              "value": "**bold**"
+            }
+          ],
+          [
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "renders bold"
+                }
+              ],
+              "type": "bold"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "caption": [
+        {
+          "type": "text",
+          "value": "Data from "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "WHO"
+            }
+          ],
+          "type": "link",
+          "url": "https://who.int"
+        }
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "A"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "B"
+          }
+        ]
+      ],
+      "id": "tbl-who",
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "1"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "2"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

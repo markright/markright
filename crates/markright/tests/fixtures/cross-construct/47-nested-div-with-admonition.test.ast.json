@@ -1,0 +1,41 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Content inside inner."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "inner",
+          "type": "fenced_div"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Warning after inner div."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "foldable": false,
+          "kind": "warning",
+          "type": "admonition"
+        }
+      ],
+      "name": "outer",
+      "type": "fenced_div"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Some text here."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "x = 1",
+      "lang": "python",
+      "type": "code_block"
+    }
+  ]
+}

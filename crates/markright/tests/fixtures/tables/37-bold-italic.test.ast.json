@@ -1,0 +1,33 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Feature"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "important"
+                }
+              ],
+              "type": "bold_italic"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

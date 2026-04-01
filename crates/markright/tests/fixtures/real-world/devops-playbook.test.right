@@ -1,0 +1,78 @@
+# Kubernetes Deployment Playbook
+
+## Prerequisites
+
+- [x] `kubectl` CLI installed and configured
+- [x] Cluster access verified
+- [ ] Review deployment manifests
+- [ ] Verify image tags match release version
+
+## Pre-Deployment Checks
+
+```bash
+# Verify cluster connectivity
+kubectl cluster-info
+
+# Check current deployment status
+kubectl get deployments -n production
+
+# Review pending changes
+kubectl diff -f manifests/
+```
+
+W> Always run `kubectl diff` before applying changes to production.
+
+## Deployment Steps
+
+### 1. Update ConfigMaps
+
+```bash
+kubectl apply -f manifests/configmap.yaml -n production
+```
+
+### 2. Deploy New Version
+
+```bash
+kubectl apply -f manifests/deployment.yaml -n production
+```
+
+### 3. Monitor Rollout
+
+```bash
+kubectl rollout status deployment/api-server -n production --timeout=300s
+```
+
+## Rollback Procedure
+
+!> If the deployment shows errors, roll back immediately.
+
+```bash
+# Check rollout history
+kubectl rollout history deployment/api-server -n production
+
+# Rollback to previous version
+kubectl rollout undo deployment/api-server -n production
+```
+
+## Health Check Endpoints
+
+| Service | Endpoint | Expected |
+| --- | --- | :---: |
+| API Server | `/health` | 200 OK |
+| Worker | `/health` | 200 OK |
+| Scheduler | `/health` | 200 OK |
+| Gateway | `/status` | 200 OK |
+
+## Post-Deployment
+
+- [ ] Verify all pods are running
+- [ ] Check application logs for errors
+- [ ] Run smoke tests
+- [ ] Update deployment tracker
+- [ ] Notify team in Slack
+
+N> Allow 10 minutes of monitoring after deployment before declaring success.
+
+T> Use `kubectl logs -f` to tail logs in real time during the deployment window.
+
+X> If more than 20% of pods fail readiness checks, trigger an automatic rollback.

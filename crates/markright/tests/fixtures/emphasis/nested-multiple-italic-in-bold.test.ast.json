@@ -1,0 +1,44 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "one "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "two"
+                }
+              ],
+              "type": "italic"
+            },
+            {
+              "type": "text",
+              "value": " three "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "four"
+                }
+              ],
+              "type": "italic"
+            },
+            {
+              "type": "text",
+              "value": " five"
+            }
+          ],
+          "type": "bold"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

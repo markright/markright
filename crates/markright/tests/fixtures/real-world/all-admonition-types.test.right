@@ -1,0 +1,41 @@
+# Admonition Reference
+
+## Note
+
+N> This is a note admonition.
+N> It provides additional context.
+
+## Tip
+
+T> This is a tip admonition.
+T> It shares best practices.
+
+## Warning
+
+W> This is a warning admonition.
+W> It alerts about potential issues.
+
+## Important
+
+!> This is an important admonition.
+!> It highlights critical information.
+
+## Caution
+
+X> This is a caution admonition.
+X> It warns about dangerous actions.
+
+## Foldable Note
+
+N>- This is a foldable note.
+N> Click to expand and see details.
+
+## Foldable Warning
+
+W>- This is a foldable warning.
+W> Contains details about a potential issue.
+
+## Admonition with Rich Content
+
+N> You can use **bold**, *italic*, and `code` inside admonitions.
+N> Even [links](https://example.com) work here.

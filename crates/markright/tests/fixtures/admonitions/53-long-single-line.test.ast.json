@@ -1,0 +1,20 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "This is a rather long admonition that contains quite a bit of text in a single line to test how the parser handles longer content."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    }
+  ]
+}

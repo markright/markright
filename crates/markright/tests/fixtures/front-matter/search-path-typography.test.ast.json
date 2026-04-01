@@ -1,0 +1,16 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Paragraph text."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
+  "front_matter": {
+    "raw": "search_path: ./images\ntypography: smart_quotes\ntitle: Settings Test"
+  }
+}

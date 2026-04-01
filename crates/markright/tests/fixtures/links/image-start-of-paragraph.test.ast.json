@@ -1,0 +1,18 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "alt": "img",
+          "type": "image",
+          "url": "https://example.com/img.png"
+        },
+        {
+          "type": "text",
+          "value": " with text after"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

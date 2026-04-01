@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Simple footnote text."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "1",
+      "type": "footnote_def"
+    }
+  ]
+}

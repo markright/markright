@@ -1,0 +1,28 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "alt": "chart",
+          "attrs": [
+            [
+              "w",
+              "600"
+            ],
+            [
+              "h",
+              "400"
+            ],
+            [
+              "loading",
+              "lazy"
+            ]
+          ],
+          "type": "image",
+          "url": "data.png"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+# Turing Machine
+
+A **Turing machine** is a mathematical model of computation describing an abstract machine[^turing1936]. It manipulates symbols on a strip of tape according to a table of rules.
+
+[TOC:2-4]
+
+## History
+
+The concept was introduced by *Alan Turing* in 1936 in his paper "On Computable Numbers"[^turing1936]. The machine was designed to formalize the concept of an algorithm.
+
+Despite its simplicity, a Turing machine can simulate any computer algorithm, no matter how complex. This is the basis of the **Church-Turing thesis**[^church].
+
+## Formal Definition {#formal-def}
+
+A Turing machine is a 7-tuple $M = (Q, \Sigma, \Gamma, \delta, q_0, q_{accept}, q_{reject})$ where:
+
+- $Q$ is a finite set of states
+- $\Sigma$ is the input alphabet
+- $\Gamma$ is the tape alphabet
+- $\delta$ is the transition function
+- $q_0$ is the start state
+- $q_{accept}$ is the accept state
+- $q_{reject}$ is the reject state
+
+## Variants
+
+### Multi-tape Turing Machine
+
+A multi-tape machine uses $k$ tapes, each with its own head. It has been proven that any multi-tape machine can be simulated by a single-tape machine.
+
+### Non-deterministic Turing Machine
+
+A non-deterministic Turing machine (NDTM) can have multiple possible transitions for a given state-symbol pair.
+
+## Significance
+
+| Property | Turing Machine | Finite Automaton |
+| --- | :---: | :---: |
+| Memory | Infinite tape | No memory |
+| Power | Universal | Limited |
+| Decidability | Halting problem | Always halts |
+
+## See Also
+
+- [Computability Theory](https://en.wikipedia.org/wiki/Computability_theory)
+- [Lambda Calculus](https://en.wikipedia.org/wiki/Lambda_calculus)
+- [Church-Turing Thesis](https://en.wikipedia.org/wiki/Church-Turing_thesis)
+
+[^turing1936]: Turing, A.M. (1936). On Computable Numbers, with an Application to the Entscheidungsproblem.
+[^church]: Church, A. (1936). An Unsolvable Problem of Elementary Number Theory.

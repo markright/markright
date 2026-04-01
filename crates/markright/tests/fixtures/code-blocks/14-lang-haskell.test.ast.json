@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "main :: IO ()\nmain = putStrLn \"hello\"",
+      "lang": "haskell",
+      "type": "code_block"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "claim"
+        },
+        {
+          "label": "1",
+          "type": "footnote_ref"
+        },
+        {
+          "label": "2",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": " here."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

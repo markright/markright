@@ -1,0 +1,21 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Price is "
+        },
+        {
+          "type": "text",
+          "value": "$"
+        },
+        {
+          "type": "text",
+          "value": "$100."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

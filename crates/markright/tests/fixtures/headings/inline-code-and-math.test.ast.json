@@ -1,0 +1,22 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_code",
+          "value": "code"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "type": "inline_math",
+          "value": "math"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Before "
+        },
+        {
+          "target": "middle",
+          "type": "wiki_link"
+        },
+        {
+          "type": "text",
+          "value": " after."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Hello "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "highlighted"
+            }
+          ],
+          "type": "highlight"
+        },
+        {
+          "type": "text",
+          "value": " world."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

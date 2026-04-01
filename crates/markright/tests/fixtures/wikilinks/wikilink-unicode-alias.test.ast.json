@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "alias": "Japanese Page",
+          "target": "日本語ページ",
+          "type": "wiki_link"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

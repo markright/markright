@@ -1,0 +1,39 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Ca"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "2+"
+            }
+          ],
+          "type": "superscript"
+        },
+        {
+          "type": "text",
+          "value": " ion in H"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "2"
+            }
+          ],
+          "type": "subscript"
+        },
+        {
+          "type": "text",
+          "value": "O"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

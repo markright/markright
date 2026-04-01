@@ -1,0 +1,27 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Solve "
+                },
+                {
+                  "type": "inline_math",
+                  "value": "E = mc^2"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

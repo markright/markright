@@ -1,0 +1,28 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "quoted"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "After Quote"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    }
+  ]
+}

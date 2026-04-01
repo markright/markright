@@ -1,0 +1,29 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "attrs": ".a",
+          "children": [
+            {
+              "type": "text",
+              "value": "first"
+            }
+          ],
+          "type": "bracketed_span"
+        },
+        {
+          "attrs": ".b",
+          "children": [
+            {
+              "type": "text",
+              "value": "second"
+            }
+          ],
+          "type": "bracketed_span"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

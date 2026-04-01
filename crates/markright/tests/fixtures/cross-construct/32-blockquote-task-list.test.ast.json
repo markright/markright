@@ -1,0 +1,56 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "items": [
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Review the PR"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ],
+              "state": "open"
+            },
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Write tests"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ],
+              "state": "done"
+            },
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Deploy to staging"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ],
+              "state": "active"
+            }
+          ],
+          "type": "task_list"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

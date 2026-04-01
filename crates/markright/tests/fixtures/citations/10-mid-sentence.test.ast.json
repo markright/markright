@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The result "
+        },
+        {
+          "keys": [
+            {
+              "key": "doe2024"
+            }
+          ],
+          "type": "citation"
+        },
+        {
+          "type": "text",
+          "value": " was surprising."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

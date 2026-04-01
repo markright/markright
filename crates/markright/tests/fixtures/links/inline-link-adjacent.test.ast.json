@@ -1,0 +1,29 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "a"
+            }
+          ],
+          "type": "link",
+          "url": "https://a.com"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "b"
+            }
+          ],
+          "type": "link",
+          "url": "https://b.com"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

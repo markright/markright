@@ -1,0 +1,46 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Bold"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": " completed"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Normal open task"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

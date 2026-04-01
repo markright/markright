@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Line before break."
+        },
+        {
+          "type": "text",
+          "value": "\\"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

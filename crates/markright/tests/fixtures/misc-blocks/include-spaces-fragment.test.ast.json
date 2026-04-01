@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "fragment": "intro",
+      "path": "path/to/file.right",
+      "type": "include"
+    }
+  ]
+}

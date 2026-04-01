@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "fragment": "42",
+          "target": "Page",
+          "type": "wiki_link"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

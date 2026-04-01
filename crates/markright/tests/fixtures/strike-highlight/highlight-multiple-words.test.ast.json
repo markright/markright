@@ -1,0 +1,18 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "multiple words here"
+            }
+          ],
+          "type": "highlight"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

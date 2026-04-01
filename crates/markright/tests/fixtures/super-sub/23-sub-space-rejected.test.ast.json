@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "~not sub"
+        },
+        {
+          "type": "text",
+          "value": "~ fails"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

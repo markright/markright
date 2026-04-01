@@ -1,0 +1,55 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Important"
+                    }
+                  ],
+                  "type": "italic"
+                },
+                {
+                  "type": "text",
+                  "value": " task"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Finished"
+                    }
+                  ],
+                  "type": "italic"
+                },
+                {
+                  "type": "text",
+                  "value": " task"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

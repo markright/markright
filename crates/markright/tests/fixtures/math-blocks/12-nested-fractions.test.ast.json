@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\frac{\\frac{a}{b}}{\\frac{c}{d}}",
+      "type": "math_block"
+    }
+  ]
+}

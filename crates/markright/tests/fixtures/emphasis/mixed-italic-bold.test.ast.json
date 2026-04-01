@@ -1,0 +1,39 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "some "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "italic"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": " with "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "bold"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " text"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Definition text."
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Term"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    }
+  ]
+}

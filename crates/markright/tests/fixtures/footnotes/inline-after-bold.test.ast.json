@@ -1,0 +1,35 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "key claim"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "citation needed"
+            }
+          ],
+          "type": "inline_footnote"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

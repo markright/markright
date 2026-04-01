@@ -1,0 +1,46 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Above."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "alignments": [
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "H"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "V"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Below."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

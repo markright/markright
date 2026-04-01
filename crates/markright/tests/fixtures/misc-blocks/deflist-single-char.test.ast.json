@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "The unknown."
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "X"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    }
+  ]
+}

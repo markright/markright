@@ -1,0 +1,31 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "items": [
+                {
+                  "children": [
+                    {
+                      "content": [
+                        {
+                          "type": "text",
+                          "value": "-"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  ]
+                }
+              ],
+              "type": "unordered_list"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    }
+  ]
+}

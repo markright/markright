@@ -1,0 +1,20 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "alt": "a beautiful sunset",
+          "attrs": [
+            [
+              "w",
+              "100%"
+            ]
+          ],
+          "type": "image",
+          "url": "sunset.jpg"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

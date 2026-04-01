@@ -1,0 +1,22 @@
+{
+  "children": [
+    {
+      "body": "some code",
+      "type": "code_block"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Quote after code"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

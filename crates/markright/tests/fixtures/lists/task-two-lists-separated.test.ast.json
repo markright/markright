@@ -1,0 +1,65 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "First list task A"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "First list task B"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Second list task A"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Second list task B"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

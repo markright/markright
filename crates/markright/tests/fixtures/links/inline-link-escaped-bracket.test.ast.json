@@ -1,0 +1,31 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "text "
+            },
+            {
+              "type": "text",
+              "value": "["
+            },
+            {
+              "type": "text",
+              "value": "escaped"
+            },
+            {
+              "type": "text",
+              "value": "]"
+            }
+          ],
+          "type": "link",
+          "url": "https://example.com"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Text with {notid}"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Summary"
+            }
+          ],
+          "level": 2,
+          "type": "heading"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Key findings:"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "items": [
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Result A"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Result B"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            }
+          ],
+          "type": "unordered_list"
+        },
+        {
+          "alignments": [
+            "none",
+            "none"
+          ],
+          "headers": [
+            [
+              {
+                "type": "text",
+                "value": "Metric"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Score"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Speed"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "95"
+                }
+              ]
+            ]
+          ],
+          "type": "table"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

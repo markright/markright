@@ -1,0 +1,44 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "first"
+            }
+          ],
+          "type": "strikethrough"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "second"
+            }
+          ],
+          "type": "strikethrough"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "third"
+            }
+          ],
+          "type": "strikethrough"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

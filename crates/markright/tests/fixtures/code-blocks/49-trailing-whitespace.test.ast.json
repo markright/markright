@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "line with trailing space   \nnormal line",
+      "type": "code_block"
+    }
+  ]
+}

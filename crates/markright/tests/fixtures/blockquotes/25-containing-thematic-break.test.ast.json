@@ -1,0 +1,12 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "type": "thematic_break"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "<style>.red{color:red}</style>"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

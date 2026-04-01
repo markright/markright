@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "target": "A",
+          "type": "wiki_link"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

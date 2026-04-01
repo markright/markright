@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "sequenceDiagram\n    participant A\n    participant B\n    A->>B: Request\n    B-->>A: Response",
+      "lang": "mermaid",
+      "type": "diagram_block"
+    }
+  ]
+}

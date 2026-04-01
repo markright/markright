@@ -1,0 +1,16 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Some content here."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: My Document\nauthor: Alice Smith\ndate: 2024-06-01\nversion: 1.2.3\nlang: en\nlicense: MIT\ncategory: tutorial"
+  }
+}

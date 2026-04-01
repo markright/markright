@@ -1,0 +1,23 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "italic strike"
+                }
+              ],
+              "type": "strikethrough"
+            }
+          ],
+          "type": "italic"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "First fact"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "source one"
+            }
+          ],
+          "type": "inline_footnote"
+        },
+        {
+          "type": "text",
+          "value": " and second"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "source two"
+            }
+          ],
+          "type": "inline_footnote"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Introduction"
+            }
+          ],
+          "level": 2,
+          "type": "heading"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "First paragraph."
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "type": "thematic_break"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Conclusion"
+            }
+          ],
+          "level": 2,
+          "type": "heading"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Final paragraph."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "article",
+      "type": "fenced_div"
+    }
+  ]
+}

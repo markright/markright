@@ -1,0 +1,48 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "According to "
+        },
+        {
+          "keys": [
+            {
+              "key": "smith2023"
+            }
+          ],
+          "type": "citation"
+        },
+        {
+          "type": "text",
+          "value": ", this is important"
+        },
+        {
+          "label": "note",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "More details here."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "note",
+      "type": "footnote_def"
+    }
+  ]
+}

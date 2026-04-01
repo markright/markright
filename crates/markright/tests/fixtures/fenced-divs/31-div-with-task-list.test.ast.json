@@ -1,0 +1,43 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "items": [
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Incomplete"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ],
+              "state": "open"
+            },
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Complete"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ],
+              "state": "done"
+            }
+          ],
+          "type": "task_list"
+        }
+      ],
+      "name": "tasks",
+      "type": "fenced_div"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "puts \"hello\"",
+      "lang": "ruby",
+      "type": "code_block"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "This is a paragraph with emoji 🎉 in the middle and at the end 🚀"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

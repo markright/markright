@@ -1,0 +1,71 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Feature"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Status"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Parser"
+                }
+              ],
+              "type": "bold"
+            }
+          ],
+          [
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "done"
+                }
+              ],
+              "type": "italic"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "inline_code",
+              "value": "WASM"
+            }
+          ],
+          [
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "link"
+                }
+              ],
+              "type": "link",
+              "url": "https://example.com"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

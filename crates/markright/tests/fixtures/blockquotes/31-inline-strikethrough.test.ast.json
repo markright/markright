@@ -1,0 +1,31 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "This is "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "deleted"
+                }
+              ],
+              "type": "strikethrough"
+            },
+            {
+              "type": "text",
+              "value": " text"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

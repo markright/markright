@@ -1,0 +1,611 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Release Notes: v3.0.0"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "We are excited to announce version 3.0 of the platform. This is a major release with new features, performance improvements, and breaking changes."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "This release contains "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "breaking changes"
+                }
+              ],
+              "type": "bold"
+            },
+            {
+              "type": "text",
+              "value": ". Please read the migration guide carefully."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "important",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "New Features"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Real-Time Collaboration"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Multiple users can now edit documents simultaneously with live cursor tracking and conflict resolution."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Advanced Search"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Full-text search with support for:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Boolean operators ("
+                },
+                {
+                  "type": "inline_code",
+                  "value": "AND"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "OR"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "NOT"
+                },
+                {
+                  "type": "text",
+                  "value": ")"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Phrase matching with "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "\"exact phrase\""
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Field-specific queries with "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "field:value"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Wildcard patterns with "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "*"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Export Improvements"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "New export formats:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Format"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Description"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "PDF"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "High-fidelity PDF with embedded fonts"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "EPUB"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "E-book format for mobile readers"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "LaTeX"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "For academic publishing"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Docx"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Microsoft Word compatible"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Performance"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Page load time reduced by "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "40%"
+                    }
+                  ],
+                  "type": "bold"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Search queries now complete in under "
+                },
+                {
+                  "type": "inline_math",
+                  "value": "50ms"
+                },
+                {
+                  "type": "text",
+                  "value": " (p99)"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Memory usage reduced by "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "25%"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": " through lazy loading"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Breaking Changes"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The following changes require updates to your configuration."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "warning",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "API Changes"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "The "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "/api/v2/"
+                },
+                {
+                  "type": "text",
+                  "value": " endpoints are now deprecated"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Authentication switched from API keys to OAuth 2.0"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Rate limits reduced from 1000 to 600 requests per minute"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "start": 1,
+      "type": "ordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Configuration"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The configuration file format changed from TOML to YAML:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "server:\n  port: 8080\n  host: 0.0.0.0\ndatabase:\n  url: postgres://localhost/mydb\n  pool_size: 20",
+      "lang": "yaml",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Previously:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "[server]\nport = 8080\nhost = \"0.0.0.0\"\n\n[database]\nurl = \"postgres://localhost/mydb\"\npool_size = 20",
+      "lang": "toml",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Migration Guide"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Update API client to use OAuth 2.0"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Convert configuration files from TOML to YAML"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Update API endpoints from v2 to v3"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Test all integrations against the new API"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Review rate limiting changes"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Run the migration script at "
+            },
+            {
+              "type": "inline_code",
+              "value": "scripts/migrate-v3.sh"
+            },
+            {
+              "type": "text",
+              "value": " to automate most of the configuration changes."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "tip",
+      "type": "admonition"
+    }
+  ]
+}

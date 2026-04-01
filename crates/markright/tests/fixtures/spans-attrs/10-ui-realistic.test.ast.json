@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "attrs": ".ui",
+          "children": [
+            {
+              "type": "text",
+              "value": "Save"
+            }
+          ],
+          "type": "bracketed_span"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

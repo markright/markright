@@ -1,0 +1,24 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Text with "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "link"
+            }
+          ],
+          "type": "link",
+          "url": "http://example.com"
+        }
+      ],
+      "id": "link-para",
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+# CS 341: Algorithms -- Lecture 12
+
+## Topic: Dynamic Programming
+
+### Recap
+
+Last lecture we covered:
+
+- Greedy algorithms
+- Optimal substructure
+- The activity selection problem
+
+### The Key Idea
+
+Dynamic programming solves problems by breaking them into ==overlapping subproblems== and storing their solutions. Unlike divide-and-conquer, DP reuses previously computed results.
+
+## Fibonacci Numbers
+
+The naive recursive approach has exponential time complexity:
+
+$$
+T(n) = T(n-1) + T(n-2) + O(1)
+$$
+
+This gives $T(n) = O(2^n)$.
+
+### Memoized Version
+
+```python
+def fib(n, memo={}):
+    if n in memo:
+        return memo[n]
+    if n <= 1:
+        return n
+    memo[n] = fib(n - 1, memo) + fib(n - 2, memo)
+    return memo[n]
+```
+
+Time complexity: $O(n)$. Space complexity: $O(n)$.
+
+### Bottom-Up Version
+
+```python
+def fib(n):
+    if n <= 1:
+        return n
+    dp = [0] * (n + 1)
+    dp[1] = 1
+    for i in range(2, n + 1):
+        dp[i] = dp[i-1] + dp[i-2]
+    return dp[n]
+```
+
+## The Knapsack Problem
+
+Given $n$ items with weights $w_1, \ldots, w_n$ and values $v_1, \ldots, v_n$, and a capacity $W$, maximize the total value without exceeding the weight limit.
+
+### Recurrence
+
+$$
+OPT(i, w) = \max(OPT(i-1, w), v_i + OPT(i-1, w - w_i))
+$$
+
+### Complexity
+
+| Variant | Time | Space |
+| --- | :---: | :---: |
+| 0/1 Knapsack | $O(nW)$ | $O(nW)$ |
+| Unbounded Knapsack | $O(nW)$ | $O(W)$ |
+| Fractional Knapsack | $O(n \log n)$ | $O(1)$ |
+
+N> The 0/1 knapsack is *pseudo-polynomial* because $W$ is exponential in the number of bits needed to represent it.
+
+## Homework
+
+- [ ] Solve problems 6.1 through 6.5 in the textbook
+- [ ] Implement the 0/1 knapsack with path reconstruction
+- [ ] Read Chapter 7 on network flow

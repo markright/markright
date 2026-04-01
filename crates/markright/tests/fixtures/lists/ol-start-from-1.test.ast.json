@@ -1,0 +1,23 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Just one"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "start": 1,
+      "type": "ordered_list"
+    }
+  ]
+}

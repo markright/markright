@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "First Heading"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: Heading After"
+  }
+}

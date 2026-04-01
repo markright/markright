@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "attrs": ".highlight",
+          "children": [
+            {
+              "type": "text",
+              "value": "This is a longer span of text with multiple words"
+            }
+          ],
+          "type": "bracketed_span"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

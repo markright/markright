@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "fragment": "Section With Spaces",
+          "target": "Page",
+          "type": "wiki_link"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

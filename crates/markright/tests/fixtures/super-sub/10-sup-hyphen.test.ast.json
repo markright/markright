@@ -1,0 +1,26 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "e"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "-x"
+            }
+          ],
+          "type": "superscript"
+        },
+        {
+          "type": "text",
+          "value": " decay"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

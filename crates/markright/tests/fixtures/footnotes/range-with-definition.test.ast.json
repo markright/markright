@@ -1,0 +1,38 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "This range is footnoted"
+            }
+          ],
+          "label": "1",
+          "type": "range_footnote"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The footnote applies to the highlighted range."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "1",
+      "type": "footnote_def"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+::::outer
+:::inner
+Content inside inner.
+:::
+
+W> Warning after inner div.
+::::

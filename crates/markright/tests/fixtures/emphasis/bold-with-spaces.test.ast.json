@@ -1,0 +1,18 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "spaced text inside"
+            }
+          ],
+          "type": "bold"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

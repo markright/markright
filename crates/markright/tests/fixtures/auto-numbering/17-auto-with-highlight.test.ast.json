@@ -1,0 +1,49 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "This is "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "highlighted"
+                    }
+                  ],
+                  "type": "highlight"
+                },
+                {
+                  "type": "text",
+                  "value": " text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Normal text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "start": 1,
+      "type": "ordered_list"
+    }
+  ]
+}

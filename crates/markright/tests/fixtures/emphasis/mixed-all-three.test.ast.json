@@ -1,0 +1,44 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "italic"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "bold"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "bold italic"
+            }
+          ],
+          "type": "bold_italic"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

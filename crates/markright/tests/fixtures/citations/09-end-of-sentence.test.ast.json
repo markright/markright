@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "As shown "
+        },
+        {
+          "keys": [
+            {
+              "key": "doe2024"
+            }
+          ],
+          "type": "citation"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

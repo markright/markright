@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "type": "thematic_break"
+    },
+    {
+      "type": "thematic_break"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Hello"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

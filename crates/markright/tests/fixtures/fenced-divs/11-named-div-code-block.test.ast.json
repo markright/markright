@@ -1,0 +1,15 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "body": "fn main() {}",
+          "lang": "rust",
+          "type": "code_block"
+        }
+      ],
+      "name": "example",
+      "type": "fenced_div"
+    }
+  ]
+}

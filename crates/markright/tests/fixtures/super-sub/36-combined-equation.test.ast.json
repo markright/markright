@@ -1,0 +1,65 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "a"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "n"
+            }
+          ],
+          "type": "superscript"
+        },
+        {
+          "type": "text",
+          "value": " + b"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "k"
+            }
+          ],
+          "type": "subscript"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "= c"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "m"
+            }
+          ],
+          "type": "superscript"
+        },
+        {
+          "type": "text",
+          "value": " + d"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "j"
+            }
+          ],
+          "type": "subscript"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

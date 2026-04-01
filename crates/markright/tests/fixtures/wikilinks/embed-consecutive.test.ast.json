@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "target": "a.png",
+          "type": "wiki_embed"
+        },
+        {
+          "target": "b.png",
+          "type": "wiki_embed"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

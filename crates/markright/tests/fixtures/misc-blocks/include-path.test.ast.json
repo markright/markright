@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "path": "path/to/file.right",
+      "type": "include"
+    }
+  ]
+}

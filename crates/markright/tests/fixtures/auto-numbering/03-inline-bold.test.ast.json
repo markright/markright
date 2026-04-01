@@ -1,0 +1,45 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Bold"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": " item"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Normal item"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "start": 1,
+      "type": "ordered_list"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "["
+        },
+        {
+          "type": "text",
+          "value": "not a link"
+        },
+        {
+          "type": "text",
+          "value": "]"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    }
+  ]
+}

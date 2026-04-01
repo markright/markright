@@ -1,0 +1,47 @@
+# Product Landing Page
+
+::: hero
+# Build Better Software
+
+Ship faster with confidence using our **developer platform**.
+
+- Automated testing
+- Continuous deployment
+- Real-time monitoring
+:::
+
+::: features
+## Why Choose Us
+
+::: feature-card
+### Lightning Fast
+
+Our platform processes builds in under 30 seconds, getting your code to production faster than ever.
+:::
+
+::: feature-card
+### Secure by Default
+
+Every deployment is scanned for vulnerabilities. We support ==SOC 2== and ==HIPAA== compliance out of the box.
+:::
+
+::: feature-card
+### Developer First
+
+Built by developers, for developers. Our CLI, API, and dashboard are designed for the best developer experience.
+:::
+:::
+
+## Pricing
+
+| Plan | Price | Builds | Team Size |
+| --- | ---: | ---: | :---: |
+| Starter | $0/mo | 500 | 3 |
+| Pro | $29/mo | 5000 | 10 |
+| Enterprise | Custom | Unlimited | Unlimited |
+
+::: cta
+## Ready to Get Started?
+
+Sign up for a free account and deploy your first project in minutes.
+:::

@@ -1,0 +1,39 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Some text"
+        },
+        {
+          "label": "1",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "type": "thematic_break"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "A footnote."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "1",
+      "type": "footnote_def"
+    }
+  ]
+}

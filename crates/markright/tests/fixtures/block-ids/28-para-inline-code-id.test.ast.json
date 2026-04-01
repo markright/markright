@@ -1,0 +1,22 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Text with "
+        },
+        {
+          "type": "inline_code",
+          "value": "code"
+        },
+        {
+          "type": "text",
+          "value": " and"
+        }
+      ],
+      "id": "code-para",
+      "type": "paragraph"
+    }
+  ]
+}

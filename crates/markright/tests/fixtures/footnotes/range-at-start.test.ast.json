@@ -1,0 +1,23 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "Start of paragraph"
+            }
+          ],
+          "label": "1",
+          "type": "range_footnote"
+        },
+        {
+          "type": "text",
+          "value": " and more text."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

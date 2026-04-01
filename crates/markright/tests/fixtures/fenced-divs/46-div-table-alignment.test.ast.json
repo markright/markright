@@ -1,0 +1,60 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "alignments": [
+            "left",
+            "center",
+            "right"
+          ],
+          "headers": [
+            [
+              {
+                "type": "text",
+                "value": "Left"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Center"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Right"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "L"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "C"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "R"
+                }
+              ]
+            ]
+          ],
+          "type": "table"
+        }
+      ],
+      "name": "data",
+      "type": "fenced_div"
+    }
+  ]
+}

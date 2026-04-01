@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Be careful with this approach."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "foldable": false,
+          "kind": "warning",
+          "type": "admonition"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

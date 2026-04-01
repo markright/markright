@@ -1,0 +1,26 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "End of sentence"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "note"
+            }
+          ],
+          "type": "inline_footnote"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

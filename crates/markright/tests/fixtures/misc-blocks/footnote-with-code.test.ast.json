@@ -1,0 +1,27 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Use the "
+            },
+            {
+              "type": "inline_code",
+              "value": "parse()"
+            },
+            {
+              "type": "text",
+              "value": " function."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "fn",
+      "type": "footnote_def"
+    }
+  ]
+}

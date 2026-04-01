@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "A simple paragraph without any ID."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

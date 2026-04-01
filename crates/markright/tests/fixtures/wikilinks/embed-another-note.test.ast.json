@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "target": "other-note",
+          "type": "wiki_embed"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

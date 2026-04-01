@@ -1,0 +1,7 @@
+## Setup {#setup}
+
+N> Ensure you have Rust installed.
+
+```bash
+cargo build
+```

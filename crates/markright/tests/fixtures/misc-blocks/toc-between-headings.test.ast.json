@@ -1,0 +1,29 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Title"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "max_level": 3,
+      "min_level": 2,
+      "type": "toc"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Section"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    }
+  ]
+}

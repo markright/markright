@@ -1,0 +1,70 @@
+# Contributing Guide
+
+Thank you for your interest in contributing to this project!
+
+## Getting Started
+
+1. Fork the repository
+2. Clone your fork
+3. Create a feature branch
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+## Development Setup
+
+```bash
+# Install dependencies
+cargo build
+
+# Run tests
+cargo test
+
+# Run the formatter
+cargo fmt
+
+# Run the linter
+cargo clippy
+```
+
+## Pull Request Checklist
+
+Before submitting a PR, make sure you have:
+
+- [x] Read this contributing guide
+- [ ] Written tests for new functionality
+- [ ] Run `cargo fmt` on all changed files
+- [ ] Run `cargo clippy` with no warnings
+- [ ] Updated documentation if needed
+- [ ] Added a changelog entry
+
+## Code Style
+
+W> Do not use `unwrap()` in library code. Use proper error handling with `Result`.
+
+T> Use `cargo clippy -- -W clippy::pedantic` for stricter linting.
+
+## Commit Messages
+
+Follow the [Conventional Commits](https://www.conventionalcommits.org/) format:
+
+```
+feat: add support for wiki embeds
+fix: handle empty code blocks correctly
+docs: update API reference
+test: add fixtures for admonition parsing
+```
+
+## Issue Labels
+
+| Label | Description |
+| --- | --- |
+| `bug` | Something is not working |
+| `feature` | New feature request |
+| `docs` | Documentation improvement |
+| `good first issue` | Suitable for newcomers |
+
+## Questions?
+
+Open a [Discussion](https://github.com/example/markright/discussions) or reach out on [Discord](https://discord.gg/markright).

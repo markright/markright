@@ -1,0 +1,46 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "alignments": [
+            "none",
+            "none"
+          ],
+          "headers": [
+            [
+              {
+                "type": "text",
+                "value": "X"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Y"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "2"
+                }
+              ]
+            ]
+          ],
+          "type": "table"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

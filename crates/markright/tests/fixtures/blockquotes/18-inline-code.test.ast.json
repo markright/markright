@@ -1,0 +1,26 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Use "
+            },
+            {
+              "type": "inline_code",
+              "value": "println!"
+            },
+            {
+              "type": "text",
+              "value": " here"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

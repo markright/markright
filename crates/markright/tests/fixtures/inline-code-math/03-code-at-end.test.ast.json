@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "End with "
+        },
+        {
+          "type": "inline_code",
+          "value": "code"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

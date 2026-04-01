@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "target": "photo.webp",
+          "type": "wiki_embed"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

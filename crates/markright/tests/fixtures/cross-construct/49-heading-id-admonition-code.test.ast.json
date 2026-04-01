@@ -1,0 +1,36 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Setup"
+        }
+      ],
+      "id": "setup",
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Ensure you have Rust installed."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    },
+    {
+      "body": "cargo build",
+      "lang": "bash",
+      "type": "code_block"
+    }
+  ]
+}

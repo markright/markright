@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "This is a note inside a blockquote."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "foldable": false,
+          "kind": "note",
+          "type": "admonition"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "See "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "documentation"
+                    }
+                  ],
+                  "type": "link",
+                  "url": "https://docs.example.com"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Follow the guide"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "start": 1,
+      "type": "ordered_list"
+    }
+  ]
+}

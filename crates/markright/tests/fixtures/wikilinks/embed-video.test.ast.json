@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "target": "video.mp4",
+          "type": "wiki_embed"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

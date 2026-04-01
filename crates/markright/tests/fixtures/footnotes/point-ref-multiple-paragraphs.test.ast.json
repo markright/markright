@@ -1,0 +1,38 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "First paragraph"
+        },
+        {
+          "label": "1",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Second paragraph"
+        },
+        {
+          "label": "2",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,525 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Design System: Button Component"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Overview"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Buttons are used to trigger actions. They communicate what will happen when the user interacts with them."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Variants"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "none",
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Variant"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Usage"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Primary"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Main actions"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Submit, Save"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Secondary"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Alternative actions"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Cancel, Back"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Destructive"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Dangerous actions"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Delete, Remove"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Ghost"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Subtle actions"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Learn more, View all"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Sizes"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Height 32px, font size 14px, padding 8px 12px"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Small"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Height 40px, font size 16px, padding 10px 16px"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Medium"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Height 48px, font size 18px, padding 12px 24px"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Large"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "States"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Default"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": ": The resting state"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Hover"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": ": When the cursor is over the button"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Active"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": ": While being pressed"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Focused"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": ": When navigated to via keyboard"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Disabled"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": ": When the action is unavailable"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Loading"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": ": While an async action is in progress"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Usage Guidelines"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Always use a verb or verb phrase for button labels. \"Save changes\" is better than \"OK\"."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Avoid using more than one primary button per section. Too many calls to action confuse users."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "warning",
+      "type": "admonition"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Destructive buttons must always include a confirmation dialog."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "important",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Code Example"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "body": "import { Button } from \"@/components/ui/button\"\n\nfunction SaveForm() {\n  return (\n    <div>\n      <Button variant=\"primary\" size=\"md\">\n        Save Changes\n      </Button>\n      <Button variant=\"secondary\" size=\"md\">\n        Cancel\n      </Button>\n    </div>\n  )\n}",
+      "lang": "tsx",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Accessibility"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "All buttons must have visible focus indicators"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Icon-only buttons must have an "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "aria-label"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Loading buttons must announce state to screen readers"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Color contrast meets WCAG AA requirements"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Touch targets are at least 44x44px"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

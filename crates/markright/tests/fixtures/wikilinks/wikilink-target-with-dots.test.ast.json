@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "target": "file.name.with.dots",
+          "type": "wiki_link"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

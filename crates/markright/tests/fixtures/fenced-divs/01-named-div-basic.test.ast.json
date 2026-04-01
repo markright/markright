@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Content here."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "columns",
+      "type": "fenced_div"
+    }
+  ]
+}

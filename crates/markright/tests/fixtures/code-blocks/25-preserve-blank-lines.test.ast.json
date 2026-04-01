@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "line 1\n\nline 3\n\n\nline 6",
+      "type": "code_block"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+# System Design Interview: URL Shortener
+
+## Requirements
+
+### Functional
+
+1. Given a long URL, generate a short URL
+2. Given a short URL, redirect to the original URL
+3. URLs expire after a configurable TTL
+
+### Non-Functional
+
+- 100 million URLs generated per day
+- 10:1 read-to-write ratio
+- 99.99% availability
+- Redirect latency under 100ms
+
+## Capacity Estimation
+
+Writes per second: $100M / 86400 \approx 1157$ writes/sec
+
+Reads per second: $1157 \times 10 \approx 11570$ reads/sec
+
+Storage for 5 years: $100M \times 365 \times 5 \times 500B \approx 91.25 TB$
+
+## Key Generation
+
+Use **base62 encoding** of a 7-character string:
+
+$$
+62^7 = 3.5 \times 10^{12}
+$$
+
+This gives us 3.5 trillion unique URLs, sufficient for our scale.
+
+## Database Schema
+
+| Field | Type | Description |
+| --- | --- | --- |
+| short_url | VARCHAR(7) | Primary key, base62 encoded |
+| long_url | TEXT | Original URL |
+| created_at | TIMESTAMP | Creation time |
+| expires_at | TIMESTAMP | Expiration time |
+| user_id | UUID | Creator (nullable) |
+
+## Architecture
+
+::: system-diagram
+```
+Client -> Load Balancer -> API Servers -> Cache (Redis)
+                                      -> Database (Cassandra)
+```
+:::
+
+### Components
+
+API Server
+: Handles URL creation and redirect requests
+: Stateless, horizontally scalable
+
+Cache Layer
+: Redis cluster for hot URLs
+: LRU eviction policy
+
+Database
+: Cassandra for distributed writes
+: Tunable consistency levels
+
+## Trade-offs
+
+| Approach | Pros | Cons |
+| --- | --- | --- |
+| Pre-generated keys | No collision, fast | Key management complexity |
+| Hash + collision check | Simple | Potential collisions |
+| Counter-based | Sequential, unique | Single point of failure |
+
+N> The pre-generated key approach is preferred at scale because it eliminates collision handling entirely.
+
+## Follow-up Questions
+
+- [x] How would you handle analytics (click tracking)?
+- [x] How would you implement custom short URLs?
+- [ ] How would you handle abuse (spam URLs)?
+- [ ] How would you implement rate limiting?
+- [?] Should we support QR code generation?

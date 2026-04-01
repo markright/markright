@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "x_i^2 + y_j^3",
+      "type": "math_block"
+    }
+  ]
+}

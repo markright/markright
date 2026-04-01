@@ -1,0 +1,23 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Need clarification"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "question"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

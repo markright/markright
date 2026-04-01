@@ -1,0 +1,24 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Watch out for this pattern:"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "body": "bad_code()",
+          "type": "code_block"
+        }
+      ],
+      "foldable": false,
+      "kind": "warning",
+      "type": "admonition"
+    }
+  ]
+}

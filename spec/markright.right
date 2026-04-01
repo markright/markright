@@ -1,0 +1,344 @@
+---
+title: MarkRight Specification
+version: 1.0.0-draft
+author: MarkRight Project
+date: 2026-03-12
+syntax: markright
+---
+
+# MarkRight Specification
+
+This file describes the parser in this repo.
+
+If code and prose disagree, code wins.
+
+## 1. Scope
+
+- Input is UTF-8 text.
+- `.right` is the canonical extension.
+- `.md` can be treated as MarkRight when front matter sets `syntax: markright`.
+- The parser produces an AST. It does not resolve includes, wikilinks, citations, or assets.
+
+## 2. Front Matter
+
+Front matter is optional.
+
+Rules:
+
+- It must be the first thing in the file.
+- It opens with `---`.
+- It closes with `---`.
+- The parser stores it as raw text.
+
+Example:
+
+````
+---
+title: Example
+syntax: markright
+---
+````
+
+## 3. Block Syntax
+
+### 3.1 Headings
+
+- Use `#` through `######` followed by a space.
+- A heading can end with `{#id}`.
+- Setext headings are not supported.
+
+Example:
+
+````
+# Title
+## Section {#section}
+````
+
+### 3.2 Paragraphs
+
+- Consecutive non-blank lines form a paragraph.
+- Multi-line paragraphs are joined with spaces.
+- Only single-line paragraphs keep a trailing `{#id}`.
+
+### 3.3 Code Blocks
+
+- Use three or more backticks.
+- The info string becomes `lang`.
+- `mermaid`, `dot`, `graphviz`, and `plantuml` become diagram blocks.
+- Unclosed fences run to end of file.
+
+Example:
+
+`````
+```rust
+fn main() {}
+```
+`````
+
+### 3.4 Math Blocks
+
+- Use `$$` on their own lines.
+- Unclosed blocks run to end of file.
+
+Example:
+
+````
+$$
+E = mc^2
+$$
+````
+
+### 3.5 Thematic Break
+
+- A line that is exactly `---`.
+
+### 3.6 Blockquotes
+
+- Use `>` or `> ` at the start of each line.
+- Nested structure is parsed by recursively parsing the quoted body.
+
+Example:
+
+````
+> Quote
+>
+> > Nested
+````
+
+### 3.7 Lists
+
+Unordered lists:
+
+- Use `- `.
+- The current parser handles flat runs of list items.
+
+Ordered lists:
+
+- Use `1. `, `2. `, and so on.
+- `#.` is accepted and starts at `1`.
+- The current parser handles flat runs of list items.
+
+Task lists:
+
+- Use `- [ ]`, `- [x]`, `- [~]`, `- [@]`, `- [-]`, `- [!]`, `- [>]`, `- [?]`.
+- The current parser handles flat runs of task items.
+
+### 3.8 Tables
+
+Rules:
+
+- A table starts when one line with `|` is followed by a separator line with `|`.
+- Alignment comes from the separator row.
+- A caption can follow as `Table: caption`.
+- A caption can end with `{#id}`.
+- Cells are split on literal `|`.
+
+Example:
+
+````
+| Name | Role |
+|:-----|-----:|
+| A    | Dev  |
+
+Table: Team {#team}
+````
+
+### 3.9 Admonitions
+
+Use one of these prefixes:
+
+| Prefix | Kind |
+|--------|------|
+| `N>` | Note |
+| `T>` | Tip |
+| `W>` | Warning |
+| `!>` | Important |
+| `X>` | Caution |
+
+Rules:
+
+- Continuation lines use the same prefix.
+- `N>-` style prefixes mark foldable admonitions.
+
+### 3.10 Definition Lists
+
+- Put the term on one line.
+- Put each definition on a following line that starts with `: `.
+
+Example:
+
+````
+Term
+: First definition.
+: Second definition.
+````
+
+### 3.11 Fenced Divs
+
+- Use `:::` with an optional name.
+- Close with a matching `:::` fence.
+- Longer fences can wrap shorter ones.
+
+Example:
+
+````
+:::note
+Body
+:::
+````
+
+### 3.12 Footnote Definitions
+
+- Start with `[^label]:`.
+- Continuation lines must be indented by four spaces.
+
+Example:
+
+````
+[^a]: First line
+    Second line
+````
+
+### 3.13 Comments
+
+Two forms are parsed:
+
+- `%% text %%`
+- A block that starts with a line containing only `%%` and ends the same way
+
+### 3.14 Table of Contents
+
+Accepted forms:
+
+- `[TOC]`
+- `[TOC:min-max]`
+
+`min` and `max` must be between `1` and `6`.
+
+### 3.15 Includes
+
+Accepted forms:
+
+- `{{path}}`
+- `{{path#fragment}}`
+
+## 4. Inline Syntax
+
+### 4.1 Escapes and Hard Breaks
+
+- `\x` emits `x`.
+- `\` followed by a newline emits a hard break.
+
+### 4.2 Emphasis
+
+Accepted forms:
+
+- `*italic*`
+- `**bold**`
+- `***bold italic***`
+- `~~strike~~`
+- `==highlight==`
+
+Underscore emphasis is not supported.
+
+### 4.3 Superscript and Subscript
+
+- `^text^` for superscript
+- `~text~` for subscript
+
+The wrapped text cannot contain spaces or newlines.
+
+### 4.4 Inline Code
+
+- Backticks wrap inline code.
+- Longer backtick runs can wrap shorter ones inside.
+
+### 4.5 Inline Math
+
+- Use `$...$`.
+- The body cannot be empty.
+- The body cannot contain a newline.
+- `$$` is reserved for block math.
+
+### 4.6 Links
+
+Accepted forms:
+
+- `[text](url)`
+- `[text](url "title")`
+- Bare `http://...`
+- Bare `https://...`
+
+Reference-style links are not supported.
+
+### 4.7 Images
+
+Accepted form:
+
+- `![alt](url)`
+
+Optional attributes can follow in braces:
+
+- `![alt](url){key=value}`
+
+### 4.8 Bracketed Spans
+
+Accepted form:
+
+- `[text]{attrs}`
+
+The parser stores the raw attribute string.
+
+### 4.9 Wikilinks
+
+Accepted forms:
+
+- `[[target]]`
+- `[[target|alias]]`
+- `[[target#fragment]]`
+- `![[target]]`
+- `![[target|640]]`
+- `![[target|640x480]]`
+
+### 4.10 Footnotes
+
+Accepted forms:
+
+- `[^label]`
+- `[^label>text]`
+- `^[text]`
+
+### 4.11 Citations
+
+Accepted forms:
+
+- `[@key]`
+- `[@key, p. 42]`
+- `[@a; @b]`
+- `[-@key]`
+
+The parser stores keys, optional locators, and the suppress-author flag.
+
+## 5. AST Notes
+
+- The AST types live in `src/ast/`.
+- Explicit IDs are parsed where supported.
+- The parser does not generate IDs.
+- Inline HTML is plain text. There is no HTML node type.
+
+## 6. Not Supported
+
+- Setext headings
+- Indented code blocks
+- Underscore emphasis
+- HTML nodes
+- Reference-style links
+- Bare `www.` autolinks
+- Custom task states
+- `*` or `+` unordered list markers
+- `\(...\)` or `\[...\]` math delimiters
+- Trailing-space hard breaks
+- Smart table escaping
+- Continued or nested list item bodies in the current parser
+
+%% End of specification %%

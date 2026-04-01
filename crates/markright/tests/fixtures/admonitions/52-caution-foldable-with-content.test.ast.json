@@ -1,0 +1,20 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "This dangerous operation cannot be undone. Make sure you have backups."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": true,
+      "kind": "caution",
+      "type": "admonition"
+    }
+  ]
+}

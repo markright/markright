@@ -1,0 +1,21 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "keys": [
+            {
+              "key": "key1"
+            },
+            {
+              "key": "key2",
+              "locator": "p. 42"
+            }
+          ],
+          "type": "citation"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "First paragraph with "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "bold"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Second paragraph with "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "italic"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

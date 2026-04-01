@@ -1,0 +1,11 @@
+{
+  "children": [
+    {
+      "body": "x = 1",
+      "type": "math_block"
+    },
+    {
+      "type": "thematic_break"
+    }
+  ]
+}

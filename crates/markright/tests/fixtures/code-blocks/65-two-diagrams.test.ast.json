@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "body": "graph LR\n    A --> B",
+      "lang": "mermaid",
+      "type": "diagram_block"
+    },
+    {
+      "body": "@startuml\nA -> B\n@enduml",
+      "lang": "plantuml",
+      "type": "diagram_block"
+    }
+  ]
+}

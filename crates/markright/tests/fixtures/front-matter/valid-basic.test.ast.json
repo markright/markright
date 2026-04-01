@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Introduction"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: Hello World\nauthor: Jane Doe\ndate: 2024-01-15"
+  }
+}

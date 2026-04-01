@@ -1,0 +1,6 @@
+```graphviz
+digraph G {
+    rankdir=LR;
+    a -> b;
+}
+```

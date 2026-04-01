@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "```python\nprint('hi')\n```",
+      "lang": "markdown",
+      "type": "code_block"
+    }
+  ]
+}

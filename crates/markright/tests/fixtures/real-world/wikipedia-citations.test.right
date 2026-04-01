@@ -1,0 +1,36 @@
+# History of the Internet
+
+The **Internet** is a global system of interconnected computer networks. Its origins trace back to research funded by the United States government in the 1960s[^arpanet].
+
+## ARPANET
+
+The Advanced Research Projects Agency Network (ARPANET) was the first wide-area packet-switched network[@leiner2009]. The first message was sent on October 29, 1969, from UCLA to Stanford[@abbate2000].
+
+## TCP/IP
+
+The development of TCP/IP by Vint Cerf and Bob Kahn[^tcpip] in the 1970s provided a standardized protocol suite. This became the foundation of the modern Internet.
+
+The key innovation was packet switching, which allows multiple communication sessions to share a network simultaneously.
+
+## World Wide Web
+
+Tim Berners-Lee invented the World Wide Web in 1989[^bernerslee] while working at CERN. The first website went live on August 6, 1991.
+
+> The web is more a social creation than a technical one. I designed it for a social effect -- to help people work together.
+
+N> The distinction between the *Internet* (network infrastructure) and the *Web* (application layer) is often confused.
+
+## Timeline
+
+| Year | Event |
+| ---: | --- |
+| 1969 | First ARPANET message sent |
+| 1974 | TCP/IP specification published |
+| 1983 | DNS introduced |
+| 1989 | World Wide Web proposed |
+| 1991 | First website goes live |
+| 1993 | Mosaic browser released |
+
+[^arpanet]: The ARPANET was funded by the Defense Advanced Research Projects Agency (DARPA).
+[^tcpip]: Cerf, V. and Kahn, R. (1974). A Protocol for Packet Network Intercommunication.
+[^bernerslee]: Berners-Lee, T. (1989). Information Management: A Proposal.

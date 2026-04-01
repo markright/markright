@@ -1,0 +1,41 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "A fruit."
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Apple"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Another fruit."
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Banana"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Try "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "https://example.com/search?q=test&lang=en"
+            }
+          ],
+          "type": "link",
+          "url": "https://example.com/search?q=test&lang=en"
+        },
+        {
+          "type": "text",
+          "value": " here."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

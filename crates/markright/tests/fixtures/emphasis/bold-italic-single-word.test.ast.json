@@ -1,0 +1,18 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "word"
+            }
+          ],
+          "type": "bold_italic"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

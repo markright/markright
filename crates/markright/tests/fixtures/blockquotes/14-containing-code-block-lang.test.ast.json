@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "body": "fn main() {}",
+          "lang": "rust",
+          "type": "code_block"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+::::outer
+Outer text.
+
+:::inner
+# Inner Heading
+
+Inner paragraph.
+
+- Inner list item
+:::
+
+More outer text.
+::::

@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "This is a\nmulti-line comment.",
+      "type": "comment"
+    }
+  ]
+}

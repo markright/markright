@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_math",
+          "value": "\\sqrt{x^2 + y^2}"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

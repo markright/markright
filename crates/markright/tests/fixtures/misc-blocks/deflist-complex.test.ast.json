@@ -1,0 +1,47 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "A small domesticated mammal."
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "A Unix command."
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Cat"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "A domesticated canine."
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Dog"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    }
+  ]
+}

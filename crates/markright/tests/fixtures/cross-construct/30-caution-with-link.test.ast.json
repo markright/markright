@@ -1,0 +1,34 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "See the "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "security advisory"
+                }
+              ],
+              "type": "link",
+              "url": "https://example.com/advisory"
+            },
+            {
+              "type": "text",
+              "value": " for details."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "caution",
+      "type": "admonition"
+    }
+  ]
+}

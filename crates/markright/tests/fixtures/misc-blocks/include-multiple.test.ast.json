@@ -1,0 +1,16 @@
+{
+  "children": [
+    {
+      "path": "ch1.right",
+      "type": "include"
+    },
+    {
+      "path": "ch2.right",
+      "type": "include"
+    },
+    {
+      "path": "ch3.right",
+      "type": "include"
+    }
+  ]
+}

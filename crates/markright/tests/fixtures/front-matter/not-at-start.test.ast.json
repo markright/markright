@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "type": "thematic_break"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "title: Should Not Parse"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "type": "thematic_break"
+    }
+  ]
+}

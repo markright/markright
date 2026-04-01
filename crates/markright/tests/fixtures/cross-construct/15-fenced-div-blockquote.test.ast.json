@@ -1,0 +1,24 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Someone once said this."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "type": "blockquote"
+        }
+      ],
+      "name": "aside",
+      "type": "fenced_div"
+    }
+  ]
+}

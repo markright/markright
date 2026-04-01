@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "---\ntitle: config\n---",
+      "lang": "yaml",
+      "type": "code_block"
+    }
+  ]
+}

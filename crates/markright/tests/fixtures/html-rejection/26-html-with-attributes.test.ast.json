@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "<div id"
+        },
+        {
+          "type": "text",
+          "value": "=\"main\" class"
+        },
+        {
+          "type": "text",
+          "value": "=\"container\" data-x"
+        },
+        {
+          "type": "text",
+          "value": "=\"1\">text</div>"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

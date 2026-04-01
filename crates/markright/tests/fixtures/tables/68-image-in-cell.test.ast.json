@@ -1,0 +1,51 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Preview"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Name"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "!"
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "alt"
+                }
+              ],
+              "type": "link",
+              "url": "img.png"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Photo"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

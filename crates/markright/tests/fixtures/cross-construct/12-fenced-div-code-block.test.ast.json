@@ -1,0 +1,15 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "body": "console.log(\"test\");",
+          "lang": "js",
+          "type": "code_block"
+        }
+      ],
+      "name": "example",
+      "type": "fenced_div"
+    }
+  ]
+}

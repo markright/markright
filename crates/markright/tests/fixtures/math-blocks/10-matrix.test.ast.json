@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\begin{pmatrix}\na & b \\\\\nc & d\n\\end{pmatrix}",
+      "type": "math_block"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "one"
+            }
+          ],
+          "type": "link",
+          "url": "https://one.com"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "two"
+            }
+          ],
+          "type": "link",
+          "url": "https://two.com"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "three"
+            }
+          ],
+          "type": "link",
+          "url": "https://three.com"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

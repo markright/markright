@@ -1,0 +1,90 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Sprint 1"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Feature A"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Feature B"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Sprint 2"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Feature C"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Feature D"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "active"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

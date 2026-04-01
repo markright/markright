@@ -1,0 +1,44 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "first"
+            }
+          ],
+          "type": "highlight"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "second"
+            }
+          ],
+          "type": "highlight"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "third"
+            }
+          ],
+          "type": "highlight"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Use the "
+            },
+            {
+              "type": "inline_code",
+              "value": "println!"
+            },
+            {
+              "type": "text",
+              "value": " macro."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    }
+  ]
+}

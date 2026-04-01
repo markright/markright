@@ -1,0 +1,54 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Emphasized"
+                    }
+                  ],
+                  "type": "italic"
+                },
+                {
+                  "type": "text",
+                  "value": " first"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Also emphasized"
+                    }
+                  ],
+                  "type": "italic"
+                },
+                {
+                  "type": "text",
+                  "value": " second"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "start": 1,
+      "type": "ordered_list"
+    }
+  ]
+}

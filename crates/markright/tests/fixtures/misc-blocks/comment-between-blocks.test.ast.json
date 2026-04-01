@@ -1,0 +1,27 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Heading"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "body": "hidden note",
+      "type": "comment"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "A paragraph."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,475 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Kubernetes Deployment Playbook"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Prerequisites"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "inline_code",
+                  "value": "kubectl"
+                },
+                {
+                  "type": "text",
+                  "value": " CLI installed and configured"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Cluster access verified"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Review deployment manifests"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Verify image tags match release version"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Pre-Deployment Checks"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "body": "# Verify cluster connectivity\nkubectl cluster-info\n\n# Check current deployment status\nkubectl get deployments -n production\n\n# Review pending changes\nkubectl diff -f manifests/",
+      "lang": "bash",
+      "type": "code_block"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Always run "
+            },
+            {
+              "type": "inline_code",
+              "value": "kubectl diff"
+            },
+            {
+              "type": "text",
+              "value": " before applying changes to production."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "warning",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Deployment Steps"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "1. Update ConfigMaps"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "body": "kubectl apply -f manifests/configmap.yaml -n production",
+      "lang": "bash",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "2. Deploy New Version"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "body": "kubectl apply -f manifests/deployment.yaml -n production",
+      "lang": "bash",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "3. Monitor Rollout"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "body": "kubectl rollout status deployment/api-server -n production --timeout=300s",
+      "lang": "bash",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Rollback Procedure"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "If the deployment shows errors, roll back immediately."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "important",
+      "type": "admonition"
+    },
+    {
+      "body": "# Check rollout history\nkubectl rollout history deployment/api-server -n production\n\n# Rollback to previous version\nkubectl rollout undo deployment/api-server -n production",
+      "lang": "bash",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Health Check Endpoints"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "none",
+        "none",
+        "center"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Service"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Endpoint"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Expected"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "API Server"
+            }
+          ],
+          [
+            {
+              "type": "inline_code",
+              "value": "/health"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "200 OK"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Worker"
+            }
+          ],
+          [
+            {
+              "type": "inline_code",
+              "value": "/health"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "200 OK"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Scheduler"
+            }
+          ],
+          [
+            {
+              "type": "inline_code",
+              "value": "/health"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "200 OK"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Gateway"
+            }
+          ],
+          [
+            {
+              "type": "inline_code",
+              "value": "/status"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "200 OK"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Post-Deployment"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Verify all pods are running"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Check application logs for errors"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Run smoke tests"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Update deployment tracker"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Notify team in Slack"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Allow 10 minutes of monitoring after deployment before declaring success."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Use "
+            },
+            {
+              "type": "inline_code",
+              "value": "kubectl logs -f"
+            },
+            {
+              "type": "text",
+              "value": " to tail logs in real time during the deployment window."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "tip",
+      "type": "admonition"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "If more than 20% of pods fail readiness checks, trigger an automatic rollback."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "caution",
+      "type": "admonition"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_code",
+          "value": "code"
+        },
+        {
+          "type": "inline_math",
+          "value": "math"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

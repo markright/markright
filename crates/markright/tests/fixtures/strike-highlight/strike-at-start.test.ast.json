@@ -1,0 +1,22 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "struck"
+            }
+          ],
+          "type": "strikethrough"
+        },
+        {
+          "type": "text",
+          "value": " then normal text"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,555 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Sprint 22 Board"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Priorities"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Three items are currently "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "blocked"
+                }
+              ],
+              "type": "bold"
+            },
+            {
+              "type": "text",
+              "value": ". Resolve blockers before picking up new work."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "important",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "To Do"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Implement search autocomplete"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Add pagination to user list endpoint"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Write integration tests for payment flow"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Should we migrate to PostgreSQL 16?"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "question"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "In Progress"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Build real-time notification system"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "active"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Refactor legacy authentication module"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "active"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "In Review"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Add RBAC to admin panel"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "review"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Implement CSV export for reports"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "review"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Blocked"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Deploy new ML model (waiting for GPU quota)"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "blocked"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Update third-party SDK (breaking API changes)"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "blocked"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Database index optimization (DBA team at capacity)"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "blocked"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Deferred"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Mobile push notifications"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "deferred"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "A/B testing framework"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "deferred"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "GraphQL API layer"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "deferred"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Cancelled"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "XML feed support"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "cancelled"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Legacy SOAP integration"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "cancelled"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Done"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Set up monitoring dashboards"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Implement rate limiting"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Add health check endpoint"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Write API documentation"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Configure auto-scaling"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Sprint Metrics"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "none",
+        "right"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Metric"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Value"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Total stories"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "22"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Completed"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "5"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "In progress"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "2"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Blocked"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "3"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Velocity (avg)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "18"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

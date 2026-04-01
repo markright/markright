@@ -1,0 +1,18 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "deleted text"
+            }
+          ],
+          "type": "strikethrough"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

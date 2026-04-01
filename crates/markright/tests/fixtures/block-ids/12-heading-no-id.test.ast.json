@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Heading without id"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    }
+  ]
+}

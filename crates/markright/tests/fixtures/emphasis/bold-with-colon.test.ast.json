@@ -1,0 +1,22 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "bold text:"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": "*"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

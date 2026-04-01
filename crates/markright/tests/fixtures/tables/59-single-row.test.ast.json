@@ -1,0 +1,54 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "A"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "B"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "C"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "only"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "row"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "here"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

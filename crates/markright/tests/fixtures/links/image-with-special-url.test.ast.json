@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "alt": "alt",
+          "type": "image",
+          "url": "https://example.com/path/to/image%20file.png"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

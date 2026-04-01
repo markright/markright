@@ -1,0 +1,69 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Symbol"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Meaning"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "+"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "check"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "%"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "percent"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "&"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "ampersand"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

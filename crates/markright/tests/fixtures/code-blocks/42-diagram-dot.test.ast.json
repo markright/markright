@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "digraph {\n    A -> B;\n    B -> C;\n}",
+      "lang": "dot",
+      "type": "diagram_block"
+    }
+  ]
+}

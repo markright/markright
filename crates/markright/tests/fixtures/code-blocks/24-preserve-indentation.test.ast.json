@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "  if True:\n    print('indented')\n      deeply_indented()",
+      "lang": "python",
+      "type": "code_block"
+    }
+  ]
+}

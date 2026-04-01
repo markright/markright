@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "type": "thematic_break"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Content."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: Doc"
+  }
+}

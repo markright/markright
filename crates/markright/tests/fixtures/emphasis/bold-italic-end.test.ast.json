@@ -1,0 +1,22 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "at end "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "emphasis"
+            }
+          ],
+          "type": "bold_italic"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

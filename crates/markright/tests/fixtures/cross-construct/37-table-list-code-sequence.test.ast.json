@@ -1,0 +1,76 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Col1"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Col2"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "a"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "b"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Item A"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Item B"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "body": "code here",
+      "type": "code_block"
+    }
+  ]
+}

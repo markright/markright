@@ -1,0 +1,42 @@
+---
+date: 2026-03-12
+tags: daily, work, personal
+mood: productive
+---
+
+# 2026-03-12
+
+## Morning Tasks
+
+- [x] Review pull requests on [[Project Alpha]]
+- [x] Update [[Sprint Board]] with new estimates
+- [~] Write tests for the parser module
+- [ ] Read [[Designing Data-Intensive Applications|DDIA Chapter 5]]
+
+## Meeting Notes
+
+Had a sync with the [[Platform Team]]. Key takeaways:
+
+- Migration to new infrastructure is on track
+- Need to update our deployment scripts
+- [[Bob]] will handle the database changes
+
+## Afternoon
+
+- [@] Code review for [[Carol]]'s PR
+- [!] Blocked on API credentials from [[External Vendor]]
+- [>] Deferred the logging refactor to next sprint
+
+## Links and References
+
+Found some useful resources today:
+
+- [Rust Error Handling](https://blog.burntsushi.net/rust-error-handling/)
+- [[Error Handling Patterns]] -- need to update this note
+- ![[whiteboard-photo.jpg]]
+
+## End of Day
+
+Completed **6 out of 9** planned tasks. Good progress on the parser but still blocked on the vendor credentials.
+
+T> Remember to follow up with [[External Vendor]] first thing tomorrow.

@@ -1,0 +1,47 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Hello "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "bold"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "italic"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "type": "inline_code",
+          "value": "code"
+        },
+        {
+          "type": "text",
+          "value": " here."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

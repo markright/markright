@@ -1,0 +1,15 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "alt": "alt",
+          "type": "image",
+          "url": "https://example.com/img.png"
+        }
+      ],
+      "id": "hero-img",
+      "type": "paragraph"
+    }
+  ]
+}

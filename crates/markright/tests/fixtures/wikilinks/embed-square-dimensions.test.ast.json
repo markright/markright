@@ -1,0 +1,15 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "height": 256,
+          "target": "avatar.png",
+          "type": "wiki_embed",
+          "width": 256
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

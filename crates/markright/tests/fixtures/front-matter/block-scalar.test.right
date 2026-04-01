@@ -1,0 +1,9 @@
+---
+title: Block Scalar
+abstract: |
+  This is a block scalar.
+  It preserves newlines.
+  Third line here.
+---
+
+Document body.

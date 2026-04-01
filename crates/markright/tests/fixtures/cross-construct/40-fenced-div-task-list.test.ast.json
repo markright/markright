@@ -1,0 +1,57 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "items": [
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Review code"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ],
+              "state": "open"
+            },
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Write docs"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ],
+              "state": "done"
+            },
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Cancelled task"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ],
+              "state": "cancelled"
+            }
+          ],
+          "type": "task_list"
+        }
+      ],
+      "name": "checklist",
+      "type": "fenced_div"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "hello, world"
+            },
+            {
+              "type": "text",
+              "value": "!"
+            }
+          ],
+          "type": "strikethrough"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "First "
+        },
+        {
+          "keys": [
+            {
+              "key": "a"
+            }
+          ],
+          "type": "citation"
+        },
+        {
+          "type": "text",
+          "value": " and then "
+        },
+        {
+          "keys": [
+            {
+              "key": "b"
+            }
+          ],
+          "type": "citation"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

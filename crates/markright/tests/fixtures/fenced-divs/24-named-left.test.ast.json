@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Left side content."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "left",
+      "type": "fenced_div"
+    }
+  ]
+}

@@ -1,0 +1,634 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Technical Specification: Real-Time Notification System"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "type": "thematic_break"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Overview"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "This document specifies the design for a real-time notification system that supports push, email, and in-app delivery channels."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "max_level": 3,
+      "min_level": 2,
+      "type": "toc"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Requirements"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Functional Requirements"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Send notifications in real time (under 500ms latency)"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Support multiple delivery channels"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Allow users to configure notification preferences"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Batch similar notifications to prevent flooding"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "start": 1,
+      "type": "ordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Non-Functional Requirements"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Handle 10,000 notifications per second at peak"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "99.9% delivery rate"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Maximum 2-second end-to-end latency"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Architecture"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "body": "graph TD\n    A[Event Source] --> B[Message Queue]\n    B --> C[Notification Service]\n    C --> D[Push Channel]\n    C --> E[Email Channel]\n    C --> F[In-App Channel]",
+          "lang": "mermaid",
+          "type": "diagram_block"
+        }
+      ],
+      "name": "architecture-diagram",
+      "type": "fenced_div"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Data Model"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "none",
+        "none",
+        "none"
+      ],
+      "caption": [
+        {
+          "type": "text",
+          "value": "Notifications table schema"
+        }
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Field"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Type"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Description"
+          }
+        ]
+      ],
+      "id": "notifications-table",
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "id"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "UUID"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Unique notification ID"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "user_id"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "UUID"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Target user"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "channel"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "ENUM"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "push, email, in_app"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "payload"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "JSONB"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Notification content"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "status"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "ENUM"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "pending, sent, failed, read"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "created_at"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "TIMESTAMP"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Creation time"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "sent_at"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "TIMESTAMP"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Delivery time"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "API Design"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Send Notification"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "body": "{\n  \"user_id\": \"usr_abc123\",\n  \"template\": \"order_shipped\",\n  \"channels\": [\"push\", \"email\"],\n  \"data\": {\n    \"order_id\": \"ord_456\",\n    \"tracking_url\": \"https://track.example.com/456\"\n  }\n}",
+      "lang": "json",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Notification Preferences"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "body": "{\n  \"user_id\": \"usr_abc123\",\n  \"preferences\": {\n    \"order_updates\": [\"push\", \"email\"],\n    \"marketing\": [\"email\"],\n    \"security_alerts\": [\"push\", \"email\", \"in_app\"]\n  }\n}",
+      "lang": "json",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Error Handling"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Failed notifications must be retried with exponential backoff. After 3 failed attempts, move to a dead letter queue."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "warning",
+      "type": "admonition"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Log all delivery failures with full context for debugging."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Implementation Plan"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Design data model"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Set up message queue infrastructure"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Implement notification service core"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "active"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Build push channel adapter"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Build email channel adapter"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Build in-app channel adapter"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Write integration tests"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Load test at 10k notifications/sec"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Deploy to staging"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Production rollout"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The push channel requires certificates from Apple and Firebase. These must be provisioned before the push adapter can be tested."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "important",
+      "type": "admonition"
+    }
+  ]
+}

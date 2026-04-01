@@ -1,0 +1,37 @@
+# Documentation with Comments
+
+%% This is a single-line comment that should not appear in output %%
+
+[TOC]
+
+## Introduction
+
+This document demonstrates comments and table of contents directives.
+
+%%
+This is a multi-line comment.
+It spans several lines.
+None of this should appear in the rendered output.
+%%
+
+## Main Content
+
+Some content between comments.
+
+[TOC:2-3]
+
+## API Section
+
+### GET /users
+
+Returns all users.
+
+### POST /users
+
+Creates a new user.
+
+%% TODO: Add PUT and DELETE documentation %%
+
+## Conclusion
+
+End of the document.

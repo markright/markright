@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "^not super"
+        },
+        {
+          "type": "text",
+          "value": "^ should not match"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

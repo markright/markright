@@ -1,0 +1,48 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Use "
+            },
+            {
+              "type": "inline_code",
+              "value": "parse()"
+            },
+            {
+              "type": "text",
+              "value": " to compute "
+            },
+            {
+              "type": "inline_math",
+              "value": "x^2"
+            },
+            {
+              "type": "text",
+              "value": " as described "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "here"
+                }
+              ],
+              "type": "link",
+              "url": "https://example.com"
+            },
+            {
+              "type": "text",
+              "value": "."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

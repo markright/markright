@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_math",
+          "value": "x \\text{ and } y"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

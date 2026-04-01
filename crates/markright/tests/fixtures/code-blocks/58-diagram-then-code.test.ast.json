@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "body": "digraph { A -> B }",
+      "lang": "dot",
+      "type": "diagram_block"
+    },
+    {
+      "body": "fn main() {}",
+      "lang": "rust",
+      "type": "code_block"
+    }
+  ]
+}

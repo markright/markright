@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\begin{array}{rcl}\na & = & b + c \\\\\nd & = & e + f\n\\end{array}",
+      "type": "math_block"
+    }
+  ]
+}

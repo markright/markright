@@ -1,0 +1,36 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "bold"
+                }
+              ],
+              "type": "bold"
+            },
+            {
+              "type": "text",
+              "value": " and "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "italic"
+                }
+              ],
+              "type": "italic"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

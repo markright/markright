@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "about"
+            }
+          ],
+          "type": "link",
+          "url": "./about.html"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

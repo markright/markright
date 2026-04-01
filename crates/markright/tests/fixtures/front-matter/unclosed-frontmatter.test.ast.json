@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "type": "thematic_break"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "title: Never Closed"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "This is just body text."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

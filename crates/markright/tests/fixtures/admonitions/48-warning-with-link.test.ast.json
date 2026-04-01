@@ -1,0 +1,34 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "See "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "the docs"
+                }
+              ],
+              "type": "link",
+              "url": "https://example.com"
+            },
+            {
+              "type": "text",
+              "value": " for details."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "warning",
+      "type": "admonition"
+    }
+  ]
+}

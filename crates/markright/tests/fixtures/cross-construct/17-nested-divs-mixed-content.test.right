@@ -1,0 +1,11 @@
+::::columns
+Outer text.
+
+:::left
+Left column content.
+:::
+
+:::right
+Right column content.
+:::
+::::

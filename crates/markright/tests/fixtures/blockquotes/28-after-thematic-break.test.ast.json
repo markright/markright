@@ -1,0 +1,21 @@
+{
+  "children": [
+    {
+      "type": "thematic_break"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "After the break"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

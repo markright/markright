@@ -1,0 +1,27 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Title"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "path": "chapter1.right",
+      "type": "include"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Some text."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

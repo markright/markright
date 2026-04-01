@@ -1,0 +1,21 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Hello "
+        },
+        {
+          "type": "inline_code",
+          "value": "world"
+        },
+        {
+          "type": "text",
+          "value": " end."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

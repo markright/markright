@@ -1,0 +1,34 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Definition."
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Term"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "A regular paragraph."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

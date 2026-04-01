@@ -1,0 +1,23 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "!"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "alt"
+            }
+          ],
+          "type": "link",
+          "url": ""
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

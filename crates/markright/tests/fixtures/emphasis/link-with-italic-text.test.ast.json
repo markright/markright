@@ -1,0 +1,24 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "italic link text"
+                }
+              ],
+              "type": "italic"
+            }
+          ],
+          "type": "link",
+          "url": "http://example.com"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "@startuml\nAlice -> Bob: Hello\nBob -> Alice: Hi\n@enduml",
+      "lang": "plantuml",
+      "type": "diagram_block"
+    }
+  ]
+}

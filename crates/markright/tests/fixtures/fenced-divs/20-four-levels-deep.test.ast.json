@@ -1,0 +1,37 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "content": [
+                        {
+                          "type": "text",
+                          "value": "Deepest content."
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  ],
+                  "name": "level4",
+                  "type": "fenced_div"
+                }
+              ],
+              "name": "level3",
+              "type": "fenced_div"
+            }
+          ],
+          "name": "level2",
+          "type": "fenced_div"
+        }
+      ],
+      "name": "level1",
+      "type": "fenced_div"
+    }
+  ]
+}

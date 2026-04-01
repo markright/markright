@@ -1,0 +1,47 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Docs"
+              }
+            ],
+            "type": "link",
+            "url": "https://docs.rs"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Version"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "API"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "1.0"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

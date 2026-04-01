@@ -1,0 +1,31 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Section"
+            }
+          ],
+          "level": 2,
+          "type": "heading"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Content paragraph."
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "type": "thematic_break"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Glossary"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Application Programming Interface."
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "API"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    }
+  ]
+}

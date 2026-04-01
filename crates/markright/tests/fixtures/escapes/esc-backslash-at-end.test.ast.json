@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "trailing backslash"
+        },
+        {
+          "type": "text",
+          "value": "\\"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

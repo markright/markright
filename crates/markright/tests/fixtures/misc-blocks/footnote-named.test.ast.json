@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "A named footnote."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "source",
+      "type": "footnote_def"
+    }
+  ]
+}

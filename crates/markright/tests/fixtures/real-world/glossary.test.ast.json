@@ -1,0 +1,239 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Glossary of Programming Terms"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Application Programming Interface"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "A set of protocols and tools for building software applications"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "API"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Continuous Integration / Continuous Deployment"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Practices for automating the build, test, and deployment pipeline"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "CI/CD"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Create, Read, Update, Delete"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "The four basic operations for persistent storage"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "CRUD"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Don't Repeat Yourself"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "A principle aimed at reducing duplication in code"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "DRY"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Keep It Simple, Stupid"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "A design principle favoring simplicity over complexity"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "KISS"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Object-Relational Mapping"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "A technique for converting between incompatible type systems in OOP languages"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "ORM"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Representational State Transfer"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "An architectural style for distributed hypermedia systems"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "REST"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Single responsibility, Open-closed, Liskov substitution, Interface segregation, Dependency inversion"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Five design principles for object-oriented programming"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "SOLID"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Test-Driven Development"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "A methodology where tests are written before the implementation code"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "TDD"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "You Aren't Gonna Need It"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "A principle stating that features should not be added until they are actually needed"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "YAGNI"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    }
+  ]
+}

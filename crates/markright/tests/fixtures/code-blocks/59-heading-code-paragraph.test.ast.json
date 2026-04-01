@@ -1,0 +1,28 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Title"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "body": "print('hello')",
+      "lang": "python",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Some text after."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

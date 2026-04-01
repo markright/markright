@@ -1,0 +1,10 @@
+```mermaid
+graph LR
+    A --> B
+```
+
+```plantuml
+@startuml
+A -> B
+@enduml
+```

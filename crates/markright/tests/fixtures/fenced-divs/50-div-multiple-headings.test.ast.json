@@ -1,0 +1,50 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Chapter One"
+            }
+          ],
+          "level": 1,
+          "type": "heading"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Section A"
+            }
+          ],
+          "level": 2,
+          "type": "heading"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Section B"
+            }
+          ],
+          "level": 2,
+          "type": "heading"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Chapter Two"
+            }
+          ],
+          "level": 1,
+          "type": "heading"
+        }
+      ],
+      "name": "document",
+      "type": "fenced_div"
+    }
+  ]
+}

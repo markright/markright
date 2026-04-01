@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "bold italic"
+            }
+          ],
+          "type": "bold_italic"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    }
+  ]
+}

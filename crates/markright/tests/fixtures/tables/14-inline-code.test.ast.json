@@ -1,0 +1,28 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Command"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "inline_code",
+              "value": "ls -la"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

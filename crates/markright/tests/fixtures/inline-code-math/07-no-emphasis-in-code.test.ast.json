@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_code",
+          "value": "*not bold*"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

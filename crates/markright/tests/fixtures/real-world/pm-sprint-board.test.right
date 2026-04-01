@@ -1,0 +1,57 @@
+# Sprint 22 Board
+
+## Priorities
+
+!> Three items are currently **blocked**. Resolve blockers before picking up new work.
+
+## To Do
+
+- [ ] Implement search autocomplete
+- [ ] Add pagination to user list endpoint
+- [ ] Write integration tests for payment flow
+- [?] Should we migrate to PostgreSQL 16?
+
+## In Progress
+
+- [~] Build real-time notification system
+- [~] Refactor legacy authentication module
+
+## In Review
+
+- [@] Add RBAC to admin panel
+- [@] Implement CSV export for reports
+
+## Blocked
+
+- [!] Deploy new ML model (waiting for GPU quota)
+- [!] Update third-party SDK (breaking API changes)
+- [!] Database index optimization (DBA team at capacity)
+
+## Deferred
+
+- [>] Mobile push notifications
+- [>] A/B testing framework
+- [>] GraphQL API layer
+
+## Cancelled
+
+- [-] XML feed support
+- [-] Legacy SOAP integration
+
+## Done
+
+- [x] Set up monitoring dashboards
+- [x] Implement rate limiting
+- [x] Add health check endpoint
+- [x] Write API documentation
+- [x] Configure auto-scaling
+
+## Sprint Metrics
+
+| Metric | Value |
+| --- | ---: |
+| Total stories | 22 |
+| Completed | 5 |
+| In progress | 2 |
+| Blocked | 3 |
+| Velocity (avg) | 18 |

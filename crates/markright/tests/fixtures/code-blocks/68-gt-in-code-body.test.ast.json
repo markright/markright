@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "> not a blockquote\n> just text",
+      "type": "code_block"
+    }
+  ]
+}

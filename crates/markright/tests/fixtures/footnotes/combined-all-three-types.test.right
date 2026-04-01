@@ -1,0 +1,5 @@
+Point ref[^1], then [^2>a range footnote], and an inline^[quick note].
+
+[^1]: First source.
+
+[^2]: Second source.

@@ -1,0 +1,18 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "version 2.0"
+            }
+          ],
+          "type": "bold"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

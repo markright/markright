@@ -1,0 +1,27 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Press "
+        },
+        {
+          "attrs": ".kbd",
+          "children": [
+            {
+              "type": "text",
+              "value": "Ctrl+S"
+            }
+          ],
+          "type": "bracketed_span"
+        },
+        {
+          "type": "text",
+          "value": " to save."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

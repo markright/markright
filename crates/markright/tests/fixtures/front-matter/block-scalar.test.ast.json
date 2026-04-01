@@ -1,0 +1,16 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Document body."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: Block Scalar\nabstract: |\n  This is a block scalar.\n  It preserves newlines.\n  Third line here."
+  }
+}

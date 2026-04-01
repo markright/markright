@@ -1,0 +1,41 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Claim"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Source"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "True"
+            }
+          ],
+          [
+            {
+              "label": "1",
+              "type": "footnote_ref"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

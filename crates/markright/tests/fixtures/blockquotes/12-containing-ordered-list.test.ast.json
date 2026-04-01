@@ -1,0 +1,41 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "items": [
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "First"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Second"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            }
+          ],
+          "start": 1,
+          "type": "ordered_list"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

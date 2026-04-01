@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    fmt.Println(\"hello\")\n}",
+      "lang": "go",
+      "type": "code_block"
+    }
+  ]
+}

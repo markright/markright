@@ -1,0 +1,29 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "keys": [
+            {
+              "key": "a"
+            },
+            {
+              "key": "b"
+            },
+            {
+              "key": "c"
+            },
+            {
+              "key": "d"
+            },
+            {
+              "key": "e"
+            }
+          ],
+          "type": "citation"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

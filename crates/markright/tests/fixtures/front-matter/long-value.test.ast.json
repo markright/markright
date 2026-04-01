@@ -1,0 +1,16 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Short body."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: This is a very long title that goes on and on to test how the parser handles longer string values in front matter fields\nauthor: Test"
+  }
+}

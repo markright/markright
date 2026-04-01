@@ -1,0 +1,73 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Data Summary"
+            }
+          ],
+          "level": 2,
+          "type": "heading"
+        },
+        {
+          "alignments": [
+            "none",
+            "none"
+          ],
+          "headers": [
+            [
+              {
+                "type": "text",
+                "value": "Metric"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Value"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Users"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "100"
+                }
+              ]
+            ]
+          ],
+          "type": "table"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "These numbers are approximate."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "foldable": false,
+          "kind": "warning",
+          "type": "admonition"
+        }
+      ],
+      "name": "panel",
+      "type": "fenced_div"
+    }
+  ]
+}

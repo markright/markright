@@ -1,0 +1,85 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Main Document"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Introduction"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "This document uses include directives to pull in content from other files."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "path": "chapters/introduction.right",
+      "type": "include"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "API Reference"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "path": "api/endpoints.right",
+      "type": "include"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Specific Section"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "fragment": "configuration",
+      "path": "chapters/advanced.right",
+      "type": "include"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Appendix"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "path": "appendix/glossary.right",
+      "type": "include"
+    },
+    {
+      "fragment": "bibliography",
+      "path": "appendix/references.right",
+      "type": "include"
+    }
+  ]
+}

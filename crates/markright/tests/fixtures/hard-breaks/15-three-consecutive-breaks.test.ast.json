@@ -1,0 +1,37 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "One."
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "Two."
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "Three."
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "Four."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

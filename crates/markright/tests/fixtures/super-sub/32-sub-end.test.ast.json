@@ -1,0 +1,22 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "element"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "n"
+            }
+          ],
+          "type": "subscript"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

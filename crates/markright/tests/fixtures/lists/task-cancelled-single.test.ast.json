@@ -1,0 +1,23 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "No longer needed"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "cancelled"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

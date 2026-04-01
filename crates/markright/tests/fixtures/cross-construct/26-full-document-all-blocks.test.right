@@ -1,0 +1,32 @@
+# Document Title
+
+An introductory paragraph.
+
+## Section One
+
+- Bullet one
+- Bullet two
+
+1. Step one
+2. Step two
+
+```python
+print("hello")
+```
+
+| Name | Role |
+| --- | --- |
+| Alice | Dev |
+
+> A blockquote.
+
+N> A note.
+
+---
+
+:::sidebar
+Sidebar content.
+:::
+
+- [ ] Todo item
+- [x] Done item

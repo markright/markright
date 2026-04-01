@@ -1,0 +1,52 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "A"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "one"
+            }
+          ],
+          "type": "inline_footnote"
+        },
+        {
+          "type": "text",
+          "value": ", B"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "two"
+            }
+          ],
+          "type": "inline_footnote"
+        },
+        {
+          "type": "text",
+          "value": ", C"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "three"
+            }
+          ],
+          "type": "inline_footnote"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

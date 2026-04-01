@@ -1,0 +1,37 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "PR review needed"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "review"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Design review"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "review"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

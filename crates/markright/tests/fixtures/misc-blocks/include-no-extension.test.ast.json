@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "path": "readme",
+      "type": "include"
+    }
+  ]
+}

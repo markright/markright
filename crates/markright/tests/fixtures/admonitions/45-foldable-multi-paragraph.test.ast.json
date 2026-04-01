@@ -1,0 +1,29 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "First paragraph of foldable warning."
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Second paragraph of foldable warning."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": true,
+      "kind": "warning",
+      "type": "admonition"
+    }
+  ]
+}

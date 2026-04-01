@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "target": "photo.png",
+          "type": "wiki_embed",
+          "width": 640
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

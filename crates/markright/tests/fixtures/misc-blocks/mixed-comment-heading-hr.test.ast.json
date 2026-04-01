@@ -1,0 +1,30 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Title"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "body": "TODO: add intro",
+      "type": "comment"
+    },
+    {
+      "type": "thematic_break"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Content here."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

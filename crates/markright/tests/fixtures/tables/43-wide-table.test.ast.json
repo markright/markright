@@ -1,0 +1,106 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "A"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "B"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "C"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "D"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "E"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "F"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "G"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "1"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "2"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "3"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "4"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "5"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "6"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "7"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

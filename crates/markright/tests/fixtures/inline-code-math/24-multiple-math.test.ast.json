@@ -1,0 +1,29 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_math",
+          "value": "a"
+        },
+        {
+          "type": "text",
+          "value": " plus "
+        },
+        {
+          "type": "inline_math",
+          "value": "b"
+        },
+        {
+          "type": "text",
+          "value": " equals "
+        },
+        {
+          "type": "inline_math",
+          "value": "c"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

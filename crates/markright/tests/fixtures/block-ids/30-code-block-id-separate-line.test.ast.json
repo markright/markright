@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "body": "print(\"hello\")",
+      "lang": "python",
+      "type": "code_block"
+    },
+    {
+      "content": [],
+      "id": "code-1",
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Привет мир"
+        },
+        {
+          "type": "text",
+          "value": "! 你好世界"
+        },
+        {
+          "type": "text",
+          "value": "! こんにちは"
+        },
+        {
+          "type": "text",
+          "value": "!"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

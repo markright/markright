@@ -1,0 +1,134 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "left",
+        "center",
+        "right"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Name"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Score"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Grade"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Alice"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "95"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "A"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Bob"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "87"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "B"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Carol"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "92"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "A"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Dave"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "78"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "C"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Eve"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "99"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "A"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

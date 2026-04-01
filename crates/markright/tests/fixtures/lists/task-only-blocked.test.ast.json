@@ -1,0 +1,37 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Blocked by X"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "blocked"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Blocked by Y"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "blocked"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

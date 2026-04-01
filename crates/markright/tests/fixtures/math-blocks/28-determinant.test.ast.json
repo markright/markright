@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\begin{vmatrix}\na & b \\\\\nc & d\n\\end{vmatrix} = ad - bc",
+      "type": "math_block"
+    }
+  ]
+}

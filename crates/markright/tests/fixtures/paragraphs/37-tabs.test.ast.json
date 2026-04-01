@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Hello\tworld\twith\ttabs."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

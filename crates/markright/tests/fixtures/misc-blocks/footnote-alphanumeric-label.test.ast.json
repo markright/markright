@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Mixed label footnote."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "abc123",
+      "type": "footnote_def"
+    }
+  ]
+}

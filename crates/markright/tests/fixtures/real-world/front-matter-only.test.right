@@ -1,0 +1,11 @@
+---
+title: Minimal Document
+author: Test Author
+date: 2026-03-12
+syntax: markright
+tags: test, minimal
+---
+
+# Minimal Document
+
+This document tests that front matter is correctly parsed alongside minimal body content.

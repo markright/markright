@@ -1,0 +1,11 @@
+---
+title: Nested Test
+metadata:
+  created: 2024-01-01
+  updated: 2024-06-15
+  author:
+    name: Alice
+    email: alice@example.com
+---
+
+Nested YAML values.

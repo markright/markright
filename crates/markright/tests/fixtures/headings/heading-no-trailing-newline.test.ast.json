@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "No trailing newline"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    }
+  ]
+}

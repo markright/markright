@@ -1,0 +1,60 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "text with "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "bold"
+                }
+              ],
+              "type": "bold"
+            },
+            {
+              "type": "text",
+              "value": " and "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "italic"
+                }
+              ],
+              "type": "italic"
+            }
+          ],
+          "label": "1",
+          "type": "range_footnote"
+        },
+        {
+          "type": "text",
+          "value": " is annotated."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Detailed annotation."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "1",
+      "type": "footnote_def"
+    }
+  ]
+}

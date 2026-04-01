@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "<table><tr><td>cell</td></tr></table>"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

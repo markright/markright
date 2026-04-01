@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "[obj method];",
+      "lang": "objective-c",
+      "type": "code_block"
+    }
+  ]
+}

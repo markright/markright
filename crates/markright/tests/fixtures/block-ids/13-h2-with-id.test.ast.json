@@ -1,0 +1,15 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Heading"
+        }
+      ],
+      "id": "custom-id",
+      "level": 2,
+      "type": "heading"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "alignments": [
+            "none",
+            "none"
+          ],
+          "headers": [
+            [
+              {
+                "type": "text",
+                "value": "Name"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Age"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Alice"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "30"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Bob"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "25"
+                }
+              ]
+            ]
+          ],
+          "type": "table"
+        }
+      ],
+      "name": "data",
+      "type": "fenced_div"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "item 42 here"
+            }
+          ],
+          "type": "italic"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

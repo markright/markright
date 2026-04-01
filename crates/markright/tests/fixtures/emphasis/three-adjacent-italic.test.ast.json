@@ -1,0 +1,44 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "a"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "b"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "c"
+            }
+          ],
+          "type": "italic"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

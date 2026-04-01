@@ -1,0 +1,37 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "bold"
+                }
+              ],
+              "type": "bold"
+            },
+            {
+              "type": "text",
+              "value": " and "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "italic"
+                }
+              ],
+              "type": "italic"
+            }
+          ],
+          "type": "link",
+          "url": "https://example.com"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

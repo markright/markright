@@ -1,0 +1,112 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Here is "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "bold"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "italic"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "type": "inline_code",
+          "value": "code"
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "type": "inline_math",
+          "value": "E=mc^2"
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "a link"
+            }
+          ],
+          "type": "link",
+          "url": "https://example.com"
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "target": "WikiPage",
+          "type": "wiki_link"
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "label": "1",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": ", and "
+        },
+        {
+          "keys": [
+            {
+              "key": "doe2024"
+            }
+          ],
+          "type": "citation"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "A footnote."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "1",
+      "type": "footnote_def"
+    }
+  ]
+}

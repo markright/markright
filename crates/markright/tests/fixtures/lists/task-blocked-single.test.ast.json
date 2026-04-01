@@ -1,0 +1,23 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Waiting on dependency"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "blocked"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

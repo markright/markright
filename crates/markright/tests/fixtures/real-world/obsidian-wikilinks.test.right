@@ -1,0 +1,36 @@
+# Rust Ownership Model
+
+Related: [[Memory Safety]], [[Borrowing Rules]], [[Lifetimes]]
+
+## Overview
+
+Rust uses an **ownership system** to manage memory without a garbage collector. Every value has a single *owner*, and when the owner goes out of scope, the value is dropped.
+
+![[ownership-diagram.png]]
+
+## Key Rules
+
+1. Each value has exactly one owner
+2. When the owner goes out of scope, the value is dropped
+3. Ownership can be transferred via `move`
+
+See also: [[Move Semantics]] and [[Copy Trait]]
+
+N> For a deeper dive, see [[The Rust Book|Chapter 4]].
+
+## Code Example
+
+```rust
+fn main() {
+    let s1 = String::from("hello");
+    let s2 = s1; // s1 is moved to s2
+    // println!("{}", s1); // ERROR: s1 is no longer valid
+    println!("{}", s2);
+}
+```
+
+## References
+
+- [[Borrowing Rules#Mutable References]]
+- [[Lifetimes#Named Lifetimes]]
+- ![[borrow-checker-flow.svg]]

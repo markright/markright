@@ -1,0 +1,24 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "alt": "banner",
+          "attrs": [
+            [
+              "w",
+              "50%"
+            ],
+            [
+              "h",
+              "auto"
+            ]
+          ],
+          "type": "image",
+          "url": "hero.png"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

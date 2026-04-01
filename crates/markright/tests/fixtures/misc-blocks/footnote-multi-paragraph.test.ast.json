@@ -1,0 +1,37 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "First paragraph."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "long",
+      "type": "footnote_def"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Second paragraph after blank line."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Third paragraph."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

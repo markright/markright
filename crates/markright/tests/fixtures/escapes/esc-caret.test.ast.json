@@ -1,0 +1,21 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "a"
+        },
+        {
+          "type": "text",
+          "value": "^"
+        },
+        {
+          "type": "text",
+          "value": " b"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Deep heading"
+        }
+      ],
+      "id": "deep",
+      "level": 6,
+      "type": "heading"
+    }
+  ]
+}

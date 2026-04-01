@@ -1,0 +1,7 @@
+```yaml
+name: markright
+version: 1.0
+features:
+  - parsing
+  - rendering
+```

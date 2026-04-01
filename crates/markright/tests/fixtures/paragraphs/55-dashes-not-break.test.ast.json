@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "This has -- dashes in it."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

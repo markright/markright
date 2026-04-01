@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "A helpful tip in a quote."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "foldable": false,
+          "kind": "tip",
+          "type": "admonition"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

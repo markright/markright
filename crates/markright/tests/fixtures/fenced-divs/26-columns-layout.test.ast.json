@@ -1,0 +1,40 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Left column."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "left",
+          "type": "fenced_div"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Right column."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "right",
+          "type": "fenced_div"
+        }
+      ],
+      "name": "columns",
+      "type": "fenced_div"
+    }
+  ]
+}

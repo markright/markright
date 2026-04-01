@@ -1,0 +1,35 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "struck"
+            }
+          ],
+          "type": "strikethrough"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "marked"
+            }
+          ],
+          "type": "highlight"
+        },
+        {
+          "type": "text",
+          "value": " in one paragraph"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

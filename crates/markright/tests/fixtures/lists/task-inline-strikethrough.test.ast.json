@@ -1,0 +1,32 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Cancelled"
+                    }
+                  ],
+                  "type": "strikethrough"
+                },
+                {
+                  "type": "text",
+                  "value": " task"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "cancelled"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

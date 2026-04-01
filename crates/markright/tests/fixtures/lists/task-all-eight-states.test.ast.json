@@ -1,0 +1,121 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Open task"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Done task"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Active task"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "active"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Review task"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "review"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Cancelled task"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "cancelled"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Blocked task"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "blocked"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Deferred task"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "deferred"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Question task"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "question"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

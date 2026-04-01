@@ -1,0 +1,6 @@
+- First item
+- Second item
+
+```rust
+fn example() {}
+```

@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "email"
+            }
+          ],
+          "type": "link",
+          "url": "mailto:user@example.com"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

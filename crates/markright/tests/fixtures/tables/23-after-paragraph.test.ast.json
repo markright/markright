@@ -1,0 +1,50 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "This is a paragraph."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "A"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "B"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "1"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "2"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

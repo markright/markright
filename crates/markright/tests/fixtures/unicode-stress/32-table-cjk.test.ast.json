@@ -1,0 +1,55 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "名前"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "言語"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "太郎"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "日本語"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "철수"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "한국어"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

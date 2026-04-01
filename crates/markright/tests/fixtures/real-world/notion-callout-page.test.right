@@ -1,0 +1,28 @@
+# Onboarding Guide
+
+Welcome to the team! This guide will help you get started.
+
+N> Make sure you have your laptop set up before your first day.
+N> Contact IT at support@example.com if you need help.
+
+## First Day Checklist
+
+- [x] Pick up badge from reception
+- [x] Complete HR paperwork
+- [ ] Set up development environment
+- [ ] Join team Slack channels
+
+T> Use the `setup.sh` script to automate most of the environment setup.
+
+## Important Policies
+
+W> All code must be reviewed by at least two team members before merging.
+
+!> Never commit secrets or API keys to the repository.
+!> Use the vault service for all sensitive configuration.
+
+## Resources
+
+- [Internal Wiki](https://wiki.example.com)
+- [Design System](https://design.example.com)
+- [API Documentation](https://api.example.com/docs)

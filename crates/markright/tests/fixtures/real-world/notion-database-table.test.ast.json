@@ -1,0 +1,299 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Project Tracker"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "none",
+        "none",
+        "center",
+        "none",
+        "right"
+      ],
+      "caption": [
+        {
+          "type": "text",
+          "value": "Current sprint tasks"
+        }
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Task"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Owner"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Priority"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Status"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Due Date"
+          }
+        ]
+      ],
+      "id": "sprint-tasks",
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Design system overhaul"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Alice"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "High"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "In Progress"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "2026-03-15"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "API v2 migration"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Bob"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Critical"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Blocked"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "2026-03-20"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Mobile app redesign"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Carol"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Medium"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Planning"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "2026-04-01"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Documentation update"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Dave"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Low"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Done"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "2026-03-10"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Performance audit"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Eve"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "High"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "In Review"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "2026-03-18"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Security patch"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Frank"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Critical"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Done"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "2026-03-08"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Notes"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The API v2 migration is blocked on the database schema changes. Contact Bob for details."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The due date for the mobile app redesign is tentative."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "warning",
+      "type": "admonition"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Some text."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "type": "thematic_break"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "title: Not front matter"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "type": "thematic_break"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Installation"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "body": "npm install markright",
+      "lang": "bash",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Usage"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    }
+  ]
+}

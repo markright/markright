@@ -1,0 +1,27 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Before "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "the annotated range"
+            }
+          ],
+          "label": "1",
+          "type": "range_footnote"
+        },
+        {
+          "type": "text",
+          "value": " after."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

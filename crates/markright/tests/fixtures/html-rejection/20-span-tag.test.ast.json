@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "<span class"
+        },
+        {
+          "type": "text",
+          "value": "=\"red\">colored</span>"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

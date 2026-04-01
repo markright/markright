@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\begin{bmatrix}\n1 & 0 \\\\\n0 & 1\n\\end{bmatrix}",
+      "type": "math_block"
+    }
+  ]
+}

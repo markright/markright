@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "max_level": 4,
+      "min_level": 2,
+      "type": "toc"
+    },
+    {
+      "path": "chapter1.right",
+      "type": "include"
+    }
+  ]
+}

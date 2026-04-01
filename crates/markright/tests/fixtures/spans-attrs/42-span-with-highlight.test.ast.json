@@ -1,0 +1,24 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "attrs": ".callout",
+          "children": [
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "important"
+                }
+              ],
+              "type": "highlight"
+            }
+          ],
+          "type": "bracketed_span"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

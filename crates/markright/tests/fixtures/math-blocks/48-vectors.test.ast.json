@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\vec{v} = \\langle v_1, v_2, v_3 \\rangle",
+      "type": "math_block"
+    }
+  ]
+}

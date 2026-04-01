@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "target": "Start Page",
+          "type": "wiki_link"
+        },
+        {
+          "type": "text",
+          "value": " is the beginning."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

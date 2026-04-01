@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "graph LR\n    A --> B",
+      "lang": "mermaid",
+      "type": "diagram_block"
+    }
+  ]
+}

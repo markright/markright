@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_code",
+          "value": "function longFunctionName(param1, param2, param3) { return param1 + param2 + param3; }"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

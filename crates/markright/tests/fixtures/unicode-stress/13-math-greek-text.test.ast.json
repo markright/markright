@@ -1,0 +1,21 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The letter "
+        },
+        {
+          "type": "inline_math",
+          "value": "\\alpha"
+        },
+        {
+          "type": "text",
+          "value": " is Greek alpha (α)."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

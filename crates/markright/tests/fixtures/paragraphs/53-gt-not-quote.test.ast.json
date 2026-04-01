@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": ">not a blockquote"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

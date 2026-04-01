@@ -1,0 +1,26 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Before the equation."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "E = mc^2",
+      "type": "math_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "After the equation."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

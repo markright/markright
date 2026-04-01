@@ -1,0 +1,20 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Section"
+            }
+          ],
+          "id": "sec",
+          "level": 2,
+          "type": "heading"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Name"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Age"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "City"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Alice"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "30"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "NYC"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Bob"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "25"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "LA"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

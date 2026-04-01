@@ -1,0 +1,63 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "items": [
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "Bold item"
+                        }
+                      ],
+                      "type": "bold"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "Italic item"
+                        }
+                      ],
+                      "type": "italic"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "inline_code",
+                      "value": "Code item"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            }
+          ],
+          "type": "unordered_list"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

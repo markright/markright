@@ -1,0 +1,49 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "x"
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "2"
+                }
+              ],
+              "type": "superscript"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "y"
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "i"
+                }
+              ],
+              "type": "subscript"
+            }
+          ],
+          "type": "italic"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+# HTTP Status Codes
+
+HTTP response status codes indicate whether a specific HTTP request has been successfully completed.
+
+## Categories
+
+1xx
+: Informational responses
+
+2xx
+: Successful responses
+
+3xx
+: Redirection messages
+
+4xx
+: Client error responses
+
+5xx
+: Server error responses
+
+## Common Status Codes
+
+| Code | Name | Description |
+| ---: | --- | --- |
+| 200 | OK | Request succeeded |
+| 201 | Created | Resource created |
+| 301 | Moved Permanently | URL has been permanently changed |
+| 400 | Bad Request | Server cannot process the request |
+| 401 | Unauthorized | Authentication required |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Resource not found |
+| 500 | Internal Server Error | Server error |
+| 502 | Bad Gateway | Invalid response from upstream |
+| 503 | Service Unavailable | Server is temporarily unable to handle request |
+
+Table: Commonly used HTTP status codes {#common-codes}
+
+## Detailed Definitions
+
+200 OK
+: The request succeeded. The meaning of the success depends on the HTTP method.
+
+301 Moved Permanently
+: The URL of the requested resource has been changed permanently.
+: The new URL is given in the response.
+
+404 Not Found
+: The server cannot find the requested resource.
+
+503 Service Unavailable
+: The server is not ready to handle the request.
+: Common causes include maintenance or overloaded servers.

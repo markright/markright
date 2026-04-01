@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "A figure container."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "figure",
+      "type": "fenced_div"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "f(x) = \\begin{cases}\nx & \\text{if } x \\geq 0 \\\\\n-x & \\text{if } x < 0\n\\end{cases}",
+      "type": "math_block"
+    }
+  ]
+}

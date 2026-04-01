@@ -1,0 +1,39 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "See "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "the spec"
+                  }
+                ],
+                "type": "link",
+                "url": "https://markright.dev"
+              },
+              {
+                "type": "text",
+                "value": "."
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "MarkRight"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    }
+  ]
+}

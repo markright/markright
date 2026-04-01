@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "สวัสดีครับ ยินดีต้อนรับ"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

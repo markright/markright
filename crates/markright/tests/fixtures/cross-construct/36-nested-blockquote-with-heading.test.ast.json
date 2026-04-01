@@ -1,0 +1,42 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Outer text."
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Inner heading"
+                }
+              ],
+              "level": 2,
+              "type": "heading"
+            },
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Inner paragraph."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "type": "blockquote"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

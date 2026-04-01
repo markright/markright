@@ -1,0 +1,37 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "In progress A"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "active"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "In progress B"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "active"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+# Cognitive Load Theory {#cognitive-load}
+
+Cognitive load theory, developed by John Sweller[^sweller1988], describes the mental effort required to process information.
+
+## Types of Cognitive Load
+
+Intrinsic load
+: The inherent difficulty of the material itself
+
+Extraneous load
+: Load caused by poor instructional design
+
+Germane load
+: Load devoted to building mental schemas
+
+## Connection to Software Design
+
+Software complexity is directly related to cognitive load[^complexity]. Clean code practices reduce **extraneous load** by making code easier to parse visually.
+
+See [[Clean Code Principles]] and [[Software Complexity Metrics]].
+
+This connects to the idea of ==chunking==[^miller1956] -- grouping information into meaningful units reduces working memory demands.
+
+## Implications for API Design
+
+> Good API design minimizes the cognitive load on the consumer. Every unnecessary option, parameter, or configuration point adds to the burden.
+
+N> This principle applies equally to CLI tools and library interfaces.
+
+[^sweller1988]: Sweller, J. (1988). Cognitive load during problem solving.
+[^complexity]: See the discussion in [[Accidental vs Essential Complexity]].
+[^miller1956]: Miller, G.A. (1956). The magical number seven, plus or minus two.

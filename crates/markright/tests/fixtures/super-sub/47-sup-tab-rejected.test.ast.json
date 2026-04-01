@@ -1,0 +1,18 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "no\ttab"
+            }
+          ],
+          "type": "superscript"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

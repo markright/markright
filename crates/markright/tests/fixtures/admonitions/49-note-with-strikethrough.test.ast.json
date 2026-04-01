@@ -1,0 +1,33 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "This is "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "wrong"
+                }
+              ],
+              "type": "strikethrough"
+            },
+            {
+              "type": "text",
+              "value": " correct."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    }
+  ]
+}

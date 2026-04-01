@@ -1,0 +1,378 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "2026-03-12"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Morning Tasks"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Review pull requests on "
+                },
+                {
+                  "target": "Project Alpha",
+                  "type": "wiki_link"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Update "
+                },
+                {
+                  "target": "Sprint Board",
+                  "type": "wiki_link"
+                },
+                {
+                  "type": "text",
+                  "value": " with new estimates"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Write tests for the parser module"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "active"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Read "
+                },
+                {
+                  "alias": "DDIA Chapter 5",
+                  "target": "Designing Data-Intensive Applications",
+                  "type": "wiki_link"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Meeting Notes"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Had a sync with the "
+        },
+        {
+          "target": "Platform Team",
+          "type": "wiki_link"
+        },
+        {
+          "type": "text",
+          "value": ". Key takeaways:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Migration to new infrastructure is on track"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Need to update our deployment scripts"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "target": "Bob",
+                  "type": "wiki_link"
+                },
+                {
+                  "type": "text",
+                  "value": " will handle the database changes"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Afternoon"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Code review for "
+                },
+                {
+                  "target": "Carol",
+                  "type": "wiki_link"
+                },
+                {
+                  "type": "text",
+                  "value": "'s PR"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "review"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Blocked on API credentials from "
+                },
+                {
+                  "target": "External Vendor",
+                  "type": "wiki_link"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "blocked"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Deferred the logging refactor to next sprint"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "deferred"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Links and References"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Found some useful resources today:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Rust Error Handling"
+                    }
+                  ],
+                  "type": "link",
+                  "url": "https://blog.burntsushi.net/rust-error-handling/"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "target": "Error Handling Patterns",
+                  "type": "wiki_link"
+                },
+                {
+                  "type": "text",
+                  "value": " -- need to update this note"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "target": "whiteboard-photo.jpg",
+                  "type": "wiki_embed"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "End of Day"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Completed "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "6 out of 9"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " planned tasks. Good progress on the parser but still blocked on the vendor credentials."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Remember to follow up with "
+            },
+            {
+              "target": "External Vendor",
+              "type": "wiki_link"
+            },
+            {
+              "type": "text",
+              "value": " first thing tomorrow."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "tip",
+      "type": "admonition"
+    }
+  ],
+  "front_matter": {
+    "raw": "date: 2026-03-12\ntags: daily, work, personal\nmood: productive"
+  }
+}

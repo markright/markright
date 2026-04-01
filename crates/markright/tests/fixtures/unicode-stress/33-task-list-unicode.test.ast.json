@@ -1,0 +1,51 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "買い物に行く"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "宿題を終わらせる"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "レポートを書く"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "active"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

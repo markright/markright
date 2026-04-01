@@ -1,0 +1,20 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "alt": "photo",
+          "attrs": [
+            [
+              "w",
+              "50%"
+            ]
+          ],
+          "type": "image",
+          "url": "pic.jpg"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

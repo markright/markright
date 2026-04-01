@@ -1,0 +1,26 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The formula "
+            },
+            {
+              "type": "inline_math",
+              "value": "E = mc^2"
+            },
+            {
+              "type": "text",
+              "value": " is famous"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

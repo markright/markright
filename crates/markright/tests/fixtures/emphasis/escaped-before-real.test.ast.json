@@ -1,0 +1,34 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "*"
+        },
+        {
+          "type": "text",
+          "value": "literal"
+        },
+        {
+          "type": "text",
+          "value": "*"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "real italic"
+            }
+          ],
+          "type": "italic"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

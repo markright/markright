@@ -1,0 +1,48 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The value x"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "2"
+            }
+          ],
+          "type": "superscript"
+        },
+        {
+          "type": "text",
+          "value": " is squared."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The element H"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "2"
+            }
+          ],
+          "type": "subscript"
+        },
+        {
+          "type": "text",
+          "value": "O is water."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

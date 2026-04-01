@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "<html> & \"quotes\" & 'apostrophes'",
+      "type": "comment"
+    }
+  ]
+}

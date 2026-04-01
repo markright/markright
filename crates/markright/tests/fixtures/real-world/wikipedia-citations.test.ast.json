@@ -1,0 +1,368 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "History of the Internet"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "Internet"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " is a global system of interconnected computer networks. Its origins trace back to research funded by the United States government in the 1960s"
+        },
+        {
+          "label": "arpanet",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "ARPANET"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The Advanced Research Projects Agency Network (ARPANET) was the first wide-area packet-switched network"
+        },
+        {
+          "keys": [
+            {
+              "key": "leiner2009"
+            }
+          ],
+          "type": "citation"
+        },
+        {
+          "type": "text",
+          "value": ". The first message was sent on October 29, 1969, from UCLA to Stanford"
+        },
+        {
+          "keys": [
+            {
+              "key": "abbate2000"
+            }
+          ],
+          "type": "citation"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "TCP/IP"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The development of TCP/IP by Vint Cerf and Bob Kahn"
+        },
+        {
+          "label": "tcpip",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": " in the 1970s provided a standardized protocol suite. This became the foundation of the modern Internet."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The key innovation was packet switching, which allows multiple communication sessions to share a network simultaneously."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "World Wide Web"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Tim Berners-Lee invented the World Wide Web in 1989"
+        },
+        {
+          "label": "bernerslee",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": " while working at CERN. The first website went live on August 6, 1991."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The web is more a social creation than a technical one. I designed it for a social effect -- to help people work together."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The distinction between the "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Internet"
+                }
+              ],
+              "type": "italic"
+            },
+            {
+              "type": "text",
+              "value": " (network infrastructure) and the "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Web"
+                }
+              ],
+              "type": "italic"
+            },
+            {
+              "type": "text",
+              "value": " (application layer) is often confused."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Timeline"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "right",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Year"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Event"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "1969"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "First ARPANET message sent"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "1974"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "TCP/IP specification published"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "1983"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "DNS introduced"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "1989"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "World Wide Web proposed"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "1991"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "First website goes live"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "1993"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Mosaic browser released"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The ARPANET was funded by the Defense Advanced Research Projects Agency (DARPA)."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "arpanet",
+      "type": "footnote_def"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Cerf, V. and Kahn, R. (1974). A Protocol for Packet Network Intercommunication."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "tcpip",
+      "type": "footnote_def"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Berners-Lee, T. (1989). Information Management: A Proposal."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "bernerslee",
+      "type": "footnote_def"
+    }
+  ]
+}

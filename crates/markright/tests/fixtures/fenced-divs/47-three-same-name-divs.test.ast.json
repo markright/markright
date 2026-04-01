@@ -1,0 +1,49 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Panel one."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "panel",
+      "type": "fenced_div"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Panel two."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "panel",
+      "type": "fenced_div"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Panel three."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "panel",
+      "type": "fenced_div"
+    }
+  ]
+}

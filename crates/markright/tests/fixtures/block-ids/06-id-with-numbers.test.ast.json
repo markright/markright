@@ -1,0 +1,15 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Section"
+        }
+      ],
+      "id": "section-1",
+      "level": 1,
+      "type": "heading"
+    }
+  ]
+}

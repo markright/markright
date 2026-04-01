@@ -1,0 +1,18 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "太字斜体テスト"
+            }
+          ],
+          "type": "bold_italic"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

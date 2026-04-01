@@ -1,0 +1,16 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Nested YAML values."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: Nested Test\nmetadata:\n  created: 2024-01-01\n  updated: 2024-06-15\n  author:\n    name: Alice\n    email: alice@example.com"
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Rust Ownership Model"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Related: "
+        },
+        {
+          "target": "Memory Safety",
+          "type": "wiki_link"
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "target": "Borrowing Rules",
+          "type": "wiki_link"
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "target": "Lifetimes",
+          "type": "wiki_link"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Overview"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Rust uses an "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "ownership system"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " to manage memory without a garbage collector. Every value has a single "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "owner"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": ", and when the owner goes out of scope, the value is dropped."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "target": "ownership-diagram.png",
+          "type": "wiki_embed"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Key Rules"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Each value has exactly one owner"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "When the owner goes out of scope, the value is dropped"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Ownership can be transferred via "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "move"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "start": 1,
+      "type": "ordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "See also: "
+        },
+        {
+          "target": "Move Semantics",
+          "type": "wiki_link"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "target": "Copy Trait",
+          "type": "wiki_link"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "For a deeper dive, see "
+            },
+            {
+              "alias": "Chapter 4",
+              "target": "The Rust Book",
+              "type": "wiki_link"
+            },
+            {
+              "type": "text",
+              "value": "."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Code Example"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "body": "fn main() {\n    let s1 = String::from(\"hello\");\n    let s2 = s1; // s1 is moved to s2\n    // println!(\"{}\", s1); // ERROR: s1 is no longer valid\n    println!(\"{}\", s2);\n}",
+      "lang": "rust",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "References"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "fragment": "Mutable References",
+                  "target": "Borrowing Rules",
+                  "type": "wiki_link"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "fragment": "Named Lifetimes",
+                  "target": "Lifetimes",
+                  "type": "wiki_link"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "target": "borrow-checker-flow.svg",
+                  "type": "wiki_embed"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    }
+  ]
+}

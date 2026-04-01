@@ -1,0 +1,21 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "alt": "alt",
+          "attrs": [
+            [
+              "w",
+              "80%"
+            ]
+          ],
+          "title": "Title",
+          "type": "image",
+          "url": "https://example.com/img.png"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

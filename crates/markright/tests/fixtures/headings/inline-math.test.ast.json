@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_math",
+          "value": "E = mc^2"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    }
+  ]
+}

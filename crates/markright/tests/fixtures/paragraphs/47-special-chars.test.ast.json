@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Ampersand & less-than < greater-than > and \"quotes\"."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

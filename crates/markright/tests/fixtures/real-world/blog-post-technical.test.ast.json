@@ -1,0 +1,337 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Building a Parser Combinator from Scratch in Rust"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Writing parsers is one of the most satisfying programming tasks. In this post, we will build a simple parser combinator library in "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "Rust"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " from scratch."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "What is a Parser Combinator?"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "A parser combinator is a higher-order function that accepts parsers as input and returns a new parser as output. The key insight is that parsers are "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "composable"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": " -- you can build complex parsers from simple ones."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The Parser Trait"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "body": "trait Parser<'a> {\n    type Output;\n    fn parse(&self, input: &'a str) -> Option<(Self::Output, &'a str)>;\n}",
+      "lang": "rust",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Our parser takes a string slice and returns:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "inline_code",
+                  "value": "Some((result, remaining))"
+                },
+                {
+                  "type": "text",
+                  "value": " on success"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "inline_code",
+                  "value": "None"
+                },
+                {
+                  "type": "text",
+                  "value": " on failure"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Basic Parsers"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Literal Parser"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "body": "fn literal<'a>(expected: &'a str) -> impl Parser<'a, Output = &'a str> {\n    move |input: &'a str| {\n        if input.starts_with(expected) {\n            Some((expected, &input[expected.len()..]))\n        } else {\n            None\n        }\n    }\n}",
+      "lang": "rust",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Character Parser"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "body": "fn any_char(input: &str) -> Option<(char, &str)> {\n    input.chars().next().map(|c| (c, &input[c.len_utf8()..]))\n}",
+      "lang": "rust",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Combinators"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Sequence"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The "
+        },
+        {
+          "type": "inline_code",
+          "value": "and"
+        },
+        {
+          "type": "text",
+          "value": " combinator runs two parsers in sequence:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "fn and<'a, A, B>(first: A, second: B) -> impl Parser<'a>\nwhere\n    A: Parser<'a>,\n    B: Parser<'a>,\n{\n    move |input| {\n        let (r1, rest) = first.parse(input)?;\n        let (r2, rest) = second.parse(rest)?;\n        Some(((r1, r2), rest))\n    }\n}",
+      "lang": "rust",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Choice"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The "
+        },
+        {
+          "type": "inline_code",
+          "value": "or"
+        },
+        {
+          "type": "text",
+          "value": " combinator tries the first parser, then falls back to the second:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "fn or<'a, A, B>(first: A, second: B) -> impl Parser<'a>\nwhere\n    A: Parser<'a>,\n    B: Parser<'a, Output = A::Output>,\n{\n    move |input| {\n        first.parse(input).or_else(|| second.parse(input))\n    }\n}",
+      "lang": "rust",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Putting It All Together"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "body": "let parser = and(literal(\"hello\"), and(literal(\" \"), literal(\"world\")));\nlet result = parser.parse(\"hello world!\");\nassert_eq!(result, Some(((\"hello\", (\" \", \"world\")), \"!\")));",
+      "lang": "rust",
+      "type": "code_block"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Parser combinators are a great fit for Rust because ownership and lifetimes naturally express the idea of consuming input."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "tip",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Further Reading"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Nom"
+                    }
+                  ],
+                  "type": "link",
+                  "url": "https://github.com/rust-bakery/nom"
+                },
+                {
+                  "type": "text",
+                  "value": " -- a mature parser combinator library for Rust"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Chumsky"
+                    }
+                  ],
+                  "type": "link",
+                  "url": "https://github.com/zesterer/chumsky"
+                },
+                {
+                  "type": "text",
+                  "value": " -- a parser library focused on error recovery"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    }
+  ]
+}

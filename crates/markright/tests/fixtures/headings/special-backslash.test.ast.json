@@ -1,0 +1,30 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "path"
+        },
+        {
+          "type": "text",
+          "value": "t"
+        },
+        {
+          "type": "text",
+          "value": "o"
+        },
+        {
+          "type": "text",
+          "value": "f"
+        },
+        {
+          "type": "text",
+          "value": "ile"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    }
+  ]
+}

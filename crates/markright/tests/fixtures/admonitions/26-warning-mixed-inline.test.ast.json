@@ -1,0 +1,54 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "This has "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "bold"
+                }
+              ],
+              "type": "bold"
+            },
+            {
+              "type": "text",
+              "value": ", "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "italic"
+                }
+              ],
+              "type": "italic"
+            },
+            {
+              "type": "text",
+              "value": ", and "
+            },
+            {
+              "type": "inline_code",
+              "value": "code"
+            },
+            {
+              "type": "text",
+              "value": " formatting."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "warning",
+      "type": "admonition"
+    }
+  ]
+}

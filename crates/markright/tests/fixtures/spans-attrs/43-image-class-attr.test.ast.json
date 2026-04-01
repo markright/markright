@@ -1,0 +1,20 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "alt": "icon",
+          "attrs": [
+            [
+              "class",
+              "icon"
+            ]
+          ],
+          "type": "image",
+          "url": "star.svg"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

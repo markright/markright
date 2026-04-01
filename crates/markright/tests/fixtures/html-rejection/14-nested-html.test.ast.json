@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "<div><p><b>nested</b></p></div>"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

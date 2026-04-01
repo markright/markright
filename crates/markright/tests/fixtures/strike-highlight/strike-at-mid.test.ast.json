@@ -1,0 +1,26 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "before "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "struck"
+            }
+          ],
+          "type": "strikethrough"
+        },
+        {
+          "type": "text",
+          "value": " after"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "const greet = (name: string): string => `Hello, ${name}`;",
+      "lang": "typescript",
+      "type": "code_block"
+    }
+  ]
+}

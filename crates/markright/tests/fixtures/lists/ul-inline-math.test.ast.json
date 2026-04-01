@@ -1,0 +1,30 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "The formula "
+                },
+                {
+                  "type": "inline_math",
+                  "value": "x^2"
+                },
+                {
+                  "type": "text",
+                  "value": " is important"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    }
+  ]
+}

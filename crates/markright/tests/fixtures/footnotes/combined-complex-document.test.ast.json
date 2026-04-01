@@ -1,0 +1,102 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Research Summary"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The primary finding"
+        },
+        {
+          "label": "1",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": " was significant."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "Secondary analysis"
+            }
+          ],
+          "label": "2",
+          "type": "range_footnote"
+        },
+        {
+          "type": "text",
+          "value": " confirmed the results."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Additional notes"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "see appendix B"
+            }
+          ],
+          "type": "inline_footnote"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Published in Science 2024."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "1",
+      "type": "footnote_def"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Internal review only."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "2",
+      "type": "footnote_def"
+    }
+  ]
+}

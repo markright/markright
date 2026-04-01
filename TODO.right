@@ -1,0 +1,90 @@
+# MarkRight Tooling Roadmap
+
+## Must-Have for Launch
+
+- [x] npm package (WASM wrapper)
+  Publish the Rust parser as an npm package via wasm-pack.
+  Everything downstream in the JS ecosystem depends on this.
+
+- [x] HTML renderer
+  AST to HTML conversion.
+  Needed for playground, SSG plugins, preview panes, and web rendering.
+
+- [x] TextMate grammar
+  `.tmLanguage.json` for MarkRight syntax.
+  Unlocks VS Code, Sublime, GitHub code view, Shiki, and Linguist registration.
+  Single highest-leverage syntax artifact.
+
+- [x] VS Code extension
+  Syntax highlighting via TextMate grammar + live preview via WASM.
+  VS Code has ~74% dev market share.
+
+- [x] Tree-sitter grammar
+  `grammar.js` + `highlights.scm` queries.
+  Unlocks Neovim, Zed, Helix, Emacs, and GitHub code view.
+
+- [x] Online playground
+  Browser-based editor with live rendered output.
+  WASM-powered, no install required.
+  Typst credits their playground as the best acquisition funnel.
+
+## High Priority
+
+- [x] LSP implementation
+  Rust-based using `tower-lsp`.
+  Document symbols, formatting, lint diagnostics, and go-to-definition for footnotes.
+
+- [x] Formatter
+  Canonical source formatting (AST to source serialization).
+  MarkRight has "one right way" -- the formatter enforces it.
+
+- [x] Pandoc reader/writer
+  Lua scripts converting MarkRight to/from Pandoc AST.
+  Gives conversion to every format for free: PDF, DOCX, EPUB, LaTeX, Markdown, RST.
+
+- [ ] GitHub Linguist registration
+  PR to `github-linguist/linguist`.
+  Requires the TextMate grammar + public repos using `.right`.
+
+- [x] Neovim support
+  `ftdetect`, Tree-sitter queries, LSP config.
+  Nearly free once Tree-sitter grammar and LSP exist.
+
+- [x] Zed extension
+  Tree-sitter grammar + LSP config.
+  Nearly free once those two exist.
+
+- [x] SSG plugins
+  Vite plugin transforms `.right` files to HTML modules with front matter.
+  Works with Astro, SvelteKit, Nuxt, and any Vite-based SSG.
+
+- [x] JSON Schema for AST
+  Enables AI agents to generate valid MarkRight via structured output.
+  Novel -- no other markup language does this yet.
+
+## Nice-to-Have
+
+- [x] MCP server
+  AI agents can parse `.right` files, query structure, validate syntax.
+  No markup language has one yet -- differentiator.
+
+- [x] JetBrains plugin
+  TextMate bundle for syntax highlighting.
+  Install via Settings > Editor > TextMate Bundles, point to editors/jetbrains.
+
+- [x] Standalone linter
+  CI-friendly: heading level skips, unused/undefined/duplicate footnotes,
+  duplicate heading IDs. Integrated into `markright --lint`, MCP, WASM, and LSP diagnostics.
+
+- [-] highlight.js / Prism grammars
+  Superseded by Shiki, which uses our TextMate grammar directly.
+
+- [x] Native PDF export
+  Covered by Pandoc: `pandoc -f pandoc/reader.lua input.right -o output.pdf`
+
+- [-] Obsidian plugin
+  Deferred until broader adoption. Obsidian is deeply tied to `.md`.
+
+- [x] Markdown-to-MarkRight converter
+  Migration tool. Also generates training data for LLMs to learn MarkRight syntax.
+  Done via Pandoc writer: `pandoc -f markdown -t pandoc/markright.lua input.md`

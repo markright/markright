@@ -1,0 +1,46 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Heading"
+        }
+      ],
+      "id": "h1",
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Paragraph"
+        }
+      ],
+      "id": "p1",
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Sub"
+        }
+      ],
+      "id": "h2",
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Another paragraph"
+        }
+      ],
+      "id": "p2",
+      "type": "paragraph"
+    }
+  ]
+}

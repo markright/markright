@@ -1,0 +1,23 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Wow "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "https://example.com!"
+            }
+          ],
+          "type": "link",
+          "url": "https://example.com!"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

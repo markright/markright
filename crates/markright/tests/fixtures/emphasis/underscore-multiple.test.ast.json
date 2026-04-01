@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "_one_ _two_ _three_"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

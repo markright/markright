@@ -1,0 +1,6 @@
+name = "MarkRight"
+grammar = "markright"
+path_suffixes = ["right"]
+line_comments = ["%% "]
+tab_size = 2
+soft_wrap = "preferred_line_length"

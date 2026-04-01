@@ -1,0 +1,546 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "On the Efficiency of Persistent Data Structures"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Abstract"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "We present a comprehensive analysis of persistent data structures and their amortized time complexity. Our results show that path copying combined with lazy evaluation achieves "
+        },
+        {
+          "type": "inline_math",
+          "value": "O(\\log n)"
+        },
+        {
+          "type": "text",
+          "value": " amortized time for most operations. We introduce a novel technique for reducing the constant factor in persistent balanced trees."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Introduction"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Persistent data structures preserve previous versions of themselves when modified"
+        },
+        {
+          "label": "driscoll1989",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": ". Unlike ephemeral data structures, which support only a single version, persistent structures maintain a version history."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "This property is essential for:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Functional programming languages"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Version control systems"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Database transaction logs"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Undo/redo mechanisms"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Background"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Persistence Levels"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Any version can be queried or updated"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Full persistence"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Any version can be queried, only the latest updated"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Partial persistence"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Versions can be combined (merged)"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Confluent persistence"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Related Work"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Driscoll et al."
+        },
+        {
+          "label": "driscoll1989",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": " introduced the fat node and path copying techniques. Okasaki"
+        },
+        {
+          "label": "okasaki1998",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": " developed purely functional approaches using lazy evaluation."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Our Approach"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "We define the cost of an operation on version "
+        },
+        {
+          "type": "inline_math",
+          "value": "v"
+        },
+        {
+          "type": "text",
+          "value": " as:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "C(v) = T_{access}(v) + T_{copy}(v) + T_{rebalance}(v)",
+      "type": "math_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Where "
+        },
+        {
+          "type": "inline_math",
+          "value": "T_{access}"
+        },
+        {
+          "type": "text",
+          "value": " is the time to locate the node, "
+        },
+        {
+          "type": "inline_math",
+          "value": "T_{copy}"
+        },
+        {
+          "type": "text",
+          "value": " is the path copying cost, and "
+        },
+        {
+          "type": "inline_math",
+          "value": "T_{rebalance}"
+        },
+        {
+          "type": "text",
+          "value": " is the structural adjustment cost."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Amortized Analysis"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Using the potential method, we assign a potential "
+        },
+        {
+          "type": "inline_math",
+          "value": "\\Phi"
+        },
+        {
+          "type": "text",
+          "value": " to each version:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "\\hat{c}_i = c_i + \\Phi_i - \\Phi_{i-1}",
+      "type": "math_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The amortized cost "
+        },
+        {
+          "type": "inline_math",
+          "value": "\\hat{c}_i"
+        },
+        {
+          "type": "text",
+          "value": " accounts for both the actual cost "
+        },
+        {
+          "type": "inline_math",
+          "value": "c_i"
+        },
+        {
+          "type": "text",
+          "value": " and the change in potential."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Results"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "none",
+        "center",
+        "center",
+        "center"
+      ],
+      "caption": [
+        {
+          "type": "text",
+          "value": "Comparison of amortized time complexities"
+        }
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Structure"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Ephemeral"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Persistent (ours)"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Previous Best"
+          }
+        ]
+      ],
+      "id": "results-table",
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Balanced BST"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(\\log n)"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(\\log n)"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(\\log^2 n)"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Hash Table"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(1)"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(\\log n)"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(\\log n)"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Priority Queue"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(\\log n)"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(\\log n)"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(\\log n \\cdot \\log \\log n)"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Conclusion"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "We have demonstrated that persistent balanced BSTs can achieve the same amortized time complexity as their ephemeral counterparts. Future work includes extending these results to concurrent persistent structures."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Driscoll, J.R. et al. (1989). Making Data Structures Persistent."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "driscoll1989",
+      "type": "footnote_def"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Okasaki, C. (1998). Purely Functional Data Structures."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "okasaki1998",
+      "type": "footnote_def"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: On the Efficiency of Persistent Data Structures\nauthor: Jane Smith\ndate: 2026-01-15\ninstitution: Department of Computer Science, Example University\nkeywords: persistent data structures, amortized analysis, functional programming"
+  }
+}

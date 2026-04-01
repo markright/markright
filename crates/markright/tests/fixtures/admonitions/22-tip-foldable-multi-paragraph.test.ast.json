@@ -1,0 +1,29 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "First paragraph of foldable tip."
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Second paragraph of foldable tip."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": true,
+      "kind": "tip",
+      "type": "admonition"
+    }
+  ]
+}

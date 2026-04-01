@@ -1,0 +1,81 @@
+# Incident Response Runbook: Database Outage
+
+## Severity Classification
+
+| Severity | Definition | Response Time |
+| :---: | --- | ---: |
+| P1 | Complete service outage | 5 min |
+| P2 | Degraded performance for all users | 15 min |
+| P3 | Partial outage affecting some users | 30 min |
+| P4 | Minor issue, no user impact | 4 hours |
+
+## Immediate Actions
+
+!> If the database is completely unresponsive, escalate to P1 immediately.
+
+1. Verify the outage is real (not a monitoring false positive)
+2. Check the database status dashboard
+3. Notify the on-call DBA
+
+```bash
+# Check database connectivity
+pg_isready -h db.internal.example.com -p 5432
+
+# Check replication lag
+psql -c "SELECT now() - pg_last_xact_replay_timestamp() AS lag;"
+```
+
+## Diagnosis
+
+### Connection Pool Exhaustion
+
+```bash
+# Check active connections
+psql -c "SELECT count(*) FROM pg_stat_activity;"
+
+# Find long-running queries
+psql -c "SELECT pid, now() - pg_stat_activity.query_start AS duration, query
+FROM pg_stat_activity
+WHERE state != 'idle'
+ORDER BY duration DESC
+LIMIT 10;"
+```
+
+W> Do not kill connections without understanding which service owns them.
+
+### Disk Space
+
+```bash
+# Check disk usage
+df -h /var/lib/postgresql/
+
+# Find large tables
+psql -c "SELECT relname, pg_size_pretty(pg_total_relation_size(relid))
+FROM pg_catalog.pg_statio_user_tables
+ORDER BY pg_total_relation_size(relid) DESC
+LIMIT 10;"
+```
+
+### Replication Issues
+
+```bash
+# Check replication status
+psql -c "SELECT * FROM pg_stat_replication;"
+```
+
+## Recovery Steps
+
+- [x] Verify the issue
+- [ ] Identify root cause
+- [ ] Apply fix
+- [ ] Verify recovery
+- [ ] Update status page
+- [ ] Write post-mortem
+
+X> Restoring from backup is a last resort. It results in data loss since the last backup.
+
+## Post-Incident
+
+N> A post-mortem document must be completed within 48 hours of incident resolution.
+
+T> Use the post-mortem template at `docs/templates/post-mortem.md`.

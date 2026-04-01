@@ -1,0 +1,24 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "attrs": ".emphasis",
+          "children": [
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "bold italic"
+                }
+              ],
+              "type": "bold_italic"
+            }
+          ],
+          "type": "bracketed_span"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

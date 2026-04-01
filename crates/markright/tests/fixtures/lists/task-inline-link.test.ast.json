@@ -1,0 +1,33 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Review "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "PR 42"
+                    }
+                  ],
+                  "type": "link",
+                  "url": "https://github.com/pr/42"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

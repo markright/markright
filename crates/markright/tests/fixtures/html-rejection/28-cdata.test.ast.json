@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "<"
+        },
+        {
+          "type": "text",
+          "value": "!"
+        },
+        {
+          "type": "text",
+          "value": "[CDATA"
+        },
+        {
+          "type": "text",
+          "value": "[some data]]>"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

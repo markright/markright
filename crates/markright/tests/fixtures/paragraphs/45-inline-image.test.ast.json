@@ -1,0 +1,22 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "See "
+        },
+        {
+          "alt": "alt text",
+          "type": "image",
+          "url": "image.png"
+        },
+        {
+          "type": "text",
+          "value": " here."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

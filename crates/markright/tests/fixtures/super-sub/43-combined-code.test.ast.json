@@ -1,0 +1,51 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Use "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "n"
+            }
+          ],
+          "type": "superscript"
+        },
+        {
+          "type": "text",
+          "value": " where "
+        },
+        {
+          "type": "inline_code",
+          "value": "n > 0"
+        },
+        {
+          "type": "text",
+          "value": " and x"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "i"
+            }
+          ],
+          "type": "subscript"
+        },
+        {
+          "type": "text",
+          "value": " where "
+        },
+        {
+          "type": "inline_code",
+          "value": "i >= 0"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

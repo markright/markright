@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Hyphenated label definition."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "my-note",
+      "type": "footnote_def"
+    }
+  ]
+}

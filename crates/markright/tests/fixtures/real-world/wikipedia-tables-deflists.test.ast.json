@@ -1,0 +1,456 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "HTTP Status Codes"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "HTTP response status codes indicate whether a specific HTTP request has been successfully completed."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Categories"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Informational responses"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "1xx"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Successful responses"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "2xx"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Redirection messages"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "3xx"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Client error responses"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "4xx"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Server error responses"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "5xx"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Common Status Codes"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "right",
+        "none",
+        "none"
+      ],
+      "caption": [
+        {
+          "type": "text",
+          "value": "Commonly used HTTP status codes"
+        }
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Code"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Name"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Description"
+          }
+        ]
+      ],
+      "id": "common-codes",
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "200"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "OK"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Request succeeded"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "201"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Created"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Resource created"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "301"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Moved Permanently"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "URL has been permanently changed"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "400"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Bad Request"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Server cannot process the request"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "401"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Unauthorized"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Authentication required"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "403"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Forbidden"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "No permission"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "404"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Not Found"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Resource not found"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "500"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Internal Server Error"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Server error"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "502"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Bad Gateway"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Invalid response from upstream"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "503"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Service Unavailable"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Server is temporarily unable to handle request"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Detailed Definitions"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "The request succeeded. The meaning of the success depends on the HTTP method."
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "200 OK"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "The URL of the requested resource has been changed permanently."
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "The new URL is given in the response."
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "301 Moved Permanently"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "The server cannot find the requested resource."
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "404 Not Found"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "The server is not ready to handle the request."
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Common causes include maintenance or overloaded servers."
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "503 Service Unavailable"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    }
+  ]
+}

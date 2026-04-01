@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\hat{x} + \\tilde{y} + \\bar{z}",
+      "type": "math_block"
+    }
+  ]
+}

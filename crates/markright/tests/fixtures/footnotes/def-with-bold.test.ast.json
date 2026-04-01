@@ -1,0 +1,32 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Contains "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "bold"
+                }
+              ],
+              "type": "bold"
+            },
+            {
+              "type": "text",
+              "value": " text."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "1",
+      "type": "footnote_def"
+    }
+  ]
+}

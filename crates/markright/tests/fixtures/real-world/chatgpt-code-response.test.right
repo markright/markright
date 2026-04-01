@@ -1,0 +1,75 @@
+# How to Implement a Binary Search Tree in Python
+
+A **binary search tree** (BST) is a data structure where each node has at most two children, and for every node, all values in the left subtree are *smaller* and all values in the right subtree are *larger*.
+
+## Node Class
+
+```python
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+```
+
+## BST Class with Insert and Search
+
+```python
+class BST:
+    def __init__(self):
+        self.root = None
+
+    def insert(self, value):
+        if self.root is None:
+            self.root = Node(value)
+        else:
+            self._insert(self.root, value)
+
+    def _insert(self, node, value):
+        if value < node.value:
+            if node.left is None:
+                node.left = Node(value)
+            else:
+                self._insert(node.left, value)
+        else:
+            if node.right is None:
+                node.right = Node(value)
+            else:
+                self._insert(node.right, value)
+
+    def search(self, value):
+        return self._search(self.root, value)
+
+    def _search(self, node, value):
+        if node is None:
+            return False
+        if value == node.value:
+            return True
+        elif value < node.value:
+            return self._search(node.left, value)
+        else:
+            return self._search(node.right, value)
+```
+
+## Time Complexity
+
+| Operation | Average | Worst Case |
+| --- | :---: | :---: |
+| Search | $O(\log n)$ | $O(n)$ |
+| Insert | $O(\log n)$ | $O(n)$ |
+| Delete | $O(\log n)$ | $O(n)$ |
+
+## Usage Example
+
+```python
+tree = BST()
+for val in [5, 3, 7, 1, 4, 6, 8]:
+    tree.insert(val)
+
+print(tree.search(4))  # True
+print(tree.search(9))  # False
+```
+
+N> The worst case occurs when elements are inserted in sorted order, creating a degenerate tree (essentially a linked list).
+
+T> Consider using a **self-balancing BST** like an AVL tree or Red-Black tree for guaranteed $O(\log n)$ operations.

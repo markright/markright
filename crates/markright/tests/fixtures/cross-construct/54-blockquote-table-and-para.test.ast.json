@@ -1,0 +1,78 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Summary of results:"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "alignments": [
+            "none",
+            "none"
+          ],
+          "headers": [
+            [
+              {
+                "type": "text",
+                "value": "Test"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Result"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "A"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Pass"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "B"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Fail"
+                }
+              ]
+            ]
+          ],
+          "type": "table"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "See above for details."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

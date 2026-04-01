@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "link"
+            }
+          ],
+          "type": "link",
+          "url": "https://example.com/p%20a%20t%20h"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

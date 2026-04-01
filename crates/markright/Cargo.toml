@@ -1,0 +1,24 @@
+[package]
+name = "markright"
+version = "0.1.0"
+edition = "2024"
+description = "MarkRight reference parser"
+
+[features]
+default = ["serde", "schemars"]
+serde = ["dep:serde", "dep:serde_json"]
+schemars = ["dep:schemars", "serde"]
+
+[dependencies]
+schemars = { version = "1.2.1", features = ["derive"], optional = true }
+serde = { version = "1.0.228", features = ["derive"], optional = true }
+serde_json = { version = "1.0.149", optional = true }
+
+[dev-dependencies]
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "markright"
+path = "src/main.rs"

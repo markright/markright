@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "max_level": 3,
+      "min_level": 2,
+      "type": "toc"
+    }
+  ]
+}

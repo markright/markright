@@ -1,0 +1,12 @@
+{
+  "children": [
+    {
+      "body": "a",
+      "type": "math_block"
+    },
+    {
+      "body": "b",
+      "type": "math_block"
+    }
+  ]
+}

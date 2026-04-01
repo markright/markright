@@ -1,0 +1,7 @@
+N> Here is some code:
+N>
+N> ```rust
+N> fn main() {
+N>     println!("hello");
+N> }
+N> ```

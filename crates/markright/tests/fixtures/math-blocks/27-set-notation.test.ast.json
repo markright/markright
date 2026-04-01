@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "A \\cup B \\cap C \\subseteq D",
+      "type": "math_block"
+    }
+  ]
+}

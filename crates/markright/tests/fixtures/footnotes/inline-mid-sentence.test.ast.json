@@ -1,0 +1,26 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The result"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "preliminary"
+            }
+          ],
+          "type": "inline_footnote"
+        },
+        {
+          "type": "text",
+          "value": " was reported."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

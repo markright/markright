@@ -1,0 +1,24 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "First."
+        }
+      ],
+      "id": "dupe",
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Second."
+        }
+      ],
+      "id": "dupe",
+      "type": "paragraph"
+    }
+  ]
+}

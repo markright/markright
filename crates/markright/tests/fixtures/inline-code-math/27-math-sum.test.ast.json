@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_math",
+          "value": "\\sum_{i=1}^{n} i"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Data"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "X"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "1"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

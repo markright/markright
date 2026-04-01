@@ -1,0 +1,27 @@
+# Famous Quotes on Software Engineering
+
+## On Simplicity
+
+> Simplicity is the ultimate sophistication.
+
+> There are two ways of constructing a software design: one way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies.
+
+## On Debugging
+
+> Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.
+
+## On Planning
+
+> The best time to plant a tree was 20 years ago. The second best time is now.
+
+> Plans are worthless, but planning is everything.
+
+N> These quotes are commonly attributed but may be paraphrased from their original sources.
+
+## On Testing
+
+> Program testing can be used to show the presence of bugs, but never to show their absence.
+
+## Summary
+
+The common thread across all these quotes is a preference for **clarity** over **cleverness**, and **humility** in the face of complexity.

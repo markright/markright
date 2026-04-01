@@ -1,0 +1,29 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "See "
+        },
+        {
+          "target": "Page",
+          "type": "wiki_link"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "target": "image.png",
+          "type": "wiki_embed"
+        },
+        {
+          "type": "text",
+          "value": " here."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

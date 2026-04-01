@@ -1,0 +1,104 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "caption": [
+        {
+          "type": "text",
+          "value": "Student scores"
+        }
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Name"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Score"
+          }
+        ]
+      ],
+      "id": "scores",
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Alice"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "95"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Bob"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "87"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Carol"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "92"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Dave"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "78"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Eve"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "99"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

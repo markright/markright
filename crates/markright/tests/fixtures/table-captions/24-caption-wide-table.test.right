@@ -1,0 +1,6 @@
+| Col1 | Col2 | Col3 | Col4 | Col5 |
+| --- | --- | --- | --- | --- |
+| a | b | c | d | e |
+| f | g | h | i | j |
+
+Table: Wide table with five columns {#tbl-wide}

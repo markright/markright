@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "foo_bar_baz"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Important"
+                    }
+                  ],
+                  "type": "highlight"
+                },
+                {
+                  "type": "text",
+                  "value": " work in progress"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "active"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "left",
+        "center",
+        "right",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Left"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Center"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Right"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "None"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "a"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "b"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "c"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "d"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

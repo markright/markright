@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "print(\"你好世界\")",
+      "lang": "python",
+      "type": "code_block"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The theory"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "this was first proposed by Johnson in 2019 and later refined by Lee in 2022"
+            }
+          ],
+          "type": "inline_footnote"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

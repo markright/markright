@@ -1,0 +1,591 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Spaced Repetition and Memory"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Spaced repetition is a learning technique that reviews information at "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "increasing intervals"
+            }
+          ],
+          "type": "highlight"
+        },
+        {
+          "type": "text",
+          "value": " to exploit the psychological spacing effect"
+        },
+        {
+          "label": "ebbinghaus",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The Forgetting Curve"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Without review, memories decay exponentially. Ebbinghaus showed that retention drops to about "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "21%"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " after 31 days without reinforcement."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The forgetting curve follows approximately:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "R(t) = e^{-t/S}",
+      "type": "math_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Where "
+        },
+        {
+          "type": "inline_math",
+          "value": "R"
+        },
+        {
+          "type": "text",
+          "value": " is retention, "
+        },
+        {
+          "type": "inline_math",
+          "value": "t"
+        },
+        {
+          "type": "text",
+          "value": " is time, and "
+        },
+        {
+          "type": "inline_math",
+          "value": "S"
+        },
+        {
+          "type": "text",
+          "value": " is the stability of the memory."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Optimal Review Schedule"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "center",
+        "right",
+        "center"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Review"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Interval"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Expected Retention"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "1st"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "1 day"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "90%"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "2nd"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "3 days"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "90%"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "3rd"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "7 days"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "90%"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "4th"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "14 days"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "90%"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "5th"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "30 days"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "90%"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "6th"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "90 days"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "90%"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Tools"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "target": "Anki",
+                  "type": "wiki_link"
+                },
+                {
+                  "type": "text",
+                  "value": " -- the gold standard for spaced repetition"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "target": "Mochi",
+                  "type": "wiki_link"
+                },
+                {
+                  "type": "text",
+                  "value": " -- modern alternative with Markdown support"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "target": "RemNote",
+                  "type": "wiki_link"
+                },
+                {
+                  "type": "text",
+                  "value": " -- combines note-taking and SRS"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Card Design Principles"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Make each card test exactly one thing. Avoid \"What do you know about X?\" cards."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Good Card Examples"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "What is the time complexity of binary search?"
+              }
+            ],
+            [
+              {
+                "type": "inline_math",
+                "value": "O(\\log n)"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Atomic question"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Bad Card Examples"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Cards that are too broad lead to inconsistent recall and wasted review time."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "warning",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "My Workflow"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Take notes while reading ("
+                },
+                {
+                  "target": "Progressive Summarization",
+                  "type": "wiki_link"
+                },
+                {
+                  "type": "text",
+                  "value": ")"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Extract key concepts into atomic cards"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Review daily in "
+                },
+                {
+                  "target": "Anki",
+                  "type": "wiki_link"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Monthly review of card quality"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "start": 1,
+      "type": "ordered_list"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Set up Anki sync across devices"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Create deck for current book"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Process highlighted passages"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "active"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Review and cull low-quality cards"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Ebbinghaus, H. (1885). Memory: A Contribution to Experimental Psychology."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "ebbinghaus",
+      "type": "footnote_def"
+    }
+  ]
+}

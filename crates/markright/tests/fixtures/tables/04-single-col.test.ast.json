@@ -1,0 +1,36 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Item"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Apple"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Banana"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

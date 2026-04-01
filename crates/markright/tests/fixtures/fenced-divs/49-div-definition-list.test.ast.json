@@ -1,0 +1,31 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "items": [
+            {
+              "definitions": [
+                [
+                  {
+                    "type": "text",
+                    "value": "Definition of the term."
+                  }
+                ]
+              ],
+              "term": [
+                {
+                  "type": "text",
+                  "value": "Term"
+                }
+              ]
+            }
+          ],
+          "type": "definition_list"
+        }
+      ],
+      "name": "glossary",
+      "type": "fenced_div"
+    }
+  ]
+}

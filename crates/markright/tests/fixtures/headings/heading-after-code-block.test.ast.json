@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "body": "let x = 1;",
+      "lang": "rust",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "After Code"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    }
+  ]
+}

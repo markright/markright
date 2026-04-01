@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "n> This should not be an admonition."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "children": [
+    {
+      "body": "first",
+      "type": "comment"
+    },
+    {
+      "body": "second",
+      "type": "comment"
+    }
+  ]
+}

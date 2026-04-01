@@ -1,0 +1,632 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "MarkRight",
+  "scopeName": "text.markright",
+  "fileTypes": ["right"],
+  "patterns": [
+    { "include": "#frontMatter" },
+    { "include": "#block" }
+  ],
+  "repository": {
+    "block": {
+      "patterns": [
+        { "include": "#comment" },
+        { "include": "#codeBlock" },
+        { "include": "#mathBlock" },
+        { "include": "#fencedDiv" },
+        { "include": "#heading" },
+        { "include": "#thematicBreak" },
+        { "include": "#admonition" },
+        { "include": "#blockquote" },
+        { "include": "#taskList" },
+        { "include": "#unorderedList" },
+        { "include": "#orderedList" },
+        { "include": "#table" },
+        { "include": "#footnoteDef" },
+        { "include": "#toc" },
+        { "include": "#include" },
+        { "include": "#definitionList" },
+        { "include": "#paragraph" }
+      ]
+    },
+
+    "frontMatter": {
+      "begin": "\\A---$",
+      "end": "^---$",
+      "name": "markup.raw.front-matter.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.front-matter.begin.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.front-matter.end.markright" } },
+      "patterns": [{ "include": "source.yaml" }]
+    },
+
+    "heading": {
+      "patterns": [
+        {
+          "match": "^(#{1,6})\\s+(.*?)(?:\\s+(\\{#[\\w-]+\\}))?\\s*$",
+          "name": "markup.heading.markright",
+          "captures": {
+            "1": { "name": "punctuation.definition.heading.markright" },
+            "2": { "name": "entity.name.section.markright", "patterns": [{ "include": "#inline" }] },
+            "3": { "name": "entity.other.attribute-name.id.markright" }
+          }
+        }
+      ]
+    },
+
+    "thematicBreak": {
+      "match": "^\\s*---\\s*$",
+      "name": "meta.separator.markright"
+    },
+
+    "codeBlock": {
+      "patterns": [
+        { "include": "#codeBlock-rust" },
+        { "include": "#codeBlock-javascript" },
+        { "include": "#codeBlock-typescript" },
+        { "include": "#codeBlock-python" },
+        { "include": "#codeBlock-json" },
+        { "include": "#codeBlock-html" },
+        { "include": "#codeBlock-css" },
+        { "include": "#codeBlock-yaml" },
+        { "include": "#codeBlock-toml" },
+        { "include": "#codeBlock-bash" },
+        { "include": "#codeBlock-go" },
+        { "include": "#codeBlock-c" },
+        { "include": "#codeBlock-cpp" },
+        { "include": "#codeBlock-java" },
+        { "include": "#codeBlock-ruby" },
+        { "include": "#codeBlock-lua" },
+        { "include": "#codeBlock-sql" },
+        { "include": "#codeBlock-generic" }
+      ]
+    },
+
+    "codeBlock-rust": {
+      "begin": "^(`{3,})\\s*(?i:rust|rs)\\s*$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "meta.embedded.block.rust",
+      "patterns": [{ "include": "source.rust" }]
+    },
+    "codeBlock-javascript": {
+      "begin": "^(`{3,})\\s*(?i:javascript|js)\\s*$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "meta.embedded.block.javascript",
+      "patterns": [{ "include": "source.js" }]
+    },
+    "codeBlock-typescript": {
+      "begin": "^(`{3,})\\s*(?i:typescript|ts)\\s*$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "meta.embedded.block.typescript",
+      "patterns": [{ "include": "source.ts" }]
+    },
+    "codeBlock-python": {
+      "begin": "^(`{3,})\\s*(?i:python|py)\\s*$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "meta.embedded.block.python",
+      "patterns": [{ "include": "source.python" }]
+    },
+    "codeBlock-json": {
+      "begin": "^(`{3,})\\s*(?i:json)\\s*$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "meta.embedded.block.json",
+      "patterns": [{ "include": "source.json" }]
+    },
+    "codeBlock-html": {
+      "begin": "^(`{3,})\\s*(?i:html)\\s*$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "meta.embedded.block.html",
+      "patterns": [{ "include": "text.html.basic" }]
+    },
+    "codeBlock-css": {
+      "begin": "^(`{3,})\\s*(?i:css)\\s*$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "meta.embedded.block.css",
+      "patterns": [{ "include": "source.css" }]
+    },
+    "codeBlock-yaml": {
+      "begin": "^(`{3,})\\s*(?i:yaml|yml)\\s*$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "meta.embedded.block.yaml",
+      "patterns": [{ "include": "source.yaml" }]
+    },
+    "codeBlock-toml": {
+      "begin": "^(`{3,})\\s*(?i:toml)\\s*$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "meta.embedded.block.toml",
+      "patterns": [{ "include": "source.toml" }]
+    },
+    "codeBlock-bash": {
+      "begin": "^(`{3,})\\s*(?i:bash|sh|shell|zsh)\\s*$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "meta.embedded.block.shellscript",
+      "patterns": [{ "include": "source.shell" }]
+    },
+    "codeBlock-go": {
+      "begin": "^(`{3,})\\s*(?i:go|golang)\\s*$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "meta.embedded.block.go",
+      "patterns": [{ "include": "source.go" }]
+    },
+    "codeBlock-c": {
+      "begin": "^(`{3,})\\s*(?i:c)\\s*$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "meta.embedded.block.c",
+      "patterns": [{ "include": "source.c" }]
+    },
+    "codeBlock-cpp": {
+      "begin": "^(`{3,})\\s*(?i:cpp|c\\+\\+)\\s*$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "meta.embedded.block.cpp",
+      "patterns": [{ "include": "source.cpp" }]
+    },
+    "codeBlock-java": {
+      "begin": "^(`{3,})\\s*(?i:java)\\s*$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "meta.embedded.block.java",
+      "patterns": [{ "include": "source.java" }]
+    },
+    "codeBlock-ruby": {
+      "begin": "^(`{3,})\\s*(?i:ruby|rb)\\s*$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "meta.embedded.block.ruby",
+      "patterns": [{ "include": "source.ruby" }]
+    },
+    "codeBlock-lua": {
+      "begin": "^(`{3,})\\s*(?i:lua)\\s*$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "meta.embedded.block.lua",
+      "patterns": [{ "include": "source.lua" }]
+    },
+    "codeBlock-sql": {
+      "begin": "^(`{3,})\\s*(?i:sql)\\s*$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "meta.embedded.block.sql",
+      "patterns": [{ "include": "source.sql" }]
+    },
+    "codeBlock-generic": {
+      "begin": "^(`{3,})(.*)$",
+      "end": "^\\1\\s*$",
+      "name": "markup.fenced_code.block.markright",
+      "beginCaptures": {
+        "1": { "name": "punctuation.definition.code.markright" },
+        "2": { "name": "fenced_code.block.language.markright" }
+      },
+      "endCaptures": { "0": { "name": "punctuation.definition.code.markright" } },
+      "contentName": "markup.raw.block.markright"
+    },
+
+    "mathBlock": {
+      "begin": "^\\s*\\$\\$\\s*$",
+      "end": "^\\s*\\$\\$\\s*$",
+      "name": "markup.math.block.markright",
+      "beginCaptures": { "0": { "name": "punctuation.definition.math.begin.markright" } },
+      "endCaptures": { "0": { "name": "punctuation.definition.math.end.markright" } },
+      "contentName": "string.other.math.markright",
+      "patterns": [{ "include": "text.tex.latex" }]
+    },
+
+    "fencedDiv": {
+      "begin": "^(:{3,})(.*)$",
+      "end": "^\\1\\s*$",
+      "name": "meta.div.markright",
+      "beginCaptures": {
+        "1": { "name": "punctuation.definition.div.markright" },
+        "2": { "name": "entity.name.tag.markright" }
+      },
+      "endCaptures": { "0": { "name": "punctuation.definition.div.markright" } },
+      "patterns": [{ "include": "#block" }]
+    },
+
+    "comment": {
+      "patterns": [
+        {
+          "match": "^%%(.+)%%\\s*$",
+          "name": "comment.block.markright",
+          "captures": { "1": { "name": "comment.block.markright" } }
+        },
+        {
+          "begin": "^\\s*%%\\s*$",
+          "end": "^\\s*%%\\s*$",
+          "name": "comment.block.markright"
+        }
+      ]
+    },
+
+    "blockquote": {
+      "begin": "^\\s*(>)\\s?",
+      "while": "^\\s*(>)\\s?",
+      "name": "markup.quote.markright",
+      "captures": { "1": { "name": "punctuation.definition.quote.markright" } },
+      "patterns": [{ "include": "#block" }]
+    },
+
+    "admonition": {
+      "begin": "^([NTWX!])>(-)?(\\s.*|$)",
+      "while": "^\\1>\\s?",
+      "name": "markup.quote.admonition.markright",
+      "beginCaptures": {
+        "1": { "name": "keyword.control.admonition.markright" },
+        "2": { "name": "punctuation.definition.admonition.foldable.markright" },
+        "3": { "name": "markup.quote.admonition.markright", "patterns": [{ "include": "#inline" }] }
+      },
+      "patterns": [{ "include": "#block" }]
+    },
+
+    "taskList": {
+      "begin": "^(- \\[)([ x~@\\-!>?])(\\]\\s)",
+      "while": "^(?=- \\[[ x~@\\-!>?]\\]\\s|  )",
+      "name": "markup.list.task.markright",
+      "beginCaptures": {
+        "1": { "name": "punctuation.definition.list.begin.markright" },
+        "2": { "name": "keyword.other.taskstate.markright" },
+        "3": { "name": "punctuation.definition.list.begin.markright" }
+      },
+      "patterns": [{ "include": "#inline" }]
+    },
+
+    "unorderedList": {
+      "begin": "^(-)\\s",
+      "while": "^(?=-\\s|  )",
+      "name": "markup.list.unnumbered.markright",
+      "beginCaptures": {
+        "1": { "name": "punctuation.definition.list.begin.markright" }
+      },
+      "patterns": [{ "include": "#inline" }]
+    },
+
+    "orderedList": {
+      "begin": "^(\\d+|#)(\\.\\s)",
+      "while": "^(?=(?:\\d+|#)\\.\\s|  )",
+      "name": "markup.list.numbered.markright",
+      "beginCaptures": {
+        "1": { "name": "punctuation.definition.list.begin.markright" },
+        "2": { "name": "punctuation.definition.list.begin.markright" }
+      },
+      "patterns": [{ "include": "#inline" }]
+    },
+
+    "table": {
+      "begin": "^(\\|)",
+      "while": "^(?:\\||Table:\\s)",
+      "name": "markup.other.table.markright",
+      "beginCaptures": { "1": { "name": "punctuation.definition.table.markright" } },
+      "patterns": [
+        {
+          "match": "\\|",
+          "name": "punctuation.definition.table.markright"
+        },
+        {
+          "match": "^Table:\\s+(.*)",
+          "captures": { "1": { "name": "entity.name.tag.caption.markright", "patterns": [{ "include": "#inline" }] } }
+        },
+        {
+          "match": ":?-+:?",
+          "name": "punctuation.separator.table.markright"
+        },
+        { "include": "#inline" }
+      ]
+    },
+
+    "footnoteDef": {
+      "begin": "^(\\[\\^)([\\w-]+)(\\]:)\\s?(.*)",
+      "while": "^    ",
+      "name": "meta.footnote.definition.markright",
+      "beginCaptures": {
+        "1": { "name": "punctuation.definition.footnote.markright" },
+        "2": { "name": "entity.name.tag.footnote.markright" },
+        "3": { "name": "punctuation.definition.footnote.markright" },
+        "4": { "name": "meta.footnote.definition.markright", "patterns": [{ "include": "#inline" }] }
+      },
+      "patterns": [{ "include": "#inline" }]
+    },
+
+    "toc": {
+      "match": "^\\s*\\[TOC(?::([1-6])-([1-6]))?\\]\\s*$",
+      "name": "meta.toc.markright",
+      "captures": {
+        "1": { "name": "constant.numeric.markright" },
+        "2": { "name": "constant.numeric.markright" }
+      }
+    },
+
+    "include": {
+      "match": "^\\s*\\{\\{(.+?)(?:#(.+?))?\\}\\}\\s*$",
+      "name": "meta.include.markright",
+      "captures": {
+        "1": { "name": "string.other.link.markright" },
+        "2": { "name": "entity.other.attribute-name.fragment.markright" }
+      }
+    },
+
+    "definitionList": {
+      "match": "^(:)\\s+(.*)",
+      "captures": {
+        "1": { "name": "punctuation.definition.list.markright" },
+        "2": { "name": "markup.list.definition.markright", "patterns": [{ "include": "#inline" }] }
+      }
+    },
+
+    "paragraph": {
+      "match": ".+",
+      "name": "meta.paragraph.markright",
+      "captures": {
+        "0": { "patterns": [{ "include": "#inline" }] }
+      }
+    },
+
+    "inline": {
+      "patterns": [
+        { "include": "#escape" },
+        { "include": "#inlineCode" },
+        { "include": "#inlineMath" },
+        { "include": "#boldItalic" },
+        { "include": "#bold" },
+        { "include": "#italic" },
+        { "include": "#strikethrough" },
+        { "include": "#highlight" },
+        { "include": "#wikiEmbed" },
+        { "include": "#wikiLink" },
+        { "include": "#image" },
+        { "include": "#inlineFootnote" },
+        { "include": "#footnoteRef" },
+        { "include": "#citation" },
+        { "include": "#link" },
+        { "include": "#bracketedSpan" },
+        { "include": "#superscript" },
+        { "include": "#subscript" },
+        { "include": "#autolink" }
+      ]
+    },
+
+    "escape": {
+      "match": "\\\\.",
+      "name": "constant.character.escape.markright"
+    },
+
+    "inlineCode": {
+      "match": "(`+)(.+?)(\\1)",
+      "name": "markup.inline.raw.string.markright",
+      "captures": {
+        "1": { "name": "punctuation.definition.raw.begin.markright" },
+        "2": { "name": "markup.inline.raw.string.markright" },
+        "3": { "name": "punctuation.definition.raw.end.markright" }
+      }
+    },
+
+    "inlineMath": {
+      "match": "(\\$)([^$\\n]+?)(\\$)",
+      "name": "markup.math.inline.markright",
+      "captures": {
+        "1": { "name": "punctuation.definition.math.begin.markright" },
+        "2": { "name": "string.other.math.markright" },
+        "3": { "name": "punctuation.definition.math.end.markright" }
+      }
+    },
+
+    "boldItalic": {
+      "begin": "(\\*{3})(?=\\S)",
+      "end": "(?<=\\S)(\\*{3})",
+      "name": "markup.bold.markright markup.italic.markright",
+      "beginCaptures": { "1": { "name": "punctuation.definition.bold.markright" } },
+      "endCaptures": { "1": { "name": "punctuation.definition.bold.markright" } },
+      "patterns": [{ "include": "#inline" }]
+    },
+
+    "bold": {
+      "begin": "(\\*{2})(?=\\S)",
+      "end": "(?<=\\S)(\\*{2})",
+      "name": "markup.bold.markright",
+      "beginCaptures": { "1": { "name": "punctuation.definition.bold.markright" } },
+      "endCaptures": { "1": { "name": "punctuation.definition.bold.markright" } },
+      "patterns": [{ "include": "#inline" }]
+    },
+
+    "italic": {
+      "begin": "(\\*)(?=[^\\s*])",
+      "end": "(?<=[^\\s*])(\\*)",
+      "name": "markup.italic.markright",
+      "beginCaptures": { "1": { "name": "punctuation.definition.italic.markright" } },
+      "endCaptures": { "1": { "name": "punctuation.definition.italic.markright" } },
+      "patterns": [{ "include": "#inline" }]
+    },
+
+    "strikethrough": {
+      "begin": "(~~)(?=\\S)",
+      "end": "(?<=\\S)(~~)",
+      "name": "markup.strikethrough.markright",
+      "beginCaptures": { "1": { "name": "punctuation.definition.strikethrough.markright" } },
+      "endCaptures": { "1": { "name": "punctuation.definition.strikethrough.markright" } },
+      "patterns": [{ "include": "#inline" }]
+    },
+
+    "highlight": {
+      "begin": "(==)(?=\\S)",
+      "end": "(?<=\\S)(==)",
+      "name": "markup.other.highlight.markright",
+      "beginCaptures": { "1": { "name": "punctuation.definition.highlight.markright" } },
+      "endCaptures": { "1": { "name": "punctuation.definition.highlight.markright" } },
+      "patterns": [{ "include": "#inline" }]
+    },
+
+    "superscript": {
+      "match": "(\\^)([^\\s^]+?)(\\^)",
+      "name": "markup.other.superscript.markright",
+      "captures": {
+        "1": { "name": "punctuation.definition.superscript.markright" },
+        "2": { "name": "markup.other.superscript.markright" },
+        "3": { "name": "punctuation.definition.superscript.markright" }
+      }
+    },
+
+    "subscript": {
+      "match": "(~)([^\\s~]+?)(~)",
+      "name": "markup.other.subscript.markright",
+      "captures": {
+        "1": { "name": "punctuation.definition.subscript.markright" },
+        "2": { "name": "markup.other.subscript.markright" },
+        "3": { "name": "punctuation.definition.subscript.markright" }
+      }
+    },
+
+    "link": {
+      "match": "(\\[)(.*?)(\\])(\\()(.*?)(?:\\s+\"(.*?)\")?(\\))",
+      "name": "meta.link.inline.markright",
+      "captures": {
+        "1": { "name": "punctuation.definition.link.markright" },
+        "2": { "name": "string.other.link.title.markright", "patterns": [{ "include": "#inline" }] },
+        "3": { "name": "punctuation.definition.link.markright" },
+        "4": { "name": "punctuation.definition.link.markright" },
+        "5": { "name": "markup.underline.link.markright" },
+        "6": { "name": "string.quoted.double.link.title.markright" },
+        "7": { "name": "punctuation.definition.link.markright" }
+      }
+    },
+
+    "image": {
+      "match": "(!)(?=\\[)(\\[)(.*?)(\\])(\\()(.*?)(?:\\s+\"(.*?)\")?(\\))(?:(\\{)(.*?)(\\}))?",
+      "name": "meta.image.inline.markright",
+      "captures": {
+        "1": { "name": "punctuation.definition.image.markright" },
+        "2": { "name": "punctuation.definition.image.markright" },
+        "3": { "name": "string.other.link.description.markright" },
+        "4": { "name": "punctuation.definition.image.markright" },
+        "5": { "name": "punctuation.definition.image.markright" },
+        "6": { "name": "markup.underline.link.image.markright" },
+        "7": { "name": "string.quoted.double.image.title.markright" },
+        "8": { "name": "punctuation.definition.image.markright" },
+        "9": { "name": "punctuation.definition.attributes.markright" },
+        "10": { "name": "entity.other.attribute-name.markright" },
+        "11": { "name": "punctuation.definition.attributes.markright" }
+      }
+    },
+
+    "wikiLink": {
+      "match": "(\\[\\[)([^\\]|#]+?)(?:(#)([^\\]|]+?))?(?:(\\|)([^\\]]+?))?(\\]\\])",
+      "name": "meta.link.wiki.markright",
+      "captures": {
+        "1": { "name": "punctuation.definition.wiki.markright" },
+        "2": { "name": "markup.underline.link.markright" },
+        "3": { "name": "punctuation.definition.fragment.markright" },
+        "4": { "name": "entity.other.attribute-name.fragment.markright" },
+        "5": { "name": "punctuation.separator.wiki.markright" },
+        "6": { "name": "string.other.link.title.markright" },
+        "7": { "name": "punctuation.definition.wiki.markright" }
+      }
+    },
+
+    "wikiEmbed": {
+      "match": "(!\\[\\[)([^\\]|#]+?)(?:(#)([^\\]|]+?))?(?:(\\|)([^\\]]+?))?(\\]\\])",
+      "name": "meta.image.wiki.markright",
+      "captures": {
+        "1": { "name": "punctuation.definition.wiki.markright" },
+        "2": { "name": "markup.underline.link.markright" },
+        "3": { "name": "punctuation.definition.fragment.markright" },
+        "4": { "name": "entity.other.attribute-name.fragment.markright" },
+        "5": { "name": "punctuation.separator.wiki.markright" },
+        "6": { "name": "string.other.link.description.markright" },
+        "7": { "name": "punctuation.definition.wiki.markright" }
+      }
+    },
+
+    "footnoteRef": {
+      "match": "(\\[\\^)([\\w-]+?)(?:(>)(.*?))?(\\])",
+      "name": "meta.footnote.reference.markright",
+      "captures": {
+        "1": { "name": "punctuation.definition.footnote.markright" },
+        "2": { "name": "entity.name.tag.footnote.markright" },
+        "3": { "name": "punctuation.separator.footnote.markright" },
+        "4": { "name": "string.other.link.title.markright", "patterns": [{ "include": "#inline" }] },
+        "5": { "name": "punctuation.definition.footnote.markright" }
+      }
+    },
+
+    "inlineFootnote": {
+      "match": "(\\^\\[)(.*?)(\\])",
+      "name": "meta.footnote.inline.markright",
+      "captures": {
+        "1": { "name": "punctuation.definition.footnote.markright" },
+        "2": { "name": "meta.footnote.inline.markright", "patterns": [{ "include": "#inline" }] },
+        "3": { "name": "punctuation.definition.footnote.markright" }
+      }
+    },
+
+    "citation": {
+      "match": "(\\[@)(.*?)(\\])",
+      "name": "meta.citation.markright",
+      "captures": {
+        "1": { "name": "punctuation.definition.citation.markright" },
+        "2": { "name": "entity.name.tag.citation.markright" },
+        "3": { "name": "punctuation.definition.citation.markright" }
+      }
+    },
+
+    "bracketedSpan": {
+      "match": "(\\[)(.*?)(\\])(\\{)(.*?)(\\})",
+      "name": "meta.span.markright",
+      "captures": {
+        "1": { "name": "punctuation.definition.span.markright" },
+        "2": { "name": "string.other.link.title.markright", "patterns": [{ "include": "#inline" }] },
+        "3": { "name": "punctuation.definition.span.markright" },
+        "4": { "name": "punctuation.definition.attributes.markright" },
+        "5": { "name": "entity.other.attribute-name.markright" },
+        "6": { "name": "punctuation.definition.attributes.markright" }
+      }
+    },
+
+    "autolink": {
+      "match": "https?://[^\\s)\\]>]+",
+      "name": "markup.underline.link.markright"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Content without closing fence."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "open",
+      "type": "fenced_div"
+    }
+  ]
+}

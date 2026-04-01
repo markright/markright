@@ -1,0 +1,5 @@
+W> Watch out for this pattern:
+W>
+W> ```
+W> bad_code()
+W> ```

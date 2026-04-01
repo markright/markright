@@ -1,0 +1,36 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "First"
+        }
+      ],
+      "id": "first",
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Second paragraph."
+        }
+      ],
+      "id": "second",
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Third"
+        }
+      ],
+      "id": "third",
+      "level": 2,
+      "type": "heading"
+    }
+  ]
+}

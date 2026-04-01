@@ -1,0 +1,66 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "bold"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": " and "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "italic"
+                    }
+                  ],
+                  "type": "italic"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "inline_code",
+                  "value": "code"
+                },
+                {
+                  "type": "text",
+                  "value": " and "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "strike"
+                    }
+                  ],
+                  "type": "strikethrough"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    }
+  ]
+}

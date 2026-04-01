@@ -1,0 +1,71 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Outer text."
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Inner Heading"
+                }
+              ],
+              "level": 1,
+              "type": "heading"
+            },
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Inner paragraph."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "items": [
+                {
+                  "children": [
+                    {
+                      "content": [
+                        {
+                          "type": "text",
+                          "value": "Inner list item"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  ]
+                }
+              ],
+              "type": "unordered_list"
+            }
+          ],
+          "name": "inner",
+          "type": "fenced_div"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "More outer text."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "outer",
+      "type": "fenced_div"
+    }
+  ]
+}

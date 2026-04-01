@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "# This is a comment\n## Not a heading\nprint('hello')",
+      "lang": "python",
+      "type": "code_block"
+    }
+  ]
+}

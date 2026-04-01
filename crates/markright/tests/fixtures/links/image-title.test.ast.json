@@ -1,0 +1,15 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "alt": "a cute cat",
+          "title": "Cat Photo",
+          "type": "image",
+          "url": "https://example.com/cat.png"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

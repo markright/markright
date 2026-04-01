@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "word "
+        },
+        {
+          "type": "text",
+          "value": "*not closed here"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

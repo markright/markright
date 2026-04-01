@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "body": "a = 1",
+      "lang": "python",
+      "type": "code_block"
+    },
+    {
+      "body": "let b = 2;",
+      "lang": "javascript",
+      "type": "code_block"
+    }
+  ]
+}

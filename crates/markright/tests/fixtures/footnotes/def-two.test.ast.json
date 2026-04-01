@@ -1,0 +1,34 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "First definition."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "1",
+      "type": "footnote_def"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Second definition."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "2",
+      "type": "footnote_def"
+    }
+  ]
+}

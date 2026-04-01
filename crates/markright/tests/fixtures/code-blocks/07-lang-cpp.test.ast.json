@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "#include <iostream>\n\nint main() {\n    std::cout << \"hello\" << std::endl;\n    return 0;\n}",
+      "lang": "cpp",
+      "type": "code_block"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "right"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Amount"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "100"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

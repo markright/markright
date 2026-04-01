@@ -1,0 +1,18 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "inline footnote"
+            }
+          ],
+          "type": "inline_footnote"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

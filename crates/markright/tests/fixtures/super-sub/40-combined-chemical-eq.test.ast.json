@@ -1,0 +1,39 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "H"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "2"
+            }
+          ],
+          "type": "subscript"
+        },
+        {
+          "type": "text",
+          "value": "SO"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "4"
+            }
+          ],
+          "type": "subscript"
+        },
+        {
+          "type": "text",
+          "value": " dissociates"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

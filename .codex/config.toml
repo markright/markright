@@ -1,0 +1,19 @@
+[mcp_servers.moon]
+command = "moon"
+args = [ "mcp" ]
+
+[mcp_servers.context7]
+type = "http"
+url = "https://mcp.context7.com/mcp/oauth"
+
+[mcp_servers.grep_app]
+type = "http"
+url = "https://mcp.grep.app"
+
+[mcp_servers.websearch]
+type = "http"
+url = "https://mcp.exa.ai/mcp"
+
+[mcp_servers.search-mcp]
+type = "http"
+url = "https://search-mcp.parallel.ai/mcp"

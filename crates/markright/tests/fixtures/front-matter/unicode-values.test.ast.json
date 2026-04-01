@@ -1,0 +1,16 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Content follows."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: Uber die Grenzen\nauthor: Rene Descartes\nlang: ja\ndescription: This contains unicode characters"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "A quoted explanation."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "type": "blockquote"
+        },
+        {
+          "body": "func main() {}",
+          "lang": "go",
+          "type": "code_block"
+        }
+      ],
+      "name": "example",
+      "type": "fenced_div"
+    }
+  ]
+}

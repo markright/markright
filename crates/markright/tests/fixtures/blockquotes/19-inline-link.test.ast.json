@@ -1,0 +1,28 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Visit "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "example"
+                }
+              ],
+              "type": "link",
+              "url": "https://example.com"
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

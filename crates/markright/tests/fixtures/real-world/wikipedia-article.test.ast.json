@@ -1,0 +1,525 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Turing Machine"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "A "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "Turing machine"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " is a mathematical model of computation describing an abstract machine"
+        },
+        {
+          "label": "turing1936",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": ". It manipulates symbols on a strip of tape according to a table of rules."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "max_level": 4,
+      "min_level": 2,
+      "type": "toc"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "History"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The concept was introduced by "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "Alan Turing"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": " in 1936 in his paper \"On Computable Numbers\""
+        },
+        {
+          "label": "turing1936",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": ". The machine was designed to formalize the concept of an algorithm."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Despite its simplicity, a Turing machine can simulate any computer algorithm, no matter how complex. This is the basis of the "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "Church-Turing thesis"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "label": "church",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Formal Definition"
+        }
+      ],
+      "id": "formal-def",
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "A Turing machine is a 7-tuple "
+        },
+        {
+          "type": "inline_math",
+          "value": "M = (Q, \\Sigma, \\Gamma, \\delta, q_0, q_{accept}, q_{reject})"
+        },
+        {
+          "type": "text",
+          "value": " where:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "inline_math",
+                  "value": "Q"
+                },
+                {
+                  "type": "text",
+                  "value": " is a finite set of states"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "inline_math",
+                  "value": "\\Sigma"
+                },
+                {
+                  "type": "text",
+                  "value": " is the input alphabet"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "inline_math",
+                  "value": "\\Gamma"
+                },
+                {
+                  "type": "text",
+                  "value": " is the tape alphabet"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "inline_math",
+                  "value": "\\delta"
+                },
+                {
+                  "type": "text",
+                  "value": " is the transition function"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "inline_math",
+                  "value": "q_0"
+                },
+                {
+                  "type": "text",
+                  "value": " is the start state"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "inline_math",
+                  "value": "q_{accept}"
+                },
+                {
+                  "type": "text",
+                  "value": " is the accept state"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "inline_math",
+                  "value": "q_{reject}"
+                },
+                {
+                  "type": "text",
+                  "value": " is the reject state"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Variants"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Multi-tape Turing Machine"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "A multi-tape machine uses "
+        },
+        {
+          "type": "inline_math",
+          "value": "k"
+        },
+        {
+          "type": "text",
+          "value": " tapes, each with its own head. It has been proven that any multi-tape machine can be simulated by a single-tape machine."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Non-deterministic Turing Machine"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "A non-deterministic Turing machine (NDTM) can have multiple possible transitions for a given state-symbol pair."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Significance"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "none",
+        "center",
+        "center"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Property"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Turing Machine"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Finite Automaton"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Memory"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Infinite tape"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "No memory"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Power"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Universal"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Limited"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Decidability"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Halting problem"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Always halts"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "See Also"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Computability Theory"
+                    }
+                  ],
+                  "type": "link",
+                  "url": "https://en.wikipedia.org/wiki/Computability_theory"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Lambda Calculus"
+                    }
+                  ],
+                  "type": "link",
+                  "url": "https://en.wikipedia.org/wiki/Lambda_calculus"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Church-Turing Thesis"
+                    }
+                  ],
+                  "type": "link",
+                  "url": "https://en.wikipedia.org/wiki/Church-Turing_thesis"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Turing, A.M. (1936). On Computable Numbers, with an Application to the Entscheidungsproblem."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "turing1936",
+      "type": "footnote_def"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Church, A. (1936). An Unsolvable Problem of Elementary Number Theory."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "church",
+      "type": "footnote_def"
+    }
+  ]
+}

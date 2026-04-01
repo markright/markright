@@ -1,0 +1,27 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Click "
+        },
+        {
+          "attrs": ".ui",
+          "children": [
+            {
+              "type": "text",
+              "value": "OK"
+            }
+          ],
+          "type": "bracketed_span"
+        },
+        {
+          "type": "text",
+          "value": " to continue."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

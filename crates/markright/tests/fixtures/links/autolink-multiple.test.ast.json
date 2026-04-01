@@ -1,0 +1,41 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Check "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "https://one.com"
+            }
+          ],
+          "type": "link",
+          "url": "https://one.com"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "https://two.com"
+            }
+          ],
+          "type": "link",
+          "url": "https://two.com"
+        },
+        {
+          "type": "text",
+          "value": " today."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

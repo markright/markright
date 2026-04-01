@@ -1,0 +1,3 @@
+[workspace]
+resolver = "3"
+members = ["crates/markright", "crates/markright-wasm", "crates/markright-mcp", "crates/markright-lsp"]

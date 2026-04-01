@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "highlighted"
+            }
+          ],
+          "type": "highlight"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    }
+  ]
+}

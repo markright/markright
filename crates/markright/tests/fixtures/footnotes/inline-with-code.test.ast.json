@@ -1,0 +1,30 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The function"
+        },
+        {
+          "children": [
+            {
+              "type": "inline_code",
+              "value": "map"
+            },
+            {
+              "type": "text",
+              "value": " is preferred"
+            }
+          ],
+          "type": "inline_footnote"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

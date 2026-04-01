@@ -1,0 +1,47 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "caption": [
+        {
+          "type": "text",
+          "value": "Ergebnisse der Analyse"
+        }
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Name"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Value"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "alpha"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "1"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

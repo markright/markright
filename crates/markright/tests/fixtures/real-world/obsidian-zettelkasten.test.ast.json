@@ -1,0 +1,279 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Cognitive Load Theory"
+        }
+      ],
+      "id": "cognitive-load",
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Cognitive load theory, developed by John Sweller"
+        },
+        {
+          "label": "sweller1988",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": ", describes the mental effort required to process information."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Types of Cognitive Load"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "The inherent difficulty of the material itself"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Intrinsic load"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Load caused by poor instructional design"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Extraneous load"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Load devoted to building mental schemas"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Germane load"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Connection to Software Design"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Software complexity is directly related to cognitive load"
+        },
+        {
+          "label": "complexity",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": ". Clean code practices reduce "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "extraneous load"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " by making code easier to parse visually."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "See "
+        },
+        {
+          "target": "Clean Code Principles",
+          "type": "wiki_link"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "target": "Software Complexity Metrics",
+          "type": "wiki_link"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "This connects to the idea of "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "chunking"
+            }
+          ],
+          "type": "highlight"
+        },
+        {
+          "label": "miller1956",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": " -- grouping information into meaningful units reduces working memory demands."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Implications for API Design"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Good API design minimizes the cognitive load on the consumer. Every unnecessary option, parameter, or configuration point adds to the burden."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "This principle applies equally to CLI tools and library interfaces."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Sweller, J. (1988). Cognitive load during problem solving."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "sweller1988",
+      "type": "footnote_def"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "See the discussion in "
+            },
+            {
+              "target": "Accidental vs Essential Complexity",
+              "type": "wiki_link"
+            },
+            {
+              "type": "text",
+              "value": "."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "complexity",
+      "type": "footnote_def"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Miller, G.A. (1956). The magical number seven, plus or minus two."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "miller1956",
+      "type": "footnote_def"
+    }
+  ]
+}

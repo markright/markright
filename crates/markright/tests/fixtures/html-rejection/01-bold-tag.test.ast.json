@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "<b>bold</b>"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

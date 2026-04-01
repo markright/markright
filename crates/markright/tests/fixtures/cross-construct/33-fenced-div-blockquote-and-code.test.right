@@ -1,0 +1,7 @@
+:::example
+> A quoted explanation.
+
+```go
+func main() {}
+```
+:::

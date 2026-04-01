@@ -1,0 +1,33 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "*"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "type": "text",
+          "value": "#"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "type": "text",
+          "value": "$"
+        },
+        {
+          "type": "text",
+          "value": " together"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

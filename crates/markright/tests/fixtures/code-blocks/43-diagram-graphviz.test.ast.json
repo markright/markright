@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "digraph G {\n    rankdir=LR;\n    a -> b;\n}",
+      "lang": "graphviz",
+      "type": "diagram_block"
+    }
+  ]
+}

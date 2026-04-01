@@ -1,0 +1,69 @@
+# Design System: Button Component
+
+## Overview
+
+Buttons are used to trigger actions. They communicate what will happen when the user interacts with them.
+
+## Variants
+
+| Variant | Usage | Example |
+| --- | --- | --- |
+| Primary | Main actions | Submit, Save |
+| Secondary | Alternative actions | Cancel, Back |
+| Destructive | Dangerous actions | Delete, Remove |
+| Ghost | Subtle actions | Learn more, View all |
+
+## Sizes
+
+Small
+: Height 32px, font size 14px, padding 8px 12px
+
+Medium
+: Height 40px, font size 16px, padding 10px 16px
+
+Large
+: Height 48px, font size 18px, padding 12px 24px
+
+## States
+
+- **Default**: The resting state
+- **Hover**: When the cursor is over the button
+- **Active**: While being pressed
+- **Focused**: When navigated to via keyboard
+- **Disabled**: When the action is unavailable
+- **Loading**: While an async action is in progress
+
+## Usage Guidelines
+
+N> Always use a verb or verb phrase for button labels. "Save changes" is better than "OK".
+
+W> Avoid using more than one primary button per section. Too many calls to action confuse users.
+
+!> Destructive buttons must always include a confirmation dialog.
+
+## Code Example
+
+```tsx
+import { Button } from "@/components/ui/button"
+
+function SaveForm() {
+  return (
+    <div>
+      <Button variant="primary" size="md">
+        Save Changes
+      </Button>
+      <Button variant="secondary" size="md">
+        Cancel
+      </Button>
+    </div>
+  )
+}
+```
+
+## Accessibility
+
+- [ ] All buttons must have visible focus indicators
+- [ ] Icon-only buttons must have an `aria-label`
+- [ ] Loading buttons must announce state to screen readers
+- [x] Color contrast meets WCAG AA requirements
+- [x] Touch targets are at least 44x44px

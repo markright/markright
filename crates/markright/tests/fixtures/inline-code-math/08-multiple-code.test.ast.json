@@ -1,0 +1,29 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_code",
+          "value": "a"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "type": "inline_code",
+          "value": "b"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "type": "inline_code",
+          "value": "c"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

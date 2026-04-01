@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\int_0^\\infty e^{-x} \\, dx = 1",
+      "type": "math_block"
+    }
+  ]
+}

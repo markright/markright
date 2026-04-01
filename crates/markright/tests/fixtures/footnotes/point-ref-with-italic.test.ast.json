@@ -1,0 +1,34 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "key"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": " finding"
+        },
+        {
+          "label": "1",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

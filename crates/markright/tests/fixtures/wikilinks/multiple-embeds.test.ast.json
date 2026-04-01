@@ -1,0 +1,21 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "target": "photo.png",
+          "type": "wiki_embed"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "target": "video.mp4",
+          "type": "wiki_embed"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

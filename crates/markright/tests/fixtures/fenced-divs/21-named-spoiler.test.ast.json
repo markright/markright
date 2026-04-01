@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The butler did it."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "spoiler",
+      "type": "fenced_div"
+    }
+  ]
+}

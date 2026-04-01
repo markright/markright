@@ -1,0 +1,27 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "one"
+            }
+          ],
+          "type": "strikethrough"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "two"
+            }
+          ],
+          "type": "strikethrough"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

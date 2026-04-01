@@ -1,0 +1,40 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "First content."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "first",
+          "type": "fenced_div"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Second content."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "second",
+          "type": "fenced_div"
+        }
+      ],
+      "name": "container",
+      "type": "fenced_div"
+    }
+  ]
+}

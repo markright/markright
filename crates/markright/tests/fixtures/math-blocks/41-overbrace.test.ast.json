@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\overbrace{a + b + c}^{n}",
+      "type": "math_block"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Here is some code:"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "body": "fn main() {\n    println!(\"hello\");\n}",
+          "lang": "rust",
+          "type": "code_block"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    }
+  ]
+}

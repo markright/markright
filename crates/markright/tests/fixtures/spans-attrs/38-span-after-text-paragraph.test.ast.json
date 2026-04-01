@@ -1,0 +1,27 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "This paragraph has "
+        },
+        {
+          "attrs": ".highlight",
+          "children": [
+            {
+              "type": "text",
+              "value": "important"
+            }
+          ],
+          "type": "bracketed_span"
+        },
+        {
+          "type": "text",
+          "value": " information."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

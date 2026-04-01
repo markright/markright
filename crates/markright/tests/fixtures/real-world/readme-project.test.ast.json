@@ -1,0 +1,453 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "markright"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "A markup language that distills the best from 44 Markdown flavors into one unambiguous, formally specified language."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "alt": "MarkRight Logo",
+          "title": "MarkRight",
+          "type": "image",
+          "url": "https://markright.dev/logo.png"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Features"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Unambiguous syntax"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": " with no edge cases"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "8 task states"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": " for comprehensive project tracking"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Admonitions"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": " with prefix syntax for notes, warnings, and tips"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Math support"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": " with "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "$"
+                },
+                {
+                  "type": "text",
+                  "value": " delimiters for inline and "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "$$"
+                },
+                {
+                  "type": "text",
+                  "value": " for block math"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "WikiLinks"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": " for knowledge base applications"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Fenced divs"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": " for generic containers"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Zero inline HTML"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Installation"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "body": "cargo install markright",
+      "lang": "bash",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Or build from source:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "git clone https://github.com/example/markright.git\ncd markright\ncargo build --release",
+      "lang": "bash",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Quick Start"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "body": "# Hello World\n\nThis is a **MarkRight** document with *inline formatting*.\n\n- [x] Write the parser\n- [~] Build the website\n- [ ] Publish to crates.io",
+      "lang": "markright",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Usage"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Command"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Description"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "inline_code",
+              "value": "markright parse <file>"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Parse a file and output AST as JSON"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "inline_code",
+              "value": "markright fmt <file>"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Format a MarkRight file"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "inline_code",
+              "value": "markright check <file>"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Validate a MarkRight file"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Documentation"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Specification"
+                    }
+                  ],
+                  "type": "link",
+                  "url": "https://markright.dev/spec"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "API Reference"
+                    }
+                  ],
+                  "type": "link",
+                  "url": "https://docs.rs/markright"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Examples"
+                    }
+                  ],
+                  "type": "link",
+                  "url": "https://markright.dev/examples"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Contributing"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "See "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "CONTRIBUTING.md"
+            }
+          ],
+          "type": "link",
+          "url": "CONTRIBUTING.md"
+        },
+        {
+          "type": "text",
+          "value": " for guidelines."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "License"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "MIT"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

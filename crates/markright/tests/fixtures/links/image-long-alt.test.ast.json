@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "alt": "This is a very long alt text describing the image in detail",
+          "type": "image",
+          "url": "https://example.com/img.png"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

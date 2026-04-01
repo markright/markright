@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_math",
+          "value": "\\mathbf{A} \\cdot \\mathbf{x} = \\mathbf{b}"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

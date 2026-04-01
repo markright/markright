@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\prod_{k=1}^{n} k = n!",
+      "type": "math_block"
+    }
+  ]
+}

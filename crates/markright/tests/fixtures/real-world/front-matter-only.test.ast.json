@@ -1,0 +1,26 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Minimal Document"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "This document tests that front matter is correctly parsed alongside minimal body content."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: Minimal Document\nauthor: Test Author\ndate: 2026-03-12\nsyntax: markright\ntags: test, minimal"
+  }
+}

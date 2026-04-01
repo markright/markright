@@ -1,0 +1,37 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "A collection of distinct objects."
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "A group of games in tennis."
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "To put something in place."
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Set"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    }
+  ]
+}

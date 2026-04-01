@@ -1,0 +1,31 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Before the break."
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "type": "thematic_break"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "After the break."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "section",
+      "type": "fenced_div"
+    }
+  ]
+}

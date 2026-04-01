@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\{x \\in \\mathbb{R} \\mid x > 0\\}",
+      "type": "math_block"
+    }
+  ]
+}

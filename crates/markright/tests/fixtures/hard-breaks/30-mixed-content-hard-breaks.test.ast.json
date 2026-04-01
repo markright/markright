@@ -1,0 +1,42 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Start "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "bold"
+            },
+            {
+              "type": "text",
+              "value": " "
+            },
+            {
+              "type": "text",
+              "value": "still bold"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " end."
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "New line here."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

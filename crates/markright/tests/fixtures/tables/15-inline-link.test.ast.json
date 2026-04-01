@@ -1,0 +1,34 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Resource"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Google"
+                }
+              ],
+              "type": "link",
+              "url": "https://google.com"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

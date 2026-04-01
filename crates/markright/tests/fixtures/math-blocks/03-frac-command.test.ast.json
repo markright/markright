@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\frac{a}{b}",
+      "type": "math_block"
+    }
+  ]
+}

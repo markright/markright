@@ -1,0 +1,45 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "This has "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "bold"
+                }
+              ],
+              "type": "bold"
+            },
+            {
+              "type": "text",
+              "value": " and "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "italic"
+                }
+              ],
+              "type": "italic"
+            },
+            {
+              "type": "text",
+              "value": "."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "note",
+      "type": "footnote_def"
+    }
+  ]
+}

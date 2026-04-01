@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Code "
+        },
+        {
+          "type": "inline_code",
+          "value": "hello"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "next line."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

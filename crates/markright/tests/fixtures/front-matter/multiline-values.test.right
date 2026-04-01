@@ -1,0 +1,9 @@
+---
+title: Multiline Test
+description: >
+  This is a long description
+  that spans multiple lines
+  in YAML flow style.
+---
+
+Body text.

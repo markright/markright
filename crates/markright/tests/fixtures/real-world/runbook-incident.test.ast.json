@@ -1,0 +1,446 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Incident Response Runbook: Database Outage"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Severity Classification"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "center",
+        "none",
+        "right"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Severity"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Definition"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Response Time"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "P1"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Complete service outage"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "5 min"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "P2"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Degraded performance for all users"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "15 min"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "P3"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Partial outage affecting some users"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "30 min"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "P4"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Minor issue, no user impact"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "4 hours"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Immediate Actions"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "If the database is completely unresponsive, escalate to P1 immediately."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "important",
+      "type": "admonition"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Verify the outage is real (not a monitoring false positive)"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Check the database status dashboard"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Notify the on-call DBA"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "start": 1,
+      "type": "ordered_list"
+    },
+    {
+      "body": "# Check database connectivity\npg_isready -h db.internal.example.com -p 5432\n\n# Check replication lag\npsql -c \"SELECT now() - pg_last_xact_replay_timestamp() AS lag;\"",
+      "lang": "bash",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Diagnosis"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Connection Pool Exhaustion"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "body": "# Check active connections\npsql -c \"SELECT count(*) FROM pg_stat_activity;\"\n\n# Find long-running queries\npsql -c \"SELECT pid, now() - pg_stat_activity.query_start AS duration, query\nFROM pg_stat_activity\nWHERE state != 'idle'\nORDER BY duration DESC\nLIMIT 10;\"",
+      "lang": "bash",
+      "type": "code_block"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Do not kill connections without understanding which service owns them."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "warning",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Disk Space"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "body": "# Check disk usage\ndf -h /var/lib/postgresql/\n\n# Find large tables\npsql -c \"SELECT relname, pg_size_pretty(pg_total_relation_size(relid))\nFROM pg_catalog.pg_statio_user_tables\nORDER BY pg_total_relation_size(relid) DESC\nLIMIT 10;\"",
+      "lang": "bash",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Replication Issues"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "body": "# Check replication status\npsql -c \"SELECT * FROM pg_stat_replication;\"",
+      "lang": "bash",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Recovery Steps"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Verify the issue"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Identify root cause"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Apply fix"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Verify recovery"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Update status page"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Write post-mortem"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Restoring from backup is a last resort. It results in data loss since the last backup."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "caution",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Post-Incident"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "A post-mortem document must be completed within 48 hours of incident resolution."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Use the post-mortem template at "
+            },
+            {
+              "type": "inline_code",
+              "value": "docs/templates/post-mortem.md"
+            },
+            {
+              "type": "text",
+              "value": "."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "tip",
+      "type": "admonition"
+    }
+  ]
+}

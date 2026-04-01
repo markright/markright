@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "#include <stdio.h>\n\nint main() {\n    printf(\"hello\\n\");\n    return 0;\n}",
+      "lang": "c",
+      "type": "code_block"
+    }
+  ]
+}

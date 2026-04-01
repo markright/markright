@@ -1,0 +1,22 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "emphasis"
+            }
+          ],
+          "type": "bold_italic"
+        },
+        {
+          "type": "text",
+          "value": " at start"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

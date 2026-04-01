@@ -1,0 +1,33 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "target": "A",
+          "type": "wiki_link"
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "target": "B",
+          "type": "wiki_link"
+        },
+        {
+          "type": "text",
+          "value": ", and "
+        },
+        {
+          "target": "C",
+          "type": "wiki_link"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

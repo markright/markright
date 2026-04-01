@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "link"
+            }
+          ],
+          "type": "link",
+          "url": "https://en.wikipedia.org/wiki/Rust_(programming_language)"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

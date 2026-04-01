@@ -1,0 +1,465 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Contributing Guide"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Thank you for your interest in contributing to this project"
+        },
+        {
+          "type": "text",
+          "value": "!"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Getting Started"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Fork the repository"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Clone your fork"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Create a feature branch"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "start": 1,
+      "type": "ordered_list"
+    },
+    {
+      "body": "git checkout -b feature/your-feature-name",
+      "lang": "bash",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Development Setup"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "body": "# Install dependencies\ncargo build\n\n# Run tests\ncargo test\n\n# Run the formatter\ncargo fmt\n\n# Run the linter\ncargo clippy",
+      "lang": "bash",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Pull Request Checklist"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Before submitting a PR, make sure you have:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Read this contributing guide"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Written tests for new functionality"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Run "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "cargo fmt"
+                },
+                {
+                  "type": "text",
+                  "value": " on all changed files"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Run "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "cargo clippy"
+                },
+                {
+                  "type": "text",
+                  "value": " with no warnings"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Updated documentation if needed"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Added a changelog entry"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Code Style"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Do not use "
+            },
+            {
+              "type": "inline_code",
+              "value": "unwrap()"
+            },
+            {
+              "type": "text",
+              "value": " in library code. Use proper error handling with "
+            },
+            {
+              "type": "inline_code",
+              "value": "Result"
+            },
+            {
+              "type": "text",
+              "value": "."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "warning",
+      "type": "admonition"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Use "
+            },
+            {
+              "type": "inline_code",
+              "value": "cargo clippy -- -W clippy::pedantic"
+            },
+            {
+              "type": "text",
+              "value": " for stricter linting."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "tip",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Commit Messages"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Follow the "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "Conventional Commits"
+            }
+          ],
+          "type": "link",
+          "url": "https://www.conventionalcommits.org/"
+        },
+        {
+          "type": "text",
+          "value": " format:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "feat: add support for wiki embeds\nfix: handle empty code blocks correctly\ndocs: update API reference\ntest: add fixtures for admonition parsing",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Issue Labels"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Label"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Description"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "inline_code",
+              "value": "bug"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Something is not working"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "inline_code",
+              "value": "feature"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "New feature request"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "inline_code",
+              "value": "docs"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Documentation improvement"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "inline_code",
+              "value": "good first issue"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Suitable for newcomers"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Questions?"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Open a "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "Discussion"
+            }
+          ],
+          "type": "link",
+          "url": "https://github.com/example/markright/discussions"
+        },
+        {
+          "type": "text",
+          "value": " or reach out on "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "Discord"
+            }
+          ],
+          "type": "link",
+          "url": "https://discord.gg/markright"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

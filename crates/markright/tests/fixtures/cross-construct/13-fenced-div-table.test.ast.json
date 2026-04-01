@@ -1,0 +1,47 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "alignments": [
+            "none",
+            "none"
+          ],
+          "headers": [
+            [
+              {
+                "type": "text",
+                "value": "Key"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Value"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "name"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Alice"
+                }
+              ]
+            ]
+          ],
+          "type": "table"
+        }
+      ],
+      "name": "data",
+      "type": "fenced_div"
+    }
+  ]
+}

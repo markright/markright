@@ -1,0 +1,51 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Name"
+              }
+            ],
+            "type": "bold"
+          }
+        ],
+        [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Age"
+              }
+            ],
+            "type": "bold"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Alice"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "30"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

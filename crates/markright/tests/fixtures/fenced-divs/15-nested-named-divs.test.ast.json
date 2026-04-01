@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Nested content."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "child",
+          "type": "fenced_div"
+        }
+      ],
+      "name": "wrapper",
+      "type": "fenced_div"
+    }
+  ]
+}

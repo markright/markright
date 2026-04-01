@@ -1,0 +1,16 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Body text."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: Multiline Test\ndescription: >\n  This is a long description\n  that spans multiple lines\n  in YAML flow style."
+  }
+}

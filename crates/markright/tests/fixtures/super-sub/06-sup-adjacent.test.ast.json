@@ -1,0 +1,26 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "a"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "b"
+            }
+          ],
+          "type": "superscript"
+        },
+        {
+          "type": "text",
+          "value": "c"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

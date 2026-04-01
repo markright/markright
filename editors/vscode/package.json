@@ -1,0 +1,51 @@
+{
+  "name": "markright",
+  "displayName": "MarkRight",
+  "description": "Syntax highlighting and editing support for MarkRight (.right files)",
+  "version": "0.0.1",
+  "publisher": "markright",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markright/markright"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "markright",
+        "aliases": ["MarkRight", "markright"],
+        "extensions": [".right"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "markright",
+        "scopeName": "text.markright",
+        "path": "../../syntaxes/markright.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "markright",
+        "path": "./snippets/markright.code-snippets"
+      }
+    ],
+    "configurationDefaults": {
+      "[markright]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+          "other": "off",
+          "comments": "off",
+          "strings": "off"
+        }
+      }
+    }
+  }
+}

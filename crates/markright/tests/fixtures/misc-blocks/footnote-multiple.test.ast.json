@@ -1,0 +1,49 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "First footnote."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "1",
+      "type": "footnote_def"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Second footnote."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "2",
+      "type": "footnote_def"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Third footnote."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "3",
+      "type": "footnote_def"
+    }
+  ]
+}

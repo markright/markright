@@ -1,0 +1,49 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Bold"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": " and "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "italic"
+                    }
+                  ],
+                  "type": "italic"
+                },
+                {
+                  "type": "text",
+                  "value": " and "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "code"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "active"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

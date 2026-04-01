@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_math",
+          "value": "\\alpha + \\beta = \\gamma"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

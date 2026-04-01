@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_math",
+          "value": "\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

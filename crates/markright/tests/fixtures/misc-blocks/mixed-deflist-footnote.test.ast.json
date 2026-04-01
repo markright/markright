@@ -1,0 +1,48 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Application Programming Interface"
+              },
+              {
+                "label": "1",
+                "type": "footnote_ref"
+              },
+              {
+                "type": "text",
+                "value": "."
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "API"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Commonly used acronym."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "1",
+      "type": "footnote_def"
+    }
+  ]
+}

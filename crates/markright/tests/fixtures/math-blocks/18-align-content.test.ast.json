@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\begin{align}\nx &= a + b \\\\\ny &= c + d\n\\end{align}",
+      "type": "math_block"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+# Building a Parser Combinator from Scratch in Rust
+
+Writing parsers is one of the most satisfying programming tasks. In this post, we will build a simple parser combinator library in **Rust** from scratch.
+
+## What is a Parser Combinator?
+
+A parser combinator is a higher-order function that accepts parsers as input and returns a new parser as output. The key insight is that parsers are *composable* -- you can build complex parsers from simple ones.
+
+## The Parser Trait
+
+```rust
+trait Parser<'a> {
+    type Output;
+    fn parse(&self, input: &'a str) -> Option<(Self::Output, &'a str)>;
+}
+```
+
+Our parser takes a string slice and returns:
+
+- `Some((result, remaining))` on success
+- `None` on failure
+
+## Basic Parsers
+
+### Literal Parser
+
+```rust
+fn literal<'a>(expected: &'a str) -> impl Parser<'a, Output = &'a str> {
+    move |input: &'a str| {
+        if input.starts_with(expected) {
+            Some((expected, &input[expected.len()..]))
+        } else {
+            None
+        }
+    }
+}
+```
+
+### Character Parser
+
+```rust
+fn any_char(input: &str) -> Option<(char, &str)> {
+    input.chars().next().map(|c| (c, &input[c.len_utf8()..]))
+}
+```
+
+## Combinators
+
+### Sequence
+
+The `and` combinator runs two parsers in sequence:
+
+```rust
+fn and<'a, A, B>(first: A, second: B) -> impl Parser<'a>
+where
+    A: Parser<'a>,
+    B: Parser<'a>,
+{
+    move |input| {
+        let (r1, rest) = first.parse(input)?;
+        let (r2, rest) = second.parse(rest)?;
+        Some(((r1, r2), rest))
+    }
+}
+```
+
+### Choice
+
+The `or` combinator tries the first parser, then falls back to the second:
+
+```rust
+fn or<'a, A, B>(first: A, second: B) -> impl Parser<'a>
+where
+    A: Parser<'a>,
+    B: Parser<'a, Output = A::Output>,
+{
+    move |input| {
+        first.parse(input).or_else(|| second.parse(input))
+    }
+}
+```
+
+## Putting It All Together
+
+```rust
+let parser = and(literal("hello"), and(literal(" "), literal("world")));
+let result = parser.parse("hello world!");
+assert_eq!(result, Some((("hello", (" ", "world")), "!")));
+```
+
+T> Parser combinators are a great fit for Rust because ownership and lifetimes naturally express the idea of consuming input.
+
+## Further Reading
+
+- [Nom](https://github.com/rust-bakery/nom) -- a mature parser combinator library for Rust
+- [Chumsky](https://github.com/zesterer/chumsky) -- a parser library focused on error recovery

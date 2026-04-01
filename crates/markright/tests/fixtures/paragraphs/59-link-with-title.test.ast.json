@@ -1,0 +1,28 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Click "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "here"
+            }
+          ],
+          "title": "Example",
+          "type": "link",
+          "url": "https://example.com"
+        },
+        {
+          "type": "text",
+          "value": " now."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

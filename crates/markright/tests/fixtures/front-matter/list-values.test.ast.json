@@ -1,0 +1,16 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Document body."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: List Test\ntags: [rust, parser, markright]\nauthors: [Alice, Bob, Charlie]"
+  }
+}

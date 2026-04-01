@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_math",
+          "value": "x^2 + y^2 = z^2"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

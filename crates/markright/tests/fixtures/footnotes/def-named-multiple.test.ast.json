@@ -1,0 +1,34 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "First named def."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "alpha",
+      "type": "footnote_def"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Second named def."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "beta",
+      "type": "footnote_def"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Documentation with Comments"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "body": "This is a single-line comment that should not appear in output",
+      "type": "comment"
+    },
+    {
+      "max_level": 6,
+      "min_level": 1,
+      "type": "toc"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Introduction"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "This document demonstrates comments and table of contents directives."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "This is a multi-line comment.\nIt spans several lines.\nNone of this should appear in the rendered output.",
+      "type": "comment"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Main Content"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Some content between comments."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "max_level": 3,
+      "min_level": 2,
+      "type": "toc"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "API Section"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "GET /users"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Returns all users."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "POST /users"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Creates a new user."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "TODO: Add PUT and DELETE documentation",
+      "type": "comment"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Conclusion"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "End of the document."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

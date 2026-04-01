@@ -1,0 +1,282 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Understanding the Fourier Transform"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "Fourier Transform"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " decomposes a function into its constituent frequencies. It is fundamental to signal processing, image compression, and quantum mechanics."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Definition"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The continuous Fourier Transform of a function "
+        },
+        {
+          "type": "inline_math",
+          "value": "f(t)"
+        },
+        {
+          "type": "text",
+          "value": " is defined as:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "F(\\omega) = \\int_{-\\infty}^{\\infty} f(t) e^{-i\\omega t} \\, dt",
+      "type": "math_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "And the inverse transform is:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "f(t) = \\frac{1}{2\\pi} \\int_{-\\infty}^{\\infty} F(\\omega) e^{i\\omega t} \\, d\\omega",
+      "type": "math_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Key Properties"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Linearity"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": ": "
+                },
+                {
+                  "type": "inline_math",
+                  "value": "\\mathcal{F}[af + bg] = a\\mathcal{F}[f] + b\\mathcal{F}[g]"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Time Shifting"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": ": If "
+                },
+                {
+                  "type": "inline_math",
+                  "value": "f(t) \\to F(\\omega)"
+                },
+                {
+                  "type": "text",
+                  "value": ", then "
+                },
+                {
+                  "type": "inline_math",
+                  "value": "f(t - t_0) \\to e^{-i\\omega t_0} F(\\omega)"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Convolution Theorem"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": ": "
+                },
+                {
+                  "type": "inline_math",
+                  "value": "\\mathcal{F}[f * g] = F(\\omega) \\cdot G(\\omega)"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "start": 1,
+      "type": "ordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Discrete Fourier Transform"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "For a sequence of "
+        },
+        {
+          "type": "inline_math",
+          "value": "N"
+        },
+        {
+          "type": "text",
+          "value": " samples, the DFT is:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "X_k = \\sum_{n=0}^{N-1} x_n \\cdot e^{-i 2\\pi k n / N}",
+      "type": "math_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "Fast Fourier Transform"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " (FFT) computes the DFT in "
+        },
+        {
+          "type": "inline_math",
+          "value": "O(N \\log N)"
+        },
+        {
+          "type": "text",
+          "value": " time instead of "
+        },
+        {
+          "type": "inline_math",
+          "value": "O(N^2)"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Python Example"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "body": "import numpy as np\n\n# Generate a signal with two frequencies\nt = np.linspace(0, 1, 1000)\nsignal = np.sin(2 * np.pi * 50 * t) + 0.5 * np.sin(2 * np.pi * 120 * t)\n\n# Compute FFT\nfft_result = np.fft.fft(signal)\nfrequencies = np.fft.fftfreq(len(signal), d=t[1] - t[0])",
+      "lang": "python",
+      "type": "code_block"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The FFT is one of the most important algorithms in computational science. It enables real-time audio processing, medical imaging, and telecommunications."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    }
+  ]
+}

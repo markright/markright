@@ -1,0 +1,23 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Inner unnamed."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "type": "fenced_div"
+        }
+      ],
+      "type": "fenced_div"
+    }
+  ]
+}

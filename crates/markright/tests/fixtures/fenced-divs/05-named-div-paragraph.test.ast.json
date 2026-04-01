@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "A paragraph inside a div."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "section",
+      "type": "fenced_div"
+    }
+  ]
+}

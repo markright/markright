@@ -1,0 +1,7 @@
+rust: {}
+
+node: {}
+pnpm: {}
+
+javascript:
+  packageManager: 'pnpm'

@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "italic text"
+            }
+          ],
+          "type": "italic"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+# Technical Specification: Real-Time Notification System
+
+---
+
+## Overview
+
+This document specifies the design for a real-time notification system that supports push, email, and in-app delivery channels.
+
+[TOC:2-3]
+
+## Requirements
+
+### Functional Requirements
+
+1. Send notifications in real time (under 500ms latency)
+2. Support multiple delivery channels
+3. Allow users to configure notification preferences
+4. Batch similar notifications to prevent flooding
+
+### Non-Functional Requirements
+
+- Handle 10,000 notifications per second at peak
+- 99.9% delivery rate
+- Maximum 2-second end-to-end latency
+
+## Architecture
+
+::: architecture-diagram
+```mermaid
+graph TD
+    A[Event Source] --> B[Message Queue]
+    B --> C[Notification Service]
+    C --> D[Push Channel]
+    C --> E[Email Channel]
+    C --> F[In-App Channel]
+```
+:::
+
+## Data Model
+
+| Field | Type | Description |
+| --- | --- | --- |
+| id | UUID | Unique notification ID |
+| user_id | UUID | Target user |
+| channel | ENUM | push, email, in_app |
+| payload | JSONB | Notification content |
+| status | ENUM | pending, sent, failed, read |
+| created_at | TIMESTAMP | Creation time |
+| sent_at | TIMESTAMP | Delivery time |
+
+Table: Notifications table schema {#notifications-table}
+
+## API Design
+
+### Send Notification
+
+```json
+{
+  "user_id": "usr_abc123",
+  "template": "order_shipped",
+  "channels": ["push", "email"],
+  "data": {
+    "order_id": "ord_456",
+    "tracking_url": "https://track.example.com/456"
+  }
+}
+```
+
+### Notification Preferences
+
+```json
+{
+  "user_id": "usr_abc123",
+  "preferences": {
+    "order_updates": ["push", "email"],
+    "marketing": ["email"],
+    "security_alerts": ["push", "email", "in_app"]
+  }
+}
+```
+
+## Error Handling
+
+W> Failed notifications must be retried with exponential backoff.
+W> After 3 failed attempts, move to a dead letter queue.
+
+N> Log all delivery failures with full context for debugging.
+
+## Implementation Plan
+
+- [x] Design data model
+- [x] Set up message queue infrastructure
+- [~] Implement notification service core
+- [ ] Build push channel adapter
+- [ ] Build email channel adapter
+- [ ] Build in-app channel adapter
+- [ ] Write integration tests
+- [ ] Load test at 10k notifications/sec
+- [ ] Deploy to staging
+- [ ] Production rollout
+
+!> The push channel requires certificates from Apple and Firebase.
+!> These must be provisioned before the push adapter can be tested.

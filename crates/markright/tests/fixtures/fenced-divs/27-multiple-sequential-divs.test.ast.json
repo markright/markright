@@ -1,0 +1,49 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Alpha content."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "alpha",
+      "type": "fenced_div"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Beta content."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "beta",
+      "type": "fenced_div"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Gamma content."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "gamma",
+      "type": "fenced_div"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Chinese characters used in writing."
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "漢字"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    }
+  ]
+}

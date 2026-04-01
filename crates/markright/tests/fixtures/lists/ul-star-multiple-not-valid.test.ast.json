@@ -1,0 +1,22 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": " First line "
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": " Second line"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

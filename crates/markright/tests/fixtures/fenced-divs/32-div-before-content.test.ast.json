@@ -1,0 +1,28 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Box content."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "box",
+      "type": "fenced_div"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "A paragraph after the div."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

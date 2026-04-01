@@ -1,0 +1,51 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Expression"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Result"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "a "
+            },
+            {
+              "type": "text",
+              "value": "\\"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "b"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "true"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

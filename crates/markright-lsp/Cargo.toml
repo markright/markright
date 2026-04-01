@@ -1,0 +1,14 @@
+[package]
+name = "markright-lsp"
+version = "0.1.0"
+edition = "2024"
+description = "Language Server Protocol implementation for MarkRight"
+
+[[bin]]
+name = "markright-lsp"
+path = "src/main.rs"
+
+[dependencies]
+markright = { path = "../markright" }
+tower-lsp = "0.20"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "io-std"] }

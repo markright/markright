@@ -1,0 +1,63 @@
+# markright
+
+A markup language that distills the best from 44 Markdown flavors into one unambiguous, formally specified language.
+
+![MarkRight Logo](https://markright.dev/logo.png "MarkRight")
+
+## Features
+
+- **Unambiguous syntax** with no edge cases
+- **8 task states** for comprehensive project tracking
+- **Admonitions** with prefix syntax for notes, warnings, and tips
+- **Math support** with `$` delimiters for inline and `$$` for block math
+- **WikiLinks** for knowledge base applications
+- **Fenced divs** for generic containers
+- Zero inline HTML
+
+## Installation
+
+```bash
+cargo install markright
+```
+
+Or build from source:
+
+```bash
+git clone https://github.com/example/markright.git
+cd markright
+cargo build --release
+```
+
+## Quick Start
+
+```markright
+# Hello World
+
+This is a **MarkRight** document with *inline formatting*.
+
+- [x] Write the parser
+- [~] Build the website
+- [ ] Publish to crates.io
+```
+
+## Usage
+
+| Command | Description |
+| --- | --- |
+| `markright parse <file>` | Parse a file and output AST as JSON |
+| `markright fmt <file>` | Format a MarkRight file |
+| `markright check <file>` | Validate a MarkRight file |
+
+## Documentation
+
+- [Specification](https://markright.dev/spec)
+- [API Reference](https://docs.rs/markright)
+- [Examples](https://markright.dev/examples)
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## License
+
+MIT

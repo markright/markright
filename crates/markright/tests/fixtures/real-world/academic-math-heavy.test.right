@@ -1,0 +1,64 @@
+---
+title: Introduction to Linear Algebra for Machine Learning
+author: Dr. Maria Chen
+date: 2026-02-20
+---
+
+# Introduction to Linear Algebra for Machine Learning
+
+## Vectors and Matrices
+
+A vector $\mathbf{v} \in \mathbb{R}^n$ is an ordered collection of $n$ real numbers. A matrix $A \in \mathbb{R}^{m \times n}$ is a rectangular array with $m$ rows and $n$ columns.
+
+## Matrix Multiplication
+
+Given matrices $A \in \mathbb{R}^{m \times p}$ and $B \in \mathbb{R}^{p \times n}$, the product $C = AB$ is defined as:
+
+$$
+C_{ij} = \sum_{k=1}^{p} A_{ik} B_{kj}
+$$
+
+## Eigendecomposition
+
+For a square matrix $A$, the eigenvalue equation is $A\mathbf{v} = \lambda\mathbf{v}$ where $\lambda$ is an eigenvalue and $\mathbf{v}$ is the corresponding eigenvector.
+
+The characteristic polynomial is:
+
+$$
+\det(A - \lambda I) = 0
+$$
+
+## Singular Value Decomposition
+
+Any matrix $A \in \mathbb{R}^{m \times n}$ can be factored as:
+
+$$
+A = U \Sigma V^T
+$$
+
+Where:
+
+- $U \in \mathbb{R}^{m \times m}$ is an orthogonal matrix (left singular vectors)
+- $\Sigma \in \mathbb{R}^{m \times n}$ is a diagonal matrix (singular values)
+- $V \in \mathbb{R}^{n \times n}$ is an orthogonal matrix (right singular vectors)
+
+## Application: Principal Component Analysis
+
+PCA finds the directions of maximum variance in the data. Given a centered data matrix $X$, the principal components are the eigenvectors of $X^T X$.
+
+```python
+import numpy as np
+
+X = np.random.randn(100, 5)  # 100 samples, 5 features
+X_centered = X - X.mean(axis=0)
+cov = X_centered.T @ X_centered / (len(X) - 1)
+eigenvalues, eigenvectors = np.linalg.eigh(cov)
+```
+
+The variance explained by the $k$-th component is:
+
+$$
+\text{explained variance ratio}_k = \frac{\lambda_k}{\sum_{i=1}^{n} \lambda_i}
+$$
+
+N> In practice, use `sklearn.decomposition.PCA` which handles numerical stability and edge cases.

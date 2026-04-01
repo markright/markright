@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "A \\rightarrow B \\Leftrightarrow C",
+      "type": "math_block"
+    }
+  ]
+}

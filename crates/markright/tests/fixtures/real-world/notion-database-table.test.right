@@ -1,0 +1,19 @@
+# Project Tracker
+
+| Task | Owner | Priority | Status | Due Date |
+| --- | --- | :---: | --- | ---: |
+| Design system overhaul | Alice | High | In Progress | 2026-03-15 |
+| API v2 migration | Bob | Critical | Blocked | 2026-03-20 |
+| Mobile app redesign | Carol | Medium | Planning | 2026-04-01 |
+| Documentation update | Dave | Low | Done | 2026-03-10 |
+| Performance audit | Eve | High | In Review | 2026-03-18 |
+| Security patch | Frank | Critical | Done | 2026-03-08 |
+
+Table: Current sprint tasks {#sprint-tasks}
+
+## Notes
+
+N> The API v2 migration is blocked on the database schema changes.
+N> Contact Bob for details.
+
+W> The due date for the mobile app redesign is tentative.

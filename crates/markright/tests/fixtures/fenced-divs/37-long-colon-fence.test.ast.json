@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Content with many colons."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "long",
+      "type": "fenced_div"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\alpha + \\beta = \\gamma",
+      "type": "math_block"
+    }
+  ]
+}

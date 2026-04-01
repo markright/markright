@@ -1,0 +1,42 @@
+# Inline Formatting Showcase
+
+## Emphasis Varieties
+
+This text has **bold**, *italic*, ***bold italic***, ~~strikethrough~~, and ==highlighted== content all in one paragraph.
+
+You can nest them: **this is bold with *italic inside* it**.
+
+## Code and Math
+
+Use `console.log()` for debugging. The time complexity is $O(n \log n)$.
+
+Inline code with backticks: `let x = 42;`
+
+Inline math: the quadratic formula is $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
+
+## Links and Images
+
+Visit [the homepage](https://example.com) or [the docs](https://docs.example.com "Documentation").
+
+Here is an image: ![Alt text](https://example.com/image.png "An example image")
+
+## Superscript and Subscript
+
+Water is H~2~O. Einstein's equation is E = mc^2^.
+
+The formula for caffeine is C~8~H~10~N~4~O~2~.
+
+Footnote reference here[^note1] and another[^note2].
+
+## WikiLinks
+
+See [[Related Page]] for more information. Or check [[Another Page|this page]].
+
+Embed an image: ![[diagram.png]]
+
+## Citations
+
+According to recent research[@smith2025], this approach is effective. Multiple sources agree[@jones2024; @williams2026].
+
+[^note1]: This is the first footnote.
+[^note2]: This is the second footnote.

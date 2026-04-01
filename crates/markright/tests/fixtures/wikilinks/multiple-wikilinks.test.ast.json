@@ -1,0 +1,29 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "See "
+        },
+        {
+          "target": "Page A",
+          "type": "wiki_link"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "target": "Page B",
+          "type": "wiki_link"
+        },
+        {
+          "type": "text",
+          "value": " for details."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

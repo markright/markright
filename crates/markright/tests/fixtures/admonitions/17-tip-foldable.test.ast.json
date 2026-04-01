@@ -1,0 +1,20 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Click to expand this tip."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": true,
+      "kind": "tip",
+      "type": "admonition"
+    }
+  ]
+}

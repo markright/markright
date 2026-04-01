@@ -1,0 +1,82 @@
+# Release Notes: v3.0.0
+
+We are excited to announce version 3.0 of the platform. This is a major release with new features, performance improvements, and breaking changes.
+
+!> This release contains **breaking changes**. Please read the migration guide carefully.
+
+## New Features
+
+### Real-Time Collaboration
+
+Multiple users can now edit documents simultaneously with live cursor tracking and conflict resolution.
+
+### Advanced Search
+
+Full-text search with support for:
+
+- Boolean operators (`AND`, `OR`, `NOT`)
+- Phrase matching with `"exact phrase"`
+- Field-specific queries with `field:value`
+- Wildcard patterns with `*`
+
+### Export Improvements
+
+New export formats:
+
+| Format | Description |
+| --- | --- |
+| PDF | High-fidelity PDF with embedded fonts |
+| EPUB | E-book format for mobile readers |
+| LaTeX | For academic publishing |
+| Docx | Microsoft Word compatible |
+
+## Performance
+
+- Page load time reduced by **40%**
+- Search queries now complete in under $50ms$ (p99)
+- Memory usage reduced by **25%** through lazy loading
+
+## Breaking Changes
+
+W> The following changes require updates to your configuration.
+
+### API Changes
+
+1. The `/api/v2/` endpoints are now deprecated
+2. Authentication switched from API keys to OAuth 2.0
+3. Rate limits reduced from 1000 to 600 requests per minute
+
+### Configuration
+
+The configuration file format changed from TOML to YAML:
+
+```yaml
+server:
+  port: 8080
+  host: 0.0.0.0
+database:
+  url: postgres://localhost/mydb
+  pool_size: 20
+```
+
+Previously:
+
+```toml
+[server]
+port = 8080
+host = "0.0.0.0"
+
+[database]
+url = "postgres://localhost/mydb"
+pool_size = 20
+```
+
+## Migration Guide
+
+- [ ] Update API client to use OAuth 2.0
+- [ ] Convert configuration files from TOML to YAML
+- [ ] Update API endpoints from v2 to v3
+- [ ] Test all integrations against the new API
+- [ ] Review rate limiting changes
+
+T> Run the migration script at `scripts/migrate-v3.sh` to automate most of the configuration changes.

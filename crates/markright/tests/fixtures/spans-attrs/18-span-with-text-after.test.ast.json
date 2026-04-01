@@ -1,0 +1,23 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "attrs": ".ui",
+          "children": [
+            {
+              "type": "text",
+              "value": "File"
+            }
+          ],
+          "type": "bracketed_span"
+        },
+        {
+          "type": "text",
+          "value": " menu contains options."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

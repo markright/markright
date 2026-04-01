@@ -1,0 +1,41 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Use "
+        },
+        {
+          "attrs": ".kbd",
+          "children": [
+            {
+              "type": "text",
+              "value": "Ctrl+C"
+            }
+          ],
+          "type": "bracketed_span"
+        },
+        {
+          "type": "text",
+          "value": " to copy and "
+        },
+        {
+          "attrs": ".kbd",
+          "children": [
+            {
+              "type": "text",
+              "value": "Ctrl+V"
+            }
+          ],
+          "type": "bracketed_span"
+        },
+        {
+          "type": "text",
+          "value": " to paste."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

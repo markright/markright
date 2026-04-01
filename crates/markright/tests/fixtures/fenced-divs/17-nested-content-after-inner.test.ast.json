@@ -1,0 +1,34 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Inner paragraph."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "inner",
+          "type": "fenced_div"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Outer paragraph."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "outer",
+      "type": "fenced_div"
+    }
+  ]
+}

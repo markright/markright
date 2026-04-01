@@ -1,0 +1,27 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Server at "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "https://example.com:3000/api"
+            }
+          ],
+          "type": "link",
+          "url": "https://example.com:3000/api"
+        },
+        {
+          "type": "text",
+          "value": " is running."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

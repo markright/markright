@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "body {\n  color: red;\n  font-size: 16px;\n}",
+      "lang": "css",
+      "type": "code_block"
+    }
+  ]
+}

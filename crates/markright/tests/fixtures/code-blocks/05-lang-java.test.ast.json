@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"hello\");\n    }\n}",
+      "lang": "java",
+      "type": "code_block"
+    }
+  ]
+}

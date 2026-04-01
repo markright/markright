@@ -1,0 +1,48 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "Bold"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "inline_code",
+          "value": "code"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "italic"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "inline_math",
+          "value": "x"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    }
+  ]
+}

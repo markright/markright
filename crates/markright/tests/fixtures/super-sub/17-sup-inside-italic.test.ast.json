@@ -1,0 +1,27 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "italic "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "super"
+                }
+              ],
+              "type": "superscript"
+            }
+          ],
+          "type": "italic"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

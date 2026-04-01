@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "a^2 + b^2 = c^2\nd^2 + e^2 = f^2",
+      "type": "math_block"
+    }
+  ]
+}

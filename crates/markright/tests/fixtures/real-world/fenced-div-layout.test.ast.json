@@ -1,0 +1,368 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Product Landing Page"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Build Better Software"
+            }
+          ],
+          "level": 1,
+          "type": "heading"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Ship faster with confidence using our "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "developer platform"
+                }
+              ],
+              "type": "bold"
+            },
+            {
+              "type": "text",
+              "value": "."
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "items": [
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Automated testing"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Continuous deployment"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "Real-time monitoring"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            }
+          ],
+          "type": "unordered_list"
+        }
+      ],
+      "name": "hero",
+      "type": "fenced_div"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Why Choose Us"
+            }
+          ],
+          "level": 2,
+          "type": "heading"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Lightning Fast"
+                }
+              ],
+              "level": 3,
+              "type": "heading"
+            },
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Our platform processes builds in under 30 seconds, getting your code to production faster than ever."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "feature-card",
+          "type": "fenced_div"
+        }
+      ],
+      "name": "features",
+      "type": "fenced_div"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Secure by Default"
+            }
+          ],
+          "level": 3,
+          "type": "heading"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Every deployment is scanned for vulnerabilities. We support "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "SOC 2"
+                }
+              ],
+              "type": "highlight"
+            },
+            {
+              "type": "text",
+              "value": " and "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "HIPAA"
+                }
+              ],
+              "type": "highlight"
+            },
+            {
+              "type": "text",
+              "value": " compliance out of the box."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "feature-card",
+      "type": "fenced_div"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Developer First"
+            }
+          ],
+          "level": 3,
+          "type": "heading"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Built by developers, for developers. Our CLI, API, and dashboard are designed for the best developer experience."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "name": "feature-card",
+      "type": "fenced_div"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Pricing"
+            }
+          ],
+          "level": 2,
+          "type": "heading"
+        },
+        {
+          "alignments": [
+            "none",
+            "right",
+            "right",
+            "center"
+          ],
+          "headers": [
+            [
+              {
+                "type": "text",
+                "value": "Plan"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Price"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Builds"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Team Size"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Starter"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "$0/mo"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "500"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "3"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Pro"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "$29/mo"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "5000"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "10"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Enterprise"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Custom"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Unlimited"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Unlimited"
+                }
+              ]
+            ]
+          ],
+          "type": "table"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Ready to Get Started?"
+                }
+              ],
+              "level": 2,
+              "type": "heading"
+            },
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Sign up for a free account and deploy your first project in minutes."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "name": "cta",
+          "type": "fenced_div"
+        }
+      ],
+      "type": "fenced_div"
+    }
+  ]
+}

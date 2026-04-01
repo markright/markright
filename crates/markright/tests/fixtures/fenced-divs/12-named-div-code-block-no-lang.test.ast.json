@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "body": "some code",
+          "type": "code_block"
+        }
+      ],
+      "name": "example",
+      "type": "fenced_div"
+    }
+  ]
+}

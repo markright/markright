@@ -1,0 +1,31 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Before the code."
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "body": "x = 1",
+          "type": "code_block"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "After the code."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "type": "blockquote"
+    }
+  ]
+}

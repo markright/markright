@@ -1,0 +1,709 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Comparing JavaScript Frameworks"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Here is a comparison of the most popular JavaScript frameworks for building web applications."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Feature Comparison"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "none",
+        "center",
+        "center",
+        "center",
+        "center"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Feature"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "React"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Vue"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Svelte"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Angular"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Virtual DOM"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Yes"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Yes"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "No"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "No"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Bundle Size"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Medium"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Small"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Tiny"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Large"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Learning Curve"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Moderate"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Easy"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Easy"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Steep"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "TypeScript"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Optional"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Optional"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Optional"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Built-in"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "SSR Support"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Next.js"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Nuxt"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "SvelteKit"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Angular Universal"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Key Differences"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "React"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Component-based architecture with "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "JSX"
+                    }
+                  ],
+                  "type": "bold"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Huge ecosystem and community"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Backed by "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Meta"
+                    }
+                  ],
+                  "type": "italic"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Uses a virtual DOM for efficient updates"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Vue"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Progressive framework"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Template-based with "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "single-file components"
+                    }
+                  ],
+                  "type": "bold"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Gentle learning curve"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Great documentation"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Svelte"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Compile-time framework (no virtual DOM)"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Smallest bundle size"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": " among major frameworks"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Reactive by default"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Growing ecosystem"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Angular"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Full-featured framework with "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "batteries included"
+                    }
+                  ],
+                  "type": "italic"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Uses "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "TypeScript"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": " by default"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Dependency injection built in"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Best for large enterprise applications"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "When to Choose What"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Choose "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "React"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": " if you need a large ecosystem and community support"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Choose "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Vue"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": " if you want an approachable framework with great docs"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Choose "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Svelte"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": " if performance and bundle size are critical"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Choose "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Angular"
+                    }
+                  ],
+                  "type": "bold"
+                },
+                {
+                  "type": "text",
+                  "value": " if building a large enterprise application"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "start": 1,
+      "type": "ordered_list"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Start with the framework your team already knows. Switching costs often outweigh theoretical benefits."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "tip",
+      "type": "admonition"
+    }
+  ]
+}

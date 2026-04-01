@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "object Main extends App {\n  println(\"hello\")\n}",
+      "lang": "scala",
+      "type": "code_block"
+    }
+  ]
+}

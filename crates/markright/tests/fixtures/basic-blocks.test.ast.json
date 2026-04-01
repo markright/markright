@@ -1,0 +1,35 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Title"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "A simple paragraph."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "type": "thematic_break"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Another paragraph after the rule."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

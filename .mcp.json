@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "moon": {
+      "command": "moon",
+      "args": ["mcp"]
+    },
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp/oauth"
+    },
+    "grep_app": {
+      "type": "http",
+      "url": "https://mcp.grep.app"
+    },
+    "websearch": {
+      "type": "http",
+      "url": "https://mcp.exa.ai/mcp"
+    },
+    "search-mcp": {
+      "type": "http",
+      "url": "https://search-mcp.parallel.ai/mcp"
+    }
+  }
+}

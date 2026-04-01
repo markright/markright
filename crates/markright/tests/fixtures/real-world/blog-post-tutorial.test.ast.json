@@ -1,0 +1,421 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Getting Started with Docker"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Docker is a platform for building, shipping, and running applications in containers. This tutorial will walk you through the basics."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Prerequisites"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Install Docker Desktop"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Verify installation with "
+                },
+                {
+                  "type": "inline_code",
+                  "value": "docker --version"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Create a Docker Hub account"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        }
+      ],
+      "type": "task_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Your First Container"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "body": "docker run hello-world",
+      "lang": "bash",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "This pulls the "
+        },
+        {
+          "type": "inline_code",
+          "value": "hello-world"
+        },
+        {
+          "type": "text",
+          "value": " image and runs it in a container. You should see a confirmation message."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Writing a Dockerfile"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Create a file named "
+        },
+        {
+          "type": "inline_code",
+          "value": "Dockerfile"
+        },
+        {
+          "type": "text",
+          "value": " in your project:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "FROM node:20-alpine\nWORKDIR /app\nCOPY package*.json ./\nRUN npm install\nCOPY . .\nEXPOSE 3000\nCMD [\"node\", \"server.js\"]",
+      "lang": "dockerfile",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Building and Running"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "body": "# Build the image\ndocker build -t my-app .\n\n# Run the container\ndocker run -p 3000:3000 my-app",
+      "lang": "bash",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Docker Compose"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "For multi-container applications, use Docker Compose:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "services:\n  web:\n    build: .\n    ports:\n      - \"3000:3000\"\n  db:\n    image: postgres:16\n    environment:\n      POSTGRES_PASSWORD: secret",
+      "lang": "yaml",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Then run:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "docker compose up",
+      "lang": "bash",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Common Commands"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Command"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Description"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "inline_code",
+              "value": "docker ps"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "List running containers"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "inline_code",
+              "value": "docker images"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "List local images"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "inline_code",
+              "value": "docker stop <id>"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Stop a container"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "inline_code",
+              "value": "docker rm <id>"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Remove a container"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "inline_code",
+              "value": "docker logs <id>"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "View container logs"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Never store secrets in Docker images. Use environment variables or secret management tools."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "warning",
+      "type": "admonition"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Docker Desktop includes Docker Compose by default since version 4.0."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Next Steps"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Learn about "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Docker volumes"
+                    }
+                  ],
+                  "type": "link",
+                  "url": "https://docs.docker.com/storage/volumes/"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Set up a "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "multi-stage build"
+                    }
+                  ],
+                  "type": "link",
+                  "url": "https://docs.docker.com/build/building/multi-stage/"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Explore "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Docker networking"
+                    }
+                  ],
+                  "type": "link",
+                  "url": "https://docs.docker.com/network/"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "start": 1,
+      "type": "ordered_list"
+    }
+  ]
+}

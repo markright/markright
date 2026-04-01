@@ -1,0 +1,90 @@
+# API Reference
+
+## Authentication
+
+All API requests require a Bearer token in the `Authorization` header.
+
+```http
+GET /api/v2/users
+Authorization: Bearer <your-token>
+Content-Type: application/json
+```
+
+W> Tokens expire after 24 hours. Use the refresh endpoint to obtain a new token.
+
+## Endpoints
+
+### GET /api/v2/users
+
+Returns a list of users.
+
+**Query Parameters:**
+
+page
+: The page number (default: 1)
+
+per_page
+: Number of results per page (default: 20, max: 100)
+
+sort
+: Sort field (`name`, `created_at`, `email`)
+
+**Response:**
+
+```json
+{
+  "data": [
+    {
+      "id": "usr_123",
+      "name": "Alice",
+      "email": "alice@example.com"
+    }
+  ],
+  "meta": {
+    "page": 1,
+    "per_page": 20,
+    "total": 142
+  }
+}
+```
+
+### POST /api/v2/users
+
+Create a new user.
+
+**Request Body:**
+
+```json
+{
+  "name": "Bob",
+  "email": "bob@example.com",
+  "role": "member"
+}
+```
+
+**Status Codes:**
+
+| Code | Meaning |
+| ---: | --- |
+| 201 | User created successfully |
+| 400 | Validation error |
+| 401 | Unauthorized |
+| 409 | Email already exists |
+
+### DELETE /api/v2/users/:id
+
+Delete a user by ID.
+
+X> This action is irreversible. All user data will be permanently deleted.
+
+## Rate Limiting
+
+The API enforces rate limits per token:
+
+| Plan | Requests/min | Requests/day |
+| --- | ---: | ---: |
+| Free | 60 | 10000 |
+| Pro | 600 | 100000 |
+| Enterprise | 6000 | 1000000 |
+
+N> Rate limit headers are included in every response: `X-RateLimit-Remaining` and `X-RateLimit-Reset`.

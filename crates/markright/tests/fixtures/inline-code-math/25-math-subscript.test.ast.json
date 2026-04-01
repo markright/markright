@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_math",
+          "value": "x_1 + x_2 = x_3"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

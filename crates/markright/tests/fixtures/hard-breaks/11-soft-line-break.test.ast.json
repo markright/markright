@@ -1,0 +1,13 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Soft line one. Soft line two."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

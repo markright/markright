@@ -1,0 +1,19 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "bold text"
+            }
+          ],
+          "type": "bold"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    }
+  ]
+}

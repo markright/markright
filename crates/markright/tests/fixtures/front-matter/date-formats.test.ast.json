@@ -1,0 +1,16 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Various dates."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: Date Formats\ndate: 2024-01-15\ndatetime: 2024-01-15T10:30:00Z\nyear: 2024"
+  }
+}

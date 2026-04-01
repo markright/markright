@@ -1,0 +1,21 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "<form action"
+        },
+        {
+          "type": "text",
+          "value": "=\"/submit\"><input type"
+        },
+        {
+          "type": "text",
+          "value": "=\"text\"/><button>Submit</button></form>"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

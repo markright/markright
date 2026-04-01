@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "flowchart TD\n    Start --> Stop",
+      "lang": "mermaid",
+      "type": "diagram_block"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\iint_D f(x,y) \\, dA",
+      "type": "math_block"
+    }
+  ]
+}

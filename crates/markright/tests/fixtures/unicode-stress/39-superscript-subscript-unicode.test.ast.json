@@ -1,0 +1,35 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "水の化学式は H"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "2"
+            }
+          ],
+          "type": "superscript"
+        },
+        {
+          "type": "text",
+          "value": "O"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "下付き"
+            }
+          ],
+          "type": "subscript"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

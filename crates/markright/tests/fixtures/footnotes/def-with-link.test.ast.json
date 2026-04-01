@@ -1,0 +1,33 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "See "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "example"
+                }
+              ],
+              "type": "link",
+              "url": "https://example.com"
+            },
+            {
+              "type": "text",
+              "value": "."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "1",
+      "type": "footnote_def"
+    }
+  ]
+}

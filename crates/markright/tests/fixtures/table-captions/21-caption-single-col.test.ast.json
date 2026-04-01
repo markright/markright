@@ -1,0 +1,42 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none"
+      ],
+      "caption": [
+        {
+          "type": "text",
+          "value": "Grocery list"
+        }
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Items"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "apple"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "banana"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

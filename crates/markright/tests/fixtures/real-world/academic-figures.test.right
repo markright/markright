@@ -1,0 +1,58 @@
+---
+title: Evaluating Neural Architecture Search Methods
+author: Alex Johnson
+date: 2026-03-01
+---
+
+# Evaluating Neural Architecture Search Methods
+
+## Abstract
+
+We compare three neural architecture search (NAS) methods on standard benchmarks. Our experiments show that weight-sharing approaches achieve competitive accuracy with significantly reduced search cost.
+
+## Experimental Setup
+
+All experiments were conducted on a cluster with 8 NVIDIA A100 GPUs. We used the following hyperparameters:
+
+| Parameter | Value |
+| --- | ---: |
+| Learning rate | 0.025 |
+| Batch size | 256 |
+| Weight decay | 0.0003 |
+| Epochs | 600 |
+| Optimizer | SGD with momentum |
+
+Table: Training hyperparameters {#hyperparams}
+
+## Results
+
+### CIFAR-10
+
+![CIFAR-10 accuracy comparison](figures/cifar10-accuracy.png "Accuracy curves on CIFAR-10")
+
+| Method | Params (M) | Accuracy (%) | GPU Hours |
+| --- | ---: | ---: | ---: |
+| DARTS | 3.3 | 97.24 | 1.5 |
+| ENAS | 4.6 | 97.11 | 0.5 |
+| NASNet | 3.3 | 97.35 | 48000 |
+| Random Search | 3.2 | 97.05 | 4.0 |
+
+Table: CIFAR-10 benchmark results {#cifar10-results}
+
+### ImageNet
+
+![ImageNet top-1 accuracy](figures/imagenet-top1.png "Top-1 accuracy on ImageNet validation set")
+
+The weight-sharing method achieves **76.2%** top-1 accuracy while requiring only *0.5 GPU days* for the search phase.
+
+## Analysis
+
+N> The search cost of NASNet (48000 GPU hours) makes it impractical for most research labs.
+
+W> Accuracy numbers should be interpreted carefully. Small differences (less than 0.3%) may not be statistically significant.
+
+## Conclusion
+
+Weight-sharing NAS methods offer the best trade-off between search efficiency and final accuracy. We recommend DARTS as the default choice for architecture search on image classification tasks.
+
+[^darts]: Liu, H. et al. (2019). DARTS: Differentiable Architecture Search.

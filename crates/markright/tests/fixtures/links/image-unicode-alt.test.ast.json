@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "alt": "写真",
+          "type": "image",
+          "url": "https://example.com/img.png"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

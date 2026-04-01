@@ -1,0 +1,90 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "caption": [
+        {
+          "type": "text",
+          "value": "First table"
+        }
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "A"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "B"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "1"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "2"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "caption": [
+        {
+          "type": "text",
+          "value": "Second table"
+        }
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "X"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Y"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "3"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "4"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "How to Implement a Binary Search Tree in Python"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "A "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "binary search tree"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " (BST) is a data structure where each node has at most two children, and for every node, all values in the left subtree are "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "smaller"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": " and all values in the right subtree are "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "larger"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Node Class"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "body": "class Node:\n    def __init__(self, value):\n        self.value = value\n        self.left = None\n        self.right = None",
+      "lang": "python",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "BST Class with Insert and Search"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "body": "class BST:\n    def __init__(self):\n        self.root = None\n\n    def insert(self, value):\n        if self.root is None:\n            self.root = Node(value)\n        else:\n            self._insert(self.root, value)\n\n    def _insert(self, node, value):\n        if value < node.value:\n            if node.left is None:\n                node.left = Node(value)\n            else:\n                self._insert(node.left, value)\n        else:\n            if node.right is None:\n                node.right = Node(value)\n            else:\n                self._insert(node.right, value)\n\n    def search(self, value):\n        return self._search(self.root, value)\n\n    def _search(self, node, value):\n        if node is None:\n            return False\n        if value == node.value:\n            return True\n        elif value < node.value:\n            return self._search(node.left, value)\n        else:\n            return self._search(node.right, value)",
+      "lang": "python",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Time Complexity"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "none",
+        "center",
+        "center"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Operation"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Average"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Worst Case"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Search"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(\\log n)"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(n)"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Insert"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(\\log n)"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(n)"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Delete"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(\\log n)"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(n)"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Usage Example"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "body": "tree = BST()\nfor val in [5, 3, 7, 1, 4, 6, 8]:\n    tree.insert(val)\n\nprint(tree.search(4))  # True\nprint(tree.search(9))  # False",
+      "lang": "python",
+      "type": "code_block"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The worst case occurs when elements are inserted in sorted order, creating a degenerate tree (essentially a linked list)."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Consider using a "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "self-balancing BST"
+                }
+              ],
+              "type": "bold"
+            },
+            {
+              "type": "text",
+              "value": " like an AVL tree or Red-Black tree for guaranteed "
+            },
+            {
+              "type": "inline_math",
+              "value": "O(\\log n)"
+            },
+            {
+              "type": "text",
+              "value": " operations."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "tip",
+      "type": "admonition"
+    }
+  ]
+}

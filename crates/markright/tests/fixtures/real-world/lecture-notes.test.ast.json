@@ -1,0 +1,473 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "CS 341: Algorithms -- Lecture 12"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Topic: Dynamic Programming"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Recap"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Last lecture we covered:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Greedy algorithms"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Optimal substructure"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "The activity selection problem"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The Key Idea"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Dynamic programming solves problems by breaking them into "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "overlapping subproblems"
+            }
+          ],
+          "type": "highlight"
+        },
+        {
+          "type": "text",
+          "value": " and storing their solutions. Unlike divide-and-conquer, DP reuses previously computed results."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Fibonacci Numbers"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The naive recursive approach has exponential time complexity:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "T(n) = T(n-1) + T(n-2) + O(1)",
+      "type": "math_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "This gives "
+        },
+        {
+          "type": "inline_math",
+          "value": "T(n) = O(2^n)"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Memoized Version"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "body": "def fib(n, memo={}):\n    if n in memo:\n        return memo[n]\n    if n <= 1:\n        return n\n    memo[n] = fib(n - 1, memo) + fib(n - 2, memo)\n    return memo[n]",
+      "lang": "python",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Time complexity: "
+        },
+        {
+          "type": "inline_math",
+          "value": "O(n)"
+        },
+        {
+          "type": "text",
+          "value": ". Space complexity: "
+        },
+        {
+          "type": "inline_math",
+          "value": "O(n)"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Bottom-Up Version"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "body": "def fib(n):\n    if n <= 1:\n        return n\n    dp = [0] * (n + 1)\n    dp[1] = 1\n    for i in range(2, n + 1):\n        dp[i] = dp[i-1] + dp[i-2]\n    return dp[n]",
+      "lang": "python",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The Knapsack Problem"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Given "
+        },
+        {
+          "type": "inline_math",
+          "value": "n"
+        },
+        {
+          "type": "text",
+          "value": " items with weights "
+        },
+        {
+          "type": "inline_math",
+          "value": "w_1, \\ldots, w_n"
+        },
+        {
+          "type": "text",
+          "value": " and values "
+        },
+        {
+          "type": "inline_math",
+          "value": "v_1, \\ldots, v_n"
+        },
+        {
+          "type": "text",
+          "value": ", and a capacity "
+        },
+        {
+          "type": "inline_math",
+          "value": "W"
+        },
+        {
+          "type": "text",
+          "value": ", maximize the total value without exceeding the weight limit."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Recurrence"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "body": "OPT(i, w) = \\max(OPT(i-1, w), v_i + OPT(i-1, w - w_i))",
+      "type": "math_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Complexity"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "none",
+        "center",
+        "center"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Variant"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Time"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Space"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "0/1 Knapsack"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(nW)"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(nW)"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Unbounded Knapsack"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(nW)"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(W)"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Fractional Knapsack"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(n \\log n)"
+            }
+          ],
+          [
+            {
+              "type": "inline_math",
+              "value": "O(1)"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The 0/1 knapsack is "
+            },
+            {
+              "children": [
+                {
+                  "type": "text",
+                  "value": "pseudo-polynomial"
+                }
+              ],
+              "type": "italic"
+            },
+            {
+              "type": "text",
+              "value": " because "
+            },
+            {
+              "type": "inline_math",
+              "value": "W"
+            },
+            {
+              "type": "text",
+              "value": " is exponential in the number of bits needed to represent it."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Homework"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Solve problems 6.1 through 6.5 in the textbook"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Implement the 0/1 knapsack with path reconstruction"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Read Chapter 7 on network flow"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+# Glossary of Programming Terms
+
+API
+: Application Programming Interface
+: A set of protocols and tools for building software applications
+
+CI/CD
+: Continuous Integration / Continuous Deployment
+: Practices for automating the build, test, and deployment pipeline
+
+CRUD
+: Create, Read, Update, Delete
+: The four basic operations for persistent storage
+
+DRY
+: Don't Repeat Yourself
+: A principle aimed at reducing duplication in code
+
+KISS
+: Keep It Simple, Stupid
+: A design principle favoring simplicity over complexity
+
+ORM
+: Object-Relational Mapping
+: A technique for converting between incompatible type systems in OOP languages
+
+REST
+: Representational State Transfer
+: An architectural style for distributed hypermedia systems
+
+SOLID
+: Single responsibility, Open-closed, Liskov substitution, Interface segregation, Dependency inversion
+: Five design principles for object-oriented programming
+
+TDD
+: Test-Driven Development
+: A methodology where tests are written before the implementation code
+
+YAGNI
+: You Aren't Gonna Need It
+: A principle stating that features should not be added until they are actually needed

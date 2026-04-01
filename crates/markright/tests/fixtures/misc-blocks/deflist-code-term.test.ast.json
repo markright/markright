@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_code",
+          "value": "printf"
+        },
+        {
+          "type": "text",
+          "value": " : A C standard library function."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

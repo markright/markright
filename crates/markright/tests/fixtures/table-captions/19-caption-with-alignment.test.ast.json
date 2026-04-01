@@ -1,0 +1,61 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "left",
+        "center",
+        "right"
+      ],
+      "caption": [
+        {
+          "type": "text",
+          "value": "Alignment demo"
+        }
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Left"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Center"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Right"
+          }
+        ]
+      ],
+      "id": "tbl-align",
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "a"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "b"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "c"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

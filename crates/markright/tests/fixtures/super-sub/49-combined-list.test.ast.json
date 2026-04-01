@@ -1,0 +1,61 @@
+{
+  "children": [
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "x"
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "2"
+                    }
+                  ],
+                  "type": "superscript"
+                },
+                {
+                  "type": "text",
+                  "value": " is squared"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "H"
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "2"
+                    }
+                  ],
+                  "type": "subscript"
+                },
+                {
+                  "type": "text",
+                  "value": "O is water"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    }
+  ]
+}

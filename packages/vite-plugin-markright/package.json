@@ -1,0 +1,24 @@
+{
+  "name": "vite-plugin-markright",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "description": "Vite plugin for MarkRight (.right) files",
+  "scripts": {
+    "test": "node --test index.test.js"
+  },
+  "keywords": [
+    "vite-plugin",
+    "markright",
+    "markup"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "vite": ">=5.0.0"
+  },
+  "dependencies": {
+    "@markright/markright-wasm": "workspace:*",
+    "gray-matter": "^4.0.3"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "alt": "a",
+          "type": "image",
+          "url": "https://example.com/a.png"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "alt": "b",
+          "type": "image",
+          "url": "https://example.com/b.png"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

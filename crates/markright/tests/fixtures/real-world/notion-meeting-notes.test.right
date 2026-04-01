@@ -1,0 +1,51 @@
+---
+title: Weekly Engineering Sync
+date: 2026-03-10
+attendees: Alice, Bob, Carol, Dave
+---
+
+# Weekly Engineering Sync
+
+## Agenda
+
+1. Sprint review
+2. Incident post-mortem
+3. Architecture decisions
+
+## Sprint Review
+
+The team completed **12 of 15** story points this sprint.
+
+- [x] User authentication refactor
+- [x] Payment gateway integration
+- [~] Search indexing pipeline
+- [ ] Admin dashboard redesign
+
+## Incident Post-Mortem
+
+> The production database experienced a 23-minute outage on March 8th due to a failed migration script.
+
+### Action Items
+
+- [x] Add migration rollback scripts
+- [@] Review database backup procedures
+- [ ] Update incident response runbook
+- [ ] Schedule chaos engineering session
+
+## Architecture Decisions
+
+We agreed to adopt **event sourcing** for the order management system.
+
+N> The RFC for event sourcing is available at `docs/rfc/event-sourcing.md`.
+
+### Pros
+
+- Better audit trail
+- Temporal queries
+- Event replay capability
+
+### Cons
+
+- Increased complexity
+- Storage requirements
+- Learning curve

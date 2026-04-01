@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Hello 🌍 world"
+        },
+        {
+          "type": "text",
+          "value": "! 🎉"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Introduction to Linear Algebra for Machine Learning"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Vectors and Matrices"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "A vector "
+        },
+        {
+          "type": "inline_math",
+          "value": "\\mathbf{v} \\in \\mathbb{R}^n"
+        },
+        {
+          "type": "text",
+          "value": " is an ordered collection of "
+        },
+        {
+          "type": "inline_math",
+          "value": "n"
+        },
+        {
+          "type": "text",
+          "value": " real numbers. A matrix "
+        },
+        {
+          "type": "inline_math",
+          "value": "A \\in \\mathbb{R}^{m \\times n}"
+        },
+        {
+          "type": "text",
+          "value": " is a rectangular array with "
+        },
+        {
+          "type": "inline_math",
+          "value": "m"
+        },
+        {
+          "type": "text",
+          "value": " rows and "
+        },
+        {
+          "type": "inline_math",
+          "value": "n"
+        },
+        {
+          "type": "text",
+          "value": " columns."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Matrix Multiplication"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Given matrices "
+        },
+        {
+          "type": "inline_math",
+          "value": "A \\in \\mathbb{R}^{m \\times p}"
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "type": "inline_math",
+          "value": "B \\in \\mathbb{R}^{p \\times n}"
+        },
+        {
+          "type": "text",
+          "value": ", the product "
+        },
+        {
+          "type": "inline_math",
+          "value": "C = AB"
+        },
+        {
+          "type": "text",
+          "value": " is defined as:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "C_{ij} = \\sum_{k=1}^{p} A_{ik} B_{kj}",
+      "type": "math_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Eigendecomposition"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "For a square matrix "
+        },
+        {
+          "type": "inline_math",
+          "value": "A"
+        },
+        {
+          "type": "text",
+          "value": ", the eigenvalue equation is "
+        },
+        {
+          "type": "inline_math",
+          "value": "A\\mathbf{v} = \\lambda\\mathbf{v}"
+        },
+        {
+          "type": "text",
+          "value": " where "
+        },
+        {
+          "type": "inline_math",
+          "value": "\\lambda"
+        },
+        {
+          "type": "text",
+          "value": " is an eigenvalue and "
+        },
+        {
+          "type": "inline_math",
+          "value": "\\mathbf{v}"
+        },
+        {
+          "type": "text",
+          "value": " is the corresponding eigenvector."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The characteristic polynomial is:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "\\det(A - \\lambda I) = 0",
+      "type": "math_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Singular Value Decomposition"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Any matrix "
+        },
+        {
+          "type": "inline_math",
+          "value": "A \\in \\mathbb{R}^{m \\times n}"
+        },
+        {
+          "type": "text",
+          "value": " can be factored as:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "A = U \\Sigma V^T",
+      "type": "math_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Where:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "inline_math",
+                  "value": "U \\in \\mathbb{R}^{m \\times m}"
+                },
+                {
+                  "type": "text",
+                  "value": " is an orthogonal matrix (left singular vectors)"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "inline_math",
+                  "value": "\\Sigma \\in \\mathbb{R}^{m \\times n}"
+                },
+                {
+                  "type": "text",
+                  "value": " is a diagonal matrix (singular values)"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "inline_math",
+                  "value": "V \\in \\mathbb{R}^{n \\times n}"
+                },
+                {
+                  "type": "text",
+                  "value": " is an orthogonal matrix (right singular vectors)"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Application: Principal Component Analysis"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "PCA finds the directions of maximum variance in the data. Given a centered data matrix "
+        },
+        {
+          "type": "inline_math",
+          "value": "X"
+        },
+        {
+          "type": "text",
+          "value": ", the principal components are the eigenvectors of "
+        },
+        {
+          "type": "inline_math",
+          "value": "X^T X"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "import numpy as np\n\nX = np.random.randn(100, 5)  # 100 samples, 5 features\nX_centered = X - X.mean(axis=0)\ncov = X_centered.T @ X_centered / (len(X) - 1)\neigenvalues, eigenvectors = np.linalg.eigh(cov)",
+      "lang": "python",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The variance explained by the "
+        },
+        {
+          "type": "inline_math",
+          "value": "k"
+        },
+        {
+          "type": "text",
+          "value": "-th component is:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "\\text{explained variance ratio}_k = \\frac{\\lambda_k}{\\sum_{i=1}^{n} \\lambda_i}",
+      "type": "math_block"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "In practice, use "
+            },
+            {
+              "type": "inline_code",
+              "value": "sklearn.decomposition.PCA"
+            },
+            {
+              "type": "text",
+              "value": " which handles numerical stability and edge cases."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: Introduction to Linear Algebra for Machine Learning\nauthor: Dr. Maria Chen\ndate: 2026-02-20"
+  }
+}

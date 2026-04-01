@@ -1,0 +1,69 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Things to remember:"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "items": [
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "Always"
+                        }
+                      ],
+                      "type": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "value": " test first"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "content": [
+                    {
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "Never"
+                        }
+                      ],
+                      "type": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "value": " skip reviews"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            }
+          ],
+          "type": "unordered_list"
+        }
+      ],
+      "foldable": false,
+      "kind": "tip",
+      "type": "admonition"
+    }
+  ]
+}

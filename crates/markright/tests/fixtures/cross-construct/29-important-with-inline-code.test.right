@@ -1,0 +1,1 @@
+!> Do not call `rm -rf /` under any circumstances.

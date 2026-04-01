@@ -1,0 +1,690 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "System Design Interview: URL Shortener"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Requirements"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Functional"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Given a long URL, generate a short URL"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Given a short URL, redirect to the original URL"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "URLs expire after a configurable TTL"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "start": 1,
+      "type": "ordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Non-Functional"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "100 million URLs generated per day"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "10:1 read-to-write ratio"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "99.99% availability"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Redirect latency under 100ms"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ]
+        }
+      ],
+      "type": "unordered_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Capacity Estimation"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Writes per second: "
+        },
+        {
+          "type": "inline_math",
+          "value": "100M / 86400 \\approx 1157"
+        },
+        {
+          "type": "text",
+          "value": " writes/sec"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Reads per second: "
+        },
+        {
+          "type": "inline_math",
+          "value": "1157 \\times 10 \\approx 11570"
+        },
+        {
+          "type": "text",
+          "value": " reads/sec"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Storage for 5 years: "
+        },
+        {
+          "type": "inline_math",
+          "value": "100M \\times 365 \\times 5 \\times 500B \\approx 91.25 TB"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Key Generation"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Use "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "base62 encoding"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " of a 7-character string:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "62^7 = 3.5 \\times 10^{12}",
+      "type": "math_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "This gives us 3.5 trillion unique URLs, sufficient for our scale."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Database Schema"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "none",
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Field"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Type"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Description"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "short_url"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "VARCHAR(7)"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Primary key, base62 encoded"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "long_url"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "TEXT"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Original URL"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "created_at"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "TIMESTAMP"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Creation time"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "expires_at"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "TIMESTAMP"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Expiration time"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "user_id"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "UUID"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Creator (nullable)"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Architecture"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "body": "Client -> Load Balancer -> API Servers -> Cache (Redis)\n                                      -> Database (Cassandra)",
+          "type": "code_block"
+        }
+      ],
+      "name": "system-diagram",
+      "type": "fenced_div"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Components"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Handles URL creation and redirect requests"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Stateless, horizontally scalable"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "API Server"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Redis cluster for hot URLs"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "LRU eviction policy"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Cache Layer"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Cassandra for distributed writes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Tunable consistency levels"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "Database"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Trade-offs"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "alignments": [
+        "none",
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Approach"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Pros"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Cons"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Pre-generated keys"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "No collision, fast"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Key management complexity"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Hash + collision check"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Simple"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Potential collisions"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Counter-based"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Sequential, unique"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Single point of failure"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The pre-generated key approach is preferred at scale because it eliminates collision handling entirely."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Follow-up Questions"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "items": [
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "How would you handle analytics (click tracking)?"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "How would you implement custom short URLs?"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "done"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "How would you handle abuse (spam URLs)?"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "How would you implement rate limiting?"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "open"
+        },
+        {
+          "children": [
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "value": "Should we support QR code generation?"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "state": "question"
+        }
+      ],
+      "type": "task_list"
+    }
+  ]
+}

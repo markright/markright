@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "#"
+        },
+        {
+          "type": "text",
+          "value": " not a heading"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

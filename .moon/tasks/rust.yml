@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../cache/schemas/tasks.json
+
+inheritedBy:
+  toolchain: 'rust'
+
+fileGroups:
+  sources:
+    - 'src/**/*'
+  tests:
+    - 'tests/fixtures_test.rs'
+  fixtures:
+    - 'tests/fixtures/**/*.test.right'
+    - 'tests/fixtures/**/*.test.ast.json'
+  manifests:
+    - 'Cargo.toml'
+    - '/Cargo.toml'
+    - '/Cargo.lock'
+  spec:
+    - '/spec/markright.right'
+
+tasks:
+  build:
+    command: 'cargo build --workspace --exclude markright-wasm'
+    inputs:
+      - '@group(sources)'
+      - '@group(manifests)'
+
+  check:
+    command: 'cargo check --workspace --exclude markright-wasm --tests'
+    inputs:
+      - '@group(sources)'
+      - '@group(tests)'
+      - '@group(manifests)'
+
+  lint:
+    command: 'cargo clippy --workspace --exclude markright-wasm --all-targets'
+    inputs:
+      - '@group(sources)'
+      - '@group(tests)'
+      - '@group(manifests)'
+
+  fmt:
+    command: 'cargo fmt --all --check'
+    inputs:
+      - '@group(sources)'
+      - '@group(tests)'
+      - '@group(manifests)'
+
+  test:
+    command: 'cargo test --workspace --exclude markright-wasm'
+    inputs:
+      - '@group(sources)'
+      - '@group(tests)'
+      - '@group(fixtures)'
+      - '@group(manifests)'
+      - '@group(spec)'
+
+  test-fixtures-update:
+    command: 'cargo test -p markright'
+    env:
+      UPDATE_FIXTURES: '1'
+    inputs:
+      - '@group(sources)'
+      - '@group(tests)'
+      - '@group(fixtures)'
+      - '@group(manifests)'
+      - '@group(spec)'
+    options:
+      cache: false
+      runInCI: false

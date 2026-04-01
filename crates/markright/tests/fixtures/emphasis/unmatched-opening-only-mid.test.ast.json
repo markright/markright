@@ -1,0 +1,17 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "before "
+        },
+        {
+          "type": "text",
+          "value": "*after text"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

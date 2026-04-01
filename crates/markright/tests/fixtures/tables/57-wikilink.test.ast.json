@@ -1,0 +1,41 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Page"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Status"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "target": "Home",
+              "type": "wiki_link"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "draft"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

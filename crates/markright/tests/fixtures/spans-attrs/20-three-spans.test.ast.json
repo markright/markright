@@ -1,0 +1,47 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "attrs": ".a",
+          "children": [
+            {
+              "type": "text",
+              "value": "one"
+            }
+          ],
+          "type": "bracketed_span"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "attrs": ".b",
+          "children": [
+            {
+              "type": "text",
+              "value": "two"
+            }
+          ],
+          "type": "bracketed_span"
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "attrs": ".c",
+          "children": [
+            {
+              "type": "text",
+              "value": "three"
+            }
+          ],
+          "type": "bracketed_span"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "tree-sitter-markright",
+  "version": "0.1.0",
+  "description": "Tree-sitter grammar for MarkRight",
+  "main": "bindings/node",
+  "tree-sitter": [
+    {
+      "scope": "text.markright",
+      "file-types": ["right"],
+      "highlights": "queries/highlights.scm",
+      "injections": "queries/injections.scm"
+    }
+  ]
+}

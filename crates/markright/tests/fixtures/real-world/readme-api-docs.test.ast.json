@@ -1,0 +1,508 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "API Reference"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Authentication"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "All API requests require a Bearer token in the "
+        },
+        {
+          "type": "inline_code",
+          "value": "Authorization"
+        },
+        {
+          "type": "text",
+          "value": " header."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "GET /api/v2/users\nAuthorization: Bearer <your-token>\nContent-Type: application/json",
+      "lang": "http",
+      "type": "code_block"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Tokens expire after 24 hours. Use the refresh endpoint to obtain a new token."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "warning",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Endpoints"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "GET /api/v2/users"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Returns a list of users."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "Query Parameters:"
+            }
+          ],
+          "type": "bold"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "items": [
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "The page number (default: 1)"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "page"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Number of results per page (default: 20, max: 100)"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "per_page"
+            }
+          ]
+        },
+        {
+          "definitions": [
+            [
+              {
+                "type": "text",
+                "value": "Sort field ("
+              },
+              {
+                "type": "inline_code",
+                "value": "name"
+              },
+              {
+                "type": "text",
+                "value": ", "
+              },
+              {
+                "type": "inline_code",
+                "value": "created_at"
+              },
+              {
+                "type": "text",
+                "value": ", "
+              },
+              {
+                "type": "inline_code",
+                "value": "email"
+              },
+              {
+                "type": "text",
+                "value": ")"
+              }
+            ]
+          ],
+          "term": [
+            {
+              "type": "text",
+              "value": "sort"
+            }
+          ]
+        }
+      ],
+      "type": "definition_list"
+    },
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "Response:"
+            }
+          ],
+          "type": "bold"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "{\n  \"data\": [\n    {\n      \"id\": \"usr_123\",\n      \"name\": \"Alice\",\n      \"email\": \"alice@example.com\"\n    }\n  ],\n  \"meta\": {\n    \"page\": 1,\n    \"per_page\": 20,\n    \"total\": 142\n  }\n}",
+      "lang": "json",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "POST /api/v2/users"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Create a new user."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "Request Body:"
+            }
+          ],
+          "type": "bold"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "body": "{\n  \"name\": \"Bob\",\n  \"email\": \"bob@example.com\",\n  \"role\": \"member\"\n}",
+      "lang": "json",
+      "type": "code_block"
+    },
+    {
+      "content": [
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "Status Codes:"
+            }
+          ],
+          "type": "bold"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "alignments": [
+        "right",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Code"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Meaning"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "201"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "User created successfully"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "400"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Validation error"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "401"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Unauthorized"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "409"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Email already exists"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "DELETE /api/v2/users/:id"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Delete a user by ID."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "This action is irreversible. All user data will be permanently deleted."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "caution",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Rate Limiting"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The API enforces rate limits per token:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "alignments": [
+        "none",
+        "right",
+        "right"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Plan"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Requests/min"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Requests/day"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Free"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "60"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "10000"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Pro"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "600"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "100000"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Enterprise"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "6000"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "1000000"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Rate limit headers are included in every response: "
+            },
+            {
+              "type": "inline_code",
+              "value": "X-RateLimit-Remaining"
+            },
+            {
+              "type": "text",
+              "value": " and "
+            },
+            {
+              "type": "inline_code",
+              "value": "X-RateLimit-Reset"
+            },
+            {
+              "type": "text",
+              "value": "."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    }
+  ]
+}

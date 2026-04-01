@@ -1,0 +1,41 @@
+{
+  "children": [
+    {
+      "alignments": [
+        "none",
+        "none"
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Description"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Notes"
+          }
+        ]
+      ],
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "This is a very long cell that contains a lot of text to test wrapping behavior"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "Short"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    }
+  ]
+}

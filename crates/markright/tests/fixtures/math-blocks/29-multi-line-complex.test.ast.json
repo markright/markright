@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\int_0^1 x^2 \\, dx\n= \\left[ \\frac{x^3}{3} \\right]_0^1\n= \\frac{1}{3}",
+      "type": "math_block"
+    }
+  ]
+}

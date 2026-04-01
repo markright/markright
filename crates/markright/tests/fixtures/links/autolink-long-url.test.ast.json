@@ -1,0 +1,23 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Link: "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "https://subdomain.example.com/very/long/path/to/resource.html"
+            }
+          ],
+          "type": "link",
+          "url": "https://subdomain.example.com/very/long/path/to/resource.html"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

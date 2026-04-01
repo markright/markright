@@ -1,0 +1,21 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Let"
+        },
+        {
+          "type": "inline_math",
+          "value": "x"
+        },
+        {
+          "type": "text",
+          "value": "be a number."
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "children": [
+    {
+      "body": "\\sqrt{\\sqrt{x} + \\sqrt{y}}",
+      "type": "math_block"
+    }
+  ]
+}

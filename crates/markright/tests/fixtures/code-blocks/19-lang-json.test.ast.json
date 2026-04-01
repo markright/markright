@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "{\n  \"name\": \"markright\",\n  \"version\": \"1.0\"\n}",
+      "lang": "json",
+      "type": "code_block"
+    }
+  ]
+}

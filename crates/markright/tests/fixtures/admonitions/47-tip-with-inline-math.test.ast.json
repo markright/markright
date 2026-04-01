@@ -1,0 +1,28 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The formula is "
+            },
+            {
+              "type": "inline_math",
+              "value": "E = mc^2"
+            },
+            {
+              "type": "text",
+              "value": " here."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "tip",
+      "type": "admonition"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "inline_code",
+          "value": "a"
+        },
+        {
+          "type": "text",
+          "value": " then "
+        },
+        {
+          "type": "inline_math",
+          "value": "b"
+        },
+        {
+          "type": "text",
+          "value": " then "
+        },
+        {
+          "type": "inline_code",
+          "value": "c"
+        },
+        {
+          "type": "text",
+          "value": " then "
+        },
+        {
+          "type": "inline_math",
+          "value": "d"
+        }
+      ],
+      "type": "paragraph"
+    }
+  ]
+}

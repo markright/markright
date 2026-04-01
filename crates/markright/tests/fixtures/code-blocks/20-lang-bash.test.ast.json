@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "body": "#!/bin/bash\necho \"hello\"\nfor i in 1 2 3; do\n  echo $i\ndone",
+      "lang": "bash",
+      "type": "code_block"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# Main Document
+
+## Introduction
+
+This document uses include directives to pull in content from other files.
+
+{{chapters/introduction.right}}
+
+## API Reference
+
+{{api/endpoints.right}}
+
+## Specific Section
+
+{{chapters/advanced.right#configuration}}
+
+## Appendix
+
+{{appendix/glossary.right}}
+
+{{appendix/references.right#bibliography}}

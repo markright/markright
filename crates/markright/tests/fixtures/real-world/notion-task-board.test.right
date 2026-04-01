@@ -1,0 +1,38 @@
+# Sprint 14 Task Board
+
+## Backlog
+
+- [ ] Implement user avatar upload
+- [ ] Add dark mode toggle
+- [?] Should we support AVIF format?
+
+## In Progress
+
+- [~] Refactor authentication middleware
+- [~] Build notification system
+
+## In Review
+
+- [@] Update payment processing flow
+- [@] Add rate limiting to API endpoints
+
+## Blocked
+
+- [!] Database migration for new schema
+- [!] Third-party OAuth integration
+
+## Deferred
+
+- [>] Internationalization support
+- [>] Accessibility audit
+
+## Cancelled
+
+- [-] Legacy XML export
+- [-] IE11 support
+
+## Done
+
+- [x] Set up CI/CD pipeline
+- [x] Write unit tests for user service
+- [x] Deploy staging environment

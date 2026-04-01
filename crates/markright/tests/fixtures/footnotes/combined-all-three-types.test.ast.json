@@ -1,0 +1,78 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Point ref"
+        },
+        {
+          "label": "1",
+          "type": "footnote_ref"
+        },
+        {
+          "type": "text",
+          "value": ", then "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "a range footnote"
+            }
+          ],
+          "label": "2",
+          "type": "range_footnote"
+        },
+        {
+          "type": "text",
+          "value": ", and an inline"
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "quick note"
+            }
+          ],
+          "type": "inline_footnote"
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "First source."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "1",
+      "type": "footnote_def"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Second source."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "2",
+      "type": "footnote_def"
+    }
+  ]
+}

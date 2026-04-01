@@ -1,0 +1,466 @@
+{
+  "children": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Evaluating Neural Architecture Search Methods"
+        }
+      ],
+      "level": 1,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Abstract"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "We compare three neural architecture search (NAS) methods on standard benchmarks. Our experiments show that weight-sharing approaches achieve competitive accuracy with significantly reduced search cost."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Experimental Setup"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "All experiments were conducted on a cluster with 8 NVIDIA A100 GPUs. We used the following hyperparameters:"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "alignments": [
+        "none",
+        "right"
+      ],
+      "caption": [
+        {
+          "type": "text",
+          "value": "Training hyperparameters"
+        }
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Parameter"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Value"
+          }
+        ]
+      ],
+      "id": "hyperparams",
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "Learning rate"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "0.025"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Batch size"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "256"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Weight decay"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "0.0003"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Epochs"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "600"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Optimizer"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "SGD with momentum"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Results"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "CIFAR-10"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "alt": "CIFAR-10 accuracy comparison",
+          "title": "Accuracy curves on CIFAR-10",
+          "type": "image",
+          "url": "figures/cifar10-accuracy.png"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "alignments": [
+        "none",
+        "right",
+        "right",
+        "right"
+      ],
+      "caption": [
+        {
+          "type": "text",
+          "value": "CIFAR-10 benchmark results"
+        }
+      ],
+      "headers": [
+        [
+          {
+            "type": "text",
+            "value": "Method"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Params (M)"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "Accuracy (%)"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "value": "GPU Hours"
+          }
+        ]
+      ],
+      "id": "cifar10-results",
+      "rows": [
+        [
+          [
+            {
+              "type": "text",
+              "value": "DARTS"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "3.3"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "97.24"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "1.5"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "ENAS"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "4.6"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "97.11"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "0.5"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "NASNet"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "3.3"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "97.35"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "48000"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "type": "text",
+              "value": "Random Search"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "3.2"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "97.05"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "value": "4.0"
+            }
+          ]
+        ]
+      ],
+      "type": "table"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "ImageNet"
+        }
+      ],
+      "level": 3,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "alt": "ImageNet top-1 accuracy",
+          "title": "Top-1 accuracy on ImageNet validation set",
+          "type": "image",
+          "url": "figures/imagenet-top1.png"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "The weight-sharing method achieves "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "76.2%"
+            }
+          ],
+          "type": "bold"
+        },
+        {
+          "type": "text",
+          "value": " top-1 accuracy while requiring only "
+        },
+        {
+          "children": [
+            {
+              "type": "text",
+              "value": "0.5 GPU days"
+            }
+          ],
+          "type": "italic"
+        },
+        {
+          "type": "text",
+          "value": " for the search phase."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Analysis"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "The search cost of NASNet (48000 GPU hours) makes it impractical for most research labs."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "note",
+      "type": "admonition"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Accuracy numbers should be interpreted carefully. Small differences (less than 0.3%) may not be statistically significant."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "foldable": false,
+      "kind": "warning",
+      "type": "admonition"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Conclusion"
+        }
+      ],
+      "level": 2,
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "value": "Weight-sharing NAS methods offer the best trade-off between search efficiency and final accuracy. We recommend DARTS as the default choice for architecture search on image classification tasks."
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "children": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "value": "Liu, H. et al. (2019). DARTS: Differentiable Architecture Search."
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "label": "darts",
+      "type": "footnote_def"
+    }
+  ],
+  "front_matter": {
+    "raw": "title: Evaluating Neural Architecture Search Methods\nauthor: Alex Johnson\ndate: 2026-03-01"
+  }
+}
