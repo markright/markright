@@ -1,0 +1,16 @@
+{
+  "name": "@markright/markright-wasm",
+  "type": "module",
+  "description": "MarkRight parser compiled to WebAssembly",
+  "version": "0.1.0",
+  "files": [
+    "markright_wasm_bg.wasm",
+    "markright_wasm.js",
+    "markright_wasm.d.ts"
+  ],
+  "main": "markright_wasm.js",
+  "types": "markright_wasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

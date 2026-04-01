@@ -13,8 +13,8 @@ node_modules
 # Next.js
 .next
 
-# WASM build output
-crates/markright-wasm/pkg
+# WASM build output (pkg is committed for Vercel deployment)
+# crates/markright-wasm/pkg
 
 # Generic build output
 dist
