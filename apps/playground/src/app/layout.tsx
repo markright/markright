@@ -22,6 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${mono.variable} dark h-full antialiased`}>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/anaclumos/sunghyun-sans@latest/dist/web/css/sunghyun-sans-dynamic-subset.min.css"
+        />
+      </head>
       <body className="flex h-full flex-col bg-background text-foreground">
         <TooltipProvider>{children}</TooltipProvider>
       </body>

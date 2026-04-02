@@ -51,17 +51,19 @@ function PlaygroundContent() {
   const deferredSource = useDeferredValue(source);
   const previewRef = useRef<HTMLDivElement>(null);
 
-  const { html, rawAst, warnings } = useMemo(() => {
+  const { html, warnings } = useMemo(() => {
     const html = wasm.parse_to_html(deferredSource);
     const lintOutput = wasm.lint(deferredSource);
-    const warnings = lintOutput ? lintOutput.split("\n") : [];
-    const rawAst =
+    return { html, warnings: lintOutput ? lintOutput.split("\n") : [] };
+  }, [deferredSource, wasm]);
+
+  const rawAst = useMemo(
+    () =>
       view === "ast"
         ? JSON.stringify(JSON.parse(wasm.parse(deferredSource)), null, 2)
-        : "";
-
-    return { html, rawAst, warnings };
-  }, [deferredSource, view, wasm]);
+        : "",
+    [deferredSource, view, wasm]
+  );
 
   useEffect(() => {
     if (!previewRef.current || view !== "preview") {
