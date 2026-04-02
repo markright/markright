@@ -180,7 +180,7 @@ function PlaygroundContent() {
             <div className="shrink-0 border-b border-border px-4 py-1.5">
               <Tabs
                 value={view}
-                onValueChange={(value: string | number | null) =>
+                onValueChange={(value) =>
                   setView(value as "preview" | "html" | "ast")
                 }
               >
