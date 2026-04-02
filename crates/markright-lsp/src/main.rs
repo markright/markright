@@ -33,11 +33,13 @@ fn heading_symbols(text: &str) -> Vec<DocumentSymbol> {
     let mut symbols = Vec::new();
 
     for block in &doc.children {
-        if let Block::Heading { content, .. } = block {
+        if let Block::Heading { level, content, .. } = block {
             let name: String = content.iter().map(|i| inline_text(i)).collect();
+            let prefix = "#".repeat(*level as usize);
 
             while line_num < lines.len() {
-                if lines[line_num].starts_with('#') && lines[line_num].contains(&name) {
+                let l = lines[line_num];
+                if l.starts_with(&prefix) && l.as_bytes().get(prefix.len()) == Some(&b' ') {
                     break;
                 }
                 line_num += 1;
