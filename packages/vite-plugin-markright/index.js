@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises'
 import matter from 'gray-matter'
-import init, { parse_to_html } from '@markright/markright-wasm'
+import init, { parse_to_html, parse_to_html_with_options } from '@markright/markright-wasm'
 
 let initPromise
 
@@ -28,7 +28,7 @@ function extractFrontMatter(source) {
   return matter(`---\n${raw}\n---`).data
 }
 
-export default function markright() {
+export default function markright(options) {
   return {
     name: 'vite-plugin-markright',
 
@@ -37,7 +37,9 @@ export default function markright() {
       await ensureInit()
 
       const frontMatter = extractFrontMatter(code)
-      const html = parse_to_html(code)
+      const html = options
+        ? parse_to_html_with_options(code, options)
+        : parse_to_html(code)
 
       return {
         code: [

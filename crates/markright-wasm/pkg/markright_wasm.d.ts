@@ -9,6 +9,8 @@ export function parse(input: string): string;
 
 export function parse_to_html(input: string): string;
 
+export function parse_to_html_with_options(input: string, options: any): string;
+
 export function schema(): string;
 
 export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembly.Module;
@@ -19,10 +21,13 @@ export interface InitOutput {
     readonly lint: (a: number, b: number) => [number, number];
     readonly parse: (a: number, b: number) => [number, number, number, number];
     readonly parse_to_html: (a: number, b: number) => [number, number];
+    readonly parse_to_html_with_options: (a: number, b: number, c: any) => [number, number, number, number];
     readonly schema: () => [number, number];
-    readonly __wbindgen_externrefs: WebAssembly.Table;
     readonly __wbindgen_malloc: (a: number, b: number) => number;
     readonly __wbindgen_realloc: (a: number, b: number, c: number, d: number) => number;
+    readonly __wbindgen_exn_store: (a: number) => void;
+    readonly __externref_table_alloc: () => number;
+    readonly __wbindgen_externrefs: WebAssembly.Table;
     readonly __wbindgen_free: (a: number, b: number, c: number) => void;
     readonly __externref_table_dealloc: (a: number) => void;
     readonly __wbindgen_start: () => void;

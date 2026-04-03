@@ -1,5 +1,5 @@
 {
-  "name": "@markright/markright-wasm",
+  "name": "markright-wasm",
   "type": "module",
   "description": "MarkRight parser compiled to WebAssembly",
   "version": "0.1.0",
