@@ -1,0 +1,10 @@
+{
+  "id": "markright",
+  "name": "MarkRight",
+  "version": "0.0.1",
+  "minAppVersion": "1.0.0",
+  "description": "Support for MarkRight (.right) files -- rendering, editing, and wikilink resolution",
+  "author": "MarkRight",
+  "authorUrl": "https://github.com/markright/markright",
+  "isDesktopOnly": false
+}

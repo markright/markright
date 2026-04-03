@@ -1,0 +1,46 @@
+/* MarkRight plugin styles */
+.markright-preview .task-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.markright-preview .task-icon {
+  margin-right: 0.5em;
+}
+
+.markright-preview .admonition {
+  padding: 1em;
+  border-left: 4px solid var(--interactive-accent);
+  margin: 1em 0;
+  border-radius: 4px;
+}
+
+.markright-preview .admonition.note {
+  border-left-color: var(--color-blue);
+}
+
+.markright-preview .admonition.warning {
+  border-left-color: var(--color-yellow);
+}
+
+.markright-preview .admonition.caution {
+  border-left-color: var(--color-red);
+}
+
+.markright-preview .admonition.tip {
+  border-left-color: var(--color-green);
+}
+
+.markright-preview .admonition.important {
+  border-left-color: var(--color-orange);
+}
+
+.markright-preview .wikilink {
+  color: var(--link-color);
+  text-decoration: var(--link-decoration);
+}
+
+.markright-preview .wikilink-broken {
+  color: var(--link-color);
+  opacity: 0.5;
+}
