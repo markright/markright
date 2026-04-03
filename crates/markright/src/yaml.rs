@@ -89,7 +89,7 @@ fn parse_map(lines: &[&str], start: usize, map_indent: usize) -> (serde_json::Va
                 i += 1;
             }
         } else if trimmed.ends_with(':') {
-            let key = trimmed[..trimmed.len() - 1].trim().to_string();
+            let key = trimmed.strip_suffix(':').unwrap().trim().to_string();
             let child_indent = if i + 1 < lines.len() {
                 let next = lines[i + 1];
                 if next.trim().is_empty() {
