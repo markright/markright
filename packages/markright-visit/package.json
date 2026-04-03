@@ -1,0 +1,13 @@
+{
+  "name": "markright-visit",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "description": "AST visitor and transform utilities for MarkRight",
+  "scripts": {
+    "test": "node --test index.test.js"
+  },
+  "keywords": ["markright", "ast", "visitor", "transform"],
+  "license": "MIT"
+}
