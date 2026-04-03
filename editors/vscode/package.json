@@ -15,6 +15,11 @@
   "categories": [
     "Programming Languages"
   ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage:markright",
+    "onLanguage:markdown"
+  ],
   "contributes": {
     "languages": [
       {
