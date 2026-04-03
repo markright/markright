@@ -5,7 +5,7 @@ use crate::ast::block::{Block, Document};
 use crate::ast::common::{AdmonitionKind, Alignment, TaskState};
 use crate::ast::inline::Inline;
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 #[cfg_attr(feature = "serde", derive(serde::Deserialize))]
 #[cfg_attr(feature = "serde", serde(default))]
 #[cfg_attr(feature = "schemars", derive(schemars::JsonSchema))]
@@ -15,17 +15,7 @@ pub struct HtmlOptions {
     pub classes: ClassMap,
 }
 
-impl Default for HtmlOptions {
-    fn default() -> Self {
-        Self {
-            wikilinks: HashMap::new(),
-            embeds: HashMap::new(),
-            classes: ClassMap::default(),
-        }
-    }
-}
-
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 #[cfg_attr(feature = "serde", derive(serde::Deserialize))]
 #[cfg_attr(feature = "serde", serde(default))]
 #[cfg_attr(feature = "schemars", derive(schemars::JsonSchema))]
@@ -33,16 +23,6 @@ pub struct ResolvedWikiLink {
     pub href: Option<String>,
     pub display: Option<String>,
     pub class: Option<String>,
-}
-
-impl Default for ResolvedWikiLink {
-    fn default() -> Self {
-        Self {
-            href: None,
-            display: None,
-            class: None,
-        }
-    }
 }
 
 #[derive(Debug, Clone)]
@@ -221,7 +201,7 @@ fn write_block(block: &Block, opts: &HtmlOptions, out: &mut dyn Write) -> fmt::R
             out.write_str("</ol>\n")
         }
         Block::TaskList { items } => {
-            write!(out, "<ul class=\"{}\">\n", opts.classes.task_list)?;
+            writeln!(out, "<ul class=\"{}\">", opts.classes.task_list)?;
             for item in items {
                 let (label, icon) = match item.state {
                     TaskState::Open => ("open", "\u{25cb}"),
