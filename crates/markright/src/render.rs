@@ -386,7 +386,7 @@ fn write_inline(node: &Inline, opts: &HtmlOptions, out: &mut dyn Write) -> fmt::
             out.write_str("</del>")
         }
         Inline::Highlight { children } => {
-            out.write_str("<mark>")?;
+            write!(out, "<mark class=\"{}\">", opts.classes.highlight)?;
             write_inlines(children, opts, out)?;
             out.write_str("</mark>")
         }
@@ -538,7 +538,7 @@ fn write_inline(node: &Inline, opts: &HtmlOptions, out: &mut dyn Write) -> fmt::
             out.write_str("</span>")
         }
         Inline::FootnoteRef { label } => {
-            out.write_str("<sup><a href=\"#fn-")?;
+            write!(out, "<sup><a class=\"{}\" href=\"#fn-", opts.classes.footnote_ref)?;
             escape_href(out, label)?;
             out.write_str("\">")?;
             escape(out, label)?;
