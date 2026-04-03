@@ -66,10 +66,10 @@ impl Default for ClassMap {
             math_inline: "math-inline".into(),
             admonition: "admonition".into(),
             footnote: "footnote".into(),
-            footnote_ref: "footnote-ref".into(),
+            footnote_ref: String::new(),
             footnote_range: "footnote-range".into(),
             footnote_inline: "footnote-inline".into(),
-            highlight: "highlight".into(),
+            highlight: String::new(),
         }
     }
 }
@@ -374,7 +374,11 @@ fn write_inline(node: &Inline, opts: &HtmlOptions, out: &mut dyn Write) -> fmt::
             out.write_str("</del>")
         }
         Inline::Highlight { children } => {
-            write!(out, "<mark class=\"{}\">", opts.classes.highlight)?;
+            if opts.classes.highlight.is_empty() {
+                out.write_str("<mark>")?;
+            } else {
+                write!(out, "<mark class=\"{}\">", opts.classes.highlight)?;
+            }
             write_inlines(children, opts, out)?;
             out.write_str("</mark>")
         }
@@ -518,11 +522,15 @@ fn write_inline(node: &Inline, opts: &HtmlOptions, out: &mut dyn Write) -> fmt::
             out.write_str("</span>")
         }
         Inline::FootnoteRef { label } => {
-            write!(
-                out,
-                "<sup><a class=\"{}\" href=\"#fn-",
-                opts.classes.footnote_ref
-            )?;
+            if opts.classes.footnote_ref.is_empty() {
+                out.write_str("<sup><a href=\"#fn-")?;
+            } else {
+                write!(
+                    out,
+                    "<sup><a class=\"{}\" href=\"#fn-",
+                    opts.classes.footnote_ref
+                )?;
+            }
             escape_href(out, label)?;
             out.write_str("\">")?;
             escape(out, label)?;

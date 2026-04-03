@@ -15,6 +15,14 @@ fn indent_of(line: &str) -> usize {
 }
 
 #[cfg(feature = "serde")]
+fn next_child_indent(lines: &[&str], i: usize, parent_indent: usize) -> usize {
+    lines
+        .get(i + 1)
+        .filter(|l| !l.trim().is_empty())
+        .map_or(parent_indent + 2, |l| indent_of(l))
+}
+
+#[cfg(feature = "serde")]
 fn parse_value(lines: &[&str], start: usize, min_indent: usize) -> (serde_json::Value, usize) {
     if start >= lines.len() {
         return (serde_json::Value::Null, start);
@@ -23,7 +31,6 @@ fn parse_value(lines: &[&str], start: usize, min_indent: usize) -> (serde_json::
     let line = lines[start];
     let trimmed = line.trim();
 
-    // Empty or comment line -- skip
     if trimmed.is_empty() || trimmed.starts_with('#') {
         return parse_value(lines, start + 1, min_indent);
     }
@@ -33,17 +40,14 @@ fn parse_value(lines: &[&str], start: usize, min_indent: usize) -> (serde_json::
         return (serde_json::Value::Null, start);
     }
 
-    // Sequence item
     if trimmed.starts_with("- ") || trimmed == "-" {
         return parse_sequence(lines, start, indent);
     }
 
-    // Map entry (key: value)
     if trimmed.contains(": ") || trimmed.ends_with(':') {
         return parse_map(lines, start, indent);
     }
 
-    // Bare scalar
     (parse_scalar(trimmed), start + 1)
 }
 
@@ -61,50 +65,27 @@ fn parse_map(lines: &[&str], start: usize, map_indent: usize) -> (serde_json::Va
             continue;
         }
 
-        let indent = indent_of(line);
-        if indent != map_indent {
+        if indent_of(line) != map_indent {
             break;
         }
 
-        if let Some(colon_pos) = trimmed.find(": ") {
-            let key = trimmed[..colon_pos].trim().to_string();
-            let val_str = trimmed[colon_pos + 2..].trim();
-            if val_str.is_empty() {
-                // Block value on next lines
-                let child_indent = if i + 1 < lines.len() {
-                    let next = lines[i + 1];
-                    if next.trim().is_empty() {
-                        map_indent + 2
-                    } else {
-                        indent_of(next)
-                    }
-                } else {
-                    map_indent + 2
-                };
-                let (val, next_i) = parse_value(lines, i + 1, child_indent);
-                map.insert(key, val);
-                i = next_i;
-            } else {
-                map.insert(key, parse_scalar(val_str));
-                i += 1;
-            }
-        } else if trimmed.ends_with(':') {
-            let key = trimmed.strip_suffix(':').unwrap().trim().to_string();
-            let child_indent = if i + 1 < lines.len() {
-                let next = lines[i + 1];
-                if next.trim().is_empty() {
-                    map_indent + 2
-                } else {
-                    indent_of(next)
-                }
-            } else {
-                map_indent + 2
-            };
+        let (key, inline_val) = if let Some(pos) = trimmed.find(": ") {
+            (&trimmed[..pos], trimmed[pos + 2..].trim())
+        } else if let Some(k) = trimmed.strip_suffix(':') {
+            (k, "")
+        } else {
+            break;
+        };
+
+        let key = key.trim().to_string();
+        if inline_val.is_empty() {
+            let child_indent = next_child_indent(lines, i, map_indent);
             let (val, next_i) = parse_value(lines, i + 1, child_indent);
             map.insert(key, val);
             i = next_i;
         } else {
-            break;
+            map.insert(key, parse_scalar(inline_val));
+            i += 1;
         }
     }
 
@@ -125,15 +106,14 @@ fn parse_sequence(lines: &[&str], start: usize, seq_indent: usize) -> (serde_jso
             continue;
         }
 
-        let indent = indent_of(line);
-        if indent != seq_indent {
+        if indent_of(line) != seq_indent {
             break;
         }
 
         if let Some(rest) = trimmed.strip_prefix("- ") {
             let rest = rest.trim();
             if rest.is_empty() {
-                let (val, next_i) = parse_value(lines, i + 1, indent + 2);
+                let (val, next_i) = parse_value(lines, i + 1, seq_indent + 2);
                 arr.push(val);
                 i = next_i;
             } else if rest.contains(": ") || rest.ends_with(':') {
@@ -146,7 +126,7 @@ fn parse_sequence(lines: &[&str], start: usize, seq_indent: usize) -> (serde_jso
                 i += 1;
             }
         } else if trimmed == "-" {
-            let (val, next_i) = parse_value(lines, i + 1, indent + 2);
+            let (val, next_i) = parse_value(lines, i + 1, seq_indent + 2);
             arr.push(val);
             i = next_i;
         } else {
@@ -157,7 +137,6 @@ fn parse_sequence(lines: &[&str], start: usize, seq_indent: usize) -> (serde_jso
     (serde_json::Value::Array(arr), i)
 }
 
-/// Rebuild lines for an inline sequence-map item: "- key: val" -> "key: val"
 /// Returns (dedented_lines, original_lines_consumed).
 #[cfg(feature = "serde")]
 fn rebuild_dedented<'a>(
@@ -166,8 +145,7 @@ fn rebuild_dedented<'a>(
     first_content: &'a str,
 ) -> (Vec<&'a str>, usize) {
     let mut result = vec![first_content];
-    let base_indent = indent_of(lines[idx]);
-    let child_indent = base_indent + 2;
+    let child_indent = indent_of(lines[idx]) + 2;
     let mut j = idx + 1;
     while j < lines.len() {
         let l = lines[j];
@@ -187,7 +165,6 @@ fn rebuild_dedented<'a>(
 
 #[cfg(feature = "serde")]
 fn parse_scalar(s: &str) -> serde_json::Value {
-    // Unquote strings
     if s.len() >= 2
         && ((s.starts_with('"') && s.ends_with('"')) || (s.starts_with('\'') && s.ends_with('\'')))
     {

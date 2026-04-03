@@ -37,11 +37,8 @@ class MarkRightPlugin extends obsidian.Plugin {
       const source = await this.app.vault.cachedRead(file)
       const html = wasm.parse_to_html(source)
 
-      // Use Obsidian's sanitized rendering
       el.empty()
-      obsidian.sanitizeHTMLToDom(html).childNodes.forEach((node) => {
-        el.appendChild(node.cloneNode(true))
-      })
+      el.appendChild(obsidian.sanitizeHTMLToDom(html))
     })
   }
 
