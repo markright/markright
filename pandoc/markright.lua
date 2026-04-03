@@ -134,8 +134,26 @@ Inlines.Math = function(el)
 end
 
 Inlines.Link = function(el)
-  local text = inlines(el.content)
   local url = el.target
+  local text_str = pandoc.utils.stringify(el.content)
+  local has_wikilink_class = false
+  if el.attr then
+    for _, cls in ipairs(el.attr.classes) do
+      if cls == "wikilink" then has_wikilink_class = true end
+    end
+  end
+  -- Detect wikilinks: explicit class, or no scheme + no slash + no extension
+  local is_wikilink = has_wikilink_class
+    or (not url:match("^%a[%w+.-]*://") and not url:match("%.%w+$")
+        and not url:match("/") and not url:match("^%.") and not url:match("^#") and url ~= "")
+  if is_wikilink then
+    if text_str == url or text_str == "" then
+      return literal("[[" .. url .. "]]")
+    else
+      return literal("[[" .. url .. "|" .. text_str .. "]]")
+    end
+  end
+  local text = inlines(el.content)
   if el.title and el.title ~= "" then
     return concat{"[", text, "](", literal(url), " \"", literal(el.title), "\")"}
   end

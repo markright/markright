@@ -461,45 +461,32 @@ fn write_inline(node: &Inline, opts: &HtmlOptions, out: &mut dyn Write) -> fmt::
                 Some(frag) => format!("{target}#{frag}"),
                 None => (*target).to_string(),
             };
-            if let Some(resolved) = opts.wikilinks.get(&lookup_key) {
-                let class = resolved
-                    .class
-                    .as_deref()
-                    .unwrap_or(&opts.classes.wikilink);
-                write!(out, "<a class=\"{class}\" href=\"")?;
-                if let Some(href) = &resolved.href {
-                    escape_href(out, href)?;
-                } else {
-                    escape_href(out, target)?;
-                    if let Some(frag) = fragment {
-                        out.write_char('#')?;
-                        escape_href(out, frag)?;
-                    }
-                }
-                out.write_str("\">")?;
-                if let Some(display) = &resolved.display {
-                    escape(out, display)?;
-                } else if let Some(a) = alias {
-                    escape(out, a)?;
-                } else {
-                    escape(out, target)?;
-                }
-                out.write_str("</a>")
+            let resolved = opts.wikilinks.get(&lookup_key);
+            let class = resolved
+                .and_then(|r| r.class.as_deref())
+                .unwrap_or(&opts.classes.wikilink);
+            let href = resolved.and_then(|r| r.href.as_deref());
+            let display = resolved.and_then(|r| r.display.as_deref());
+
+            write!(out, "<a class=\"{class}\" href=\"")?;
+            if let Some(href) = href {
+                escape_href(out, href)?;
             } else {
-                write!(out, "<a class=\"{}\" href=\"", opts.classes.wikilink)?;
                 escape_href(out, target)?;
                 if let Some(frag) = fragment {
                     out.write_char('#')?;
                     escape_href(out, frag)?;
                 }
-                out.write_str("\">")?;
-                if let Some(alias) = alias {
-                    escape(out, alias)?;
-                } else {
-                    escape(out, target)?;
-                }
-                out.write_str("</a>")
             }
+            out.write_str("\">")?;
+            if let Some(d) = display {
+                escape(out, d)?;
+            } else if let Some(a) = alias {
+                escape(out, a)?;
+            } else {
+                escape(out, target)?;
+            }
+            out.write_str("</a>")
         }
         Inline::WikiEmbed {
             target,
