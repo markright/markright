@@ -137,11 +137,10 @@ fn parse_sequence(lines: &[&str], start: usize, seq_indent: usize) -> (serde_jso
                 arr.push(val);
                 i = next_i;
             } else if rest.contains(": ") || rest.ends_with(':') {
-                // Inline map start within sequence item
-                let (val, next_i) = parse_map(&rebuild_dedented(lines, i, rest), 0, 0);
-                // We consumed just this one line for the inline part
+                let (rebuilt, lines_consumed) = rebuild_dedented(lines, i, rest);
+                let (val, _) = parse_map(&rebuilt, 0, 0);
                 arr.push(val);
-                i += next_i.max(1);
+                i += lines_consumed;
             } else {
                 arr.push(parse_scalar(rest));
                 i += 1;
@@ -159,8 +158,13 @@ fn parse_sequence(lines: &[&str], start: usize, seq_indent: usize) -> (serde_jso
 }
 
 /// Rebuild lines for an inline sequence-map item: "- key: val" -> "key: val"
+/// Returns (dedented_lines, original_lines_consumed).
 #[cfg(feature = "serde")]
-fn rebuild_dedented<'a>(lines: &[&'a str], idx: usize, first_content: &'a str) -> Vec<&'a str> {
+fn rebuild_dedented<'a>(
+    lines: &[&'a str],
+    idx: usize,
+    first_content: &'a str,
+) -> (Vec<&'a str>, usize) {
     let mut result = vec![first_content];
     let base_indent = indent_of(lines[idx]);
     let child_indent = base_indent + 2;
@@ -178,13 +182,15 @@ fn rebuild_dedented<'a>(lines: &[&'a str], idx: usize, first_content: &'a str) -
             break;
         }
     }
-    result
+    (result, j - idx)
 }
 
 #[cfg(feature = "serde")]
 fn parse_scalar(s: &str) -> serde_json::Value {
     // Unquote strings
-    if (s.starts_with('"') && s.ends_with('"')) || (s.starts_with('\'') && s.ends_with('\'')) {
+    if s.len() >= 2
+        && ((s.starts_with('"') && s.ends_with('"')) || (s.starts_with('\'') && s.ends_with('\'')))
+    {
         return serde_json::Value::String(s[1..s.len() - 1].to_string());
     }
 
@@ -266,5 +272,23 @@ mod tests {
         );
         assert_eq!(v["title"], "MarkRight Feature Tour");
         assert_eq!(v["syntax"], "markright");
+    }
+
+    #[test]
+    fn single_char_quote_no_panic() {
+        let v = parse_yaml("a: \"\nb: '\n");
+        assert_eq!(v["a"], "\"");
+        assert_eq!(v["b"], "'");
+    }
+
+    #[test]
+    fn sequence_of_maps() {
+        let v = parse_yaml("items:\n  - name: Alice\n    age: 30\n  - name: Bob\n    age: 25\n");
+        let items = v["items"].as_array().unwrap();
+        assert_eq!(items.len(), 2);
+        assert_eq!(items[0]["name"], "Alice");
+        assert_eq!(items[0]["age"], 30);
+        assert_eq!(items[1]["name"], "Bob");
+        assert_eq!(items[1]["age"], 25);
     }
 }

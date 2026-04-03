@@ -14,7 +14,9 @@ async function loadWasm(vault) {
     await mod.default(wasmBinary)
     wasmModule = mod
     return mod
-  } catch {
+  } catch (e) {
+    console.error('markright: failed to load WASM module:', e)
+    new obsidian.Notice('MarkRight: WASM module not found. Copy markright_wasm.js and markright_wasm_bg.wasm to the plugin folder.')
     return null
   }
 }
