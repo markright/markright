@@ -2,6 +2,7 @@
 /* eslint-disable */
 export const memory: WebAssembly.Memory;
 export const format: (a: number, b: number) => [number, number];
+export const is_markright_syntax: (a: number, b: number) => number;
 export const lint: (a: number, b: number) => [number, number];
 export const parse: (a: number, b: number) => [number, number, number, number];
 export const parse_to_html: (a: number, b: number) => [number, number];

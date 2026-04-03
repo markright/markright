@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises'
 import matter from 'gray-matter'
-import init, { parse_to_html, parse_to_html_with_options } from '@markright/markright-wasm'
+import init, { parse_to_html, parse_to_html_with_options, is_markright_syntax } from '@markright/markright-wasm'
 
 let initPromise
 
@@ -33,8 +33,9 @@ export default function markright(options) {
     name: 'vite-plugin-markright',
 
     async transform(code, id) {
-      if (!id.endsWith('.right')) return null
+      if (!id.endsWith('.right') && !id.endsWith('.md')) return null
       await ensureInit()
+      if (id.endsWith('.md') && !is_markright_syntax(code)) return null
 
       const frontMatter = extractFrontMatter(code)
       const html = options

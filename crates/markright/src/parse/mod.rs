@@ -127,6 +127,21 @@ pub fn parse<'a>(input: &'a str, bump: &'a Bump) -> Document<'a> {
     }
 }
 
+/// Check if input has `syntax: markright` in its front matter.
+pub fn is_markright_syntax(input: &str) -> bool {
+    if !input.starts_with("---\n") && !input.starts_with("---\r\n") {
+        return false;
+    }
+    let check = &input[..input.len().min(512)];
+    let close = check.find("\n---");
+    let Some(pos) = close else { return false };
+    let raw = &check[4..pos];
+    raw.lines().any(|line| {
+        let trimmed = line.trim();
+        trimmed == "syntax: markright" || trimmed == "syntax:markright"
+    })
+}
+
 /// Extract front matter delimited by `---\n`. Input must already be CR-stripped.
 fn extract_front_matter<'a>(input: &'a str) -> (Option<FrontMatter<'a>>, &'a str) {
     if !input.starts_with("---\n") {

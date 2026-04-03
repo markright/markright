@@ -44,6 +44,11 @@ pub fn lint(input: &str) -> String {
 }
 
 #[wasm_bindgen]
+pub fn is_markright_syntax(input: &str) -> bool {
+    markright::is_markright_syntax(input)
+}
+
+#[wasm_bindgen]
 pub fn schema() -> String {
     serde_json::to_string(&markright::json_schema()).unwrap()
 }

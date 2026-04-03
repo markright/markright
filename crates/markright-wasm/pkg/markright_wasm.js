@@ -21,6 +21,17 @@ export function format(input) {
 
 /**
  * @param {string} input
+ * @returns {boolean}
+ */
+export function is_markright_syntax(input) {
+    const ptr0 = passStringToWasm0(input, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+    const len0 = WASM_VECTOR_LEN;
+    const ret = wasm.is_markright_syntax(ptr0, len0);
+    return ret !== 0;
+}
+
+/**
+ * @param {string} input
  * @returns {string}
  */
 export function lint(input) {

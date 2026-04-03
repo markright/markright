@@ -3,6 +3,8 @@
 
 export function format(input: string): string;
 
+export function is_markright_syntax(input: string): boolean;
+
 export function lint(input: string): string;
 
 export function parse(input: string): string;
@@ -18,6 +20,7 @@ export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembl
 export interface InitOutput {
     readonly memory: WebAssembly.Memory;
     readonly format: (a: number, b: number) => [number, number];
+    readonly is_markright_syntax: (a: number, b: number) => number;
     readonly lint: (a: number, b: number) => [number, number];
     readonly parse: (a: number, b: number) => [number, number, number, number];
     readonly parse_to_html: (a: number, b: number) => [number, number];
