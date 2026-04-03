@@ -19,6 +19,15 @@ pub fn parse_to_html(input: &str) -> String {
 }
 
 #[wasm_bindgen]
+pub fn parse_to_html_with_options(input: &str, options: JsValue) -> Result<String, JsValue> {
+    let opts: markright::HtmlOptions =
+        serde_wasm_bindgen::from_value(options).map_err(|e| JsValue::from_str(&e.to_string()))?;
+    Ok(with_doc(input, |doc| {
+        markright::to_html_with_options(doc, &opts)
+    }))
+}
+
+#[wasm_bindgen]
 pub fn format(input: &str) -> String {
     with_doc(input, markright::to_string)
 }

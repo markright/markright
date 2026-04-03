@@ -13,6 +13,15 @@ struct SourceInput {
     source: String,
 }
 
+#[derive(Debug, serde::Deserialize, JsonSchema)]
+struct RenderInput {
+    /// MarkRight source text to process
+    source: String,
+    /// HTML rendering options: wikilink/embed lookup tables and CSS class overrides
+    #[serde(default)]
+    options: markright::HtmlOptions,
+}
+
 fn with_doc<T>(source: &str, f: impl FnOnce(&markright::ast::block::Document) -> T) -> T {
     let bump = markright::Bump::new();
     let doc = markright::parse(source, &bump);
@@ -50,6 +59,17 @@ impl MarkRight {
         Parameters(input): Parameters<SourceInput>,
     ) -> Result<CallToolResult, McpError> {
         let html = with_doc(&input.source, markright::to_html);
+        Ok(CallToolResult::success(vec![Content::text(html)]))
+    }
+
+    #[tool(description = "Render MarkRight source to HTML with wikilink/embed resolution and custom CSS classes")]
+    async fn render_with_options(
+        &self,
+        Parameters(input): Parameters<RenderInput>,
+    ) -> Result<CallToolResult, McpError> {
+        let html = with_doc(&input.source, |doc| {
+            markright::to_html_with_options(doc, &input.options)
+        });
         Ok(CallToolResult::success(vec![Content::text(html)]))
     }
 
