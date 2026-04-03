@@ -67,7 +67,7 @@ pub fn lint(doc: &Document) -> Vec<Lint> {
     lints
 }
 
-fn collect_blocks<'a>(blocks: &'a [Block<'a>], f: &mut dyn FnMut(&'a Block<'a>)) {
+pub(crate) fn collect_blocks<'a>(blocks: &'a [Block<'a>], f: &mut dyn FnMut(&'a Block<'a>)) {
     for block in blocks {
         f(block);
         match block {
@@ -95,7 +95,7 @@ fn collect_blocks<'a>(blocks: &'a [Block<'a>], f: &mut dyn FnMut(&'a Block<'a>))
     }
 }
 
-fn collect_inlines_from_blocks<'a>(blocks: &'a [Block<'a>], f: &mut dyn FnMut(&'a Inline<'a>)) {
+pub(crate) fn collect_inlines_from_blocks<'a>(blocks: &'a [Block<'a>], f: &mut dyn FnMut(&'a Inline<'a>)) {
     collect_blocks(blocks, &mut |block| match block {
         Block::Heading { content, .. } | Block::Paragraph { content, .. } => {
             collect_inlines(content, f);

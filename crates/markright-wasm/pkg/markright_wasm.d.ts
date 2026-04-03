@@ -1,6 +1,10 @@
 /* tslint:disable */
 /* eslint-disable */
 
+export function extract_headings(input: string): string;
+
+export function extract_wikilinks(input: string): string;
+
 export function format(input: string): string;
 
 export function is_markright_syntax(input: string): boolean;
@@ -19,6 +23,8 @@ export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembl
 
 export interface InitOutput {
     readonly memory: WebAssembly.Memory;
+    readonly extract_headings: (a: number, b: number) => [number, number, number, number];
+    readonly extract_wikilinks: (a: number, b: number) => [number, number, number, number];
     readonly format: (a: number, b: number) => [number, number];
     readonly is_markright_syntax: (a: number, b: number) => number;
     readonly lint: (a: number, b: number) => [number, number];
@@ -31,8 +37,8 @@ export interface InitOutput {
     readonly __wbindgen_exn_store: (a: number) => void;
     readonly __externref_table_alloc: () => number;
     readonly __wbindgen_externrefs: WebAssembly.Table;
-    readonly __wbindgen_free: (a: number, b: number, c: number) => void;
     readonly __externref_table_dealloc: (a: number) => void;
+    readonly __wbindgen_free: (a: number, b: number, c: number) => void;
     readonly __wbindgen_start: () => void;
 }
 

@@ -1,10 +1,12 @@
 pub mod ast;
+pub mod extract;
 pub mod format;
 pub mod lint;
 pub mod parse;
 pub mod render;
 
 pub use ast::block::Document;
+pub use extract::{extract_headings, extract_wikilinks};
 pub use format::to_string;
 pub use lint::lint;
 pub use parse::{Bump, is_markright_syntax, parse};

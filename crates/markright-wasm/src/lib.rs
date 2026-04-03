@@ -44,6 +44,22 @@ pub fn lint(input: &str) -> String {
 }
 
 #[wasm_bindgen]
+pub fn extract_headings(input: &str) -> Result<String, JsValue> {
+    with_doc(input, |doc| {
+        serde_json::to_string(&markright::extract_headings(doc))
+            .map_err(|e| JsValue::from_str(&e.to_string()))
+    })
+}
+
+#[wasm_bindgen]
+pub fn extract_wikilinks(input: &str) -> Result<String, JsValue> {
+    with_doc(input, |doc| {
+        serde_json::to_string(&markright::extract_wikilinks(doc))
+            .map_err(|e| JsValue::from_str(&e.to_string()))
+    })
+}
+
+#[wasm_bindgen]
 pub fn is_markright_syntax(input: &str) -> bool {
     markright::is_markright_syntax(input)
 }

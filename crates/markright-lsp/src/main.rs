@@ -6,7 +6,7 @@ use tower_lsp::lsp_types::*;
 use tower_lsp::{Client, LanguageServer, LspService, Server};
 
 use markright::ast::block::Block;
-use markright::ast::inline::Inline;
+use markright::extract::inline_text;
 
 #[derive(Debug)]
 struct Backend {
@@ -63,25 +63,6 @@ fn heading_symbols(text: &str) -> Vec<DocumentSymbol> {
         }
     }
     symbols
-}
-
-fn inline_text(inline: &Inline) -> String {
-    match inline {
-        Inline::Text { value } => value.to_string(),
-        Inline::InlineCode { value } | Inline::InlineMath { value } => value.to_string(),
-        Inline::Bold { children }
-        | Inline::Italic { children }
-        | Inline::BoldItalic { children }
-        | Inline::Strikethrough { children }
-        | Inline::Highlight { children }
-        | Inline::Superscript { children }
-        | Inline::Subscript { children }
-        | Inline::Link { children, .. }
-        | Inline::BracketedSpan { children, .. } => {
-            children.iter().map(|i| inline_text(i)).collect()
-        }
-        _ => String::new(),
-    }
 }
 
 fn find_footnote_target(text: &str, line: u32, col: u32) -> Option<(u32, u32)> {
