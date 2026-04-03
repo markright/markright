@@ -214,7 +214,11 @@ fn write_block(block: &Block, opts: &HtmlOptions, out: &mut dyn Write) -> fmt::R
                     TaskState::Question => ("question", "?"),
                 };
                 write!(out, "<li data-state=\"{label}\">")?;
-                write!(out, "<span class=\"{}\">{icon}</span>", opts.classes.task_icon)?;
+                write!(
+                    out,
+                    "<span class=\"{}\">{icon}</span>",
+                    opts.classes.task_icon
+                )?;
                 write!(out, "<span class=\"{}\">", opts.classes.task_content)?;
                 write_block_children(&item.children, opts, out)?;
                 out.write_str("</span></li>\n")?;
@@ -267,14 +271,22 @@ fn write_block(block: &Block, opts: &HtmlOptions, out: &mut dyn Write) -> fmt::R
                 AdmonitionKind::Caution => "caution",
             };
             if *foldable {
-                writeln!(out, "<details class=\"{} {kind_class}\">", opts.classes.admonition)?;
+                writeln!(
+                    out,
+                    "<details class=\"{} {kind_class}\">",
+                    opts.classes.admonition
+                )?;
                 writeln!(out, "<summary>{kind_class}</summary>")?;
                 for child in children {
                     write_block(child, opts, out)?;
                 }
                 out.write_str("</details>\n")
             } else {
-                writeln!(out, "<div class=\"{} {kind_class}\">", opts.classes.admonition)?;
+                writeln!(
+                    out,
+                    "<div class=\"{} {kind_class}\">",
+                    opts.classes.admonition
+                )?;
                 for child in children {
                     write_block(child, opts, out)?;
                 }
@@ -506,14 +518,22 @@ fn write_inline(node: &Inline, opts: &HtmlOptions, out: &mut dyn Write) -> fmt::
             out.write_str("</span>")
         }
         Inline::FootnoteRef { label } => {
-            write!(out, "<sup><a class=\"{}\" href=\"#fn-", opts.classes.footnote_ref)?;
+            write!(
+                out,
+                "<sup><a class=\"{}\" href=\"#fn-",
+                opts.classes.footnote_ref
+            )?;
             escape_href(out, label)?;
             out.write_str("\">")?;
             escape(out, label)?;
             out.write_str("</a></sup>")
         }
         Inline::RangeFootnote { label, children } => {
-            write!(out, "<a class=\"{}\" href=\"#fn-", opts.classes.footnote_range)?;
+            write!(
+                out,
+                "<a class=\"{}\" href=\"#fn-",
+                opts.classes.footnote_range
+            )?;
             escape_href(out, label)?;
             out.write_str("\">")?;
             write_inlines(children, opts, out)?;
@@ -615,7 +635,11 @@ fn write_span_attrs(attrs: &str, out: &mut dyn Write) -> fmt::Result {
     Ok(())
 }
 
-fn write_block_children(children: &[Block], opts: &HtmlOptions, out: &mut dyn Write) -> fmt::Result {
+fn write_block_children(
+    children: &[Block],
+    opts: &HtmlOptions,
+    out: &mut dyn Write,
+) -> fmt::Result {
     if children.len() == 1
         && let Block::Paragraph { content, .. } = &children[0]
     {

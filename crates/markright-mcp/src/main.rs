@@ -62,7 +62,9 @@ impl MarkRight {
         Ok(CallToolResult::success(vec![Content::text(html)]))
     }
 
-    #[tool(description = "Render MarkRight source to HTML with wikilink/embed resolution and custom CSS classes")]
+    #[tool(
+        description = "Render MarkRight source to HTML with wikilink/embed resolution and custom CSS classes"
+    )]
     async fn render_with_options(
         &self,
         Parameters(input): Parameters<RenderInput>,
