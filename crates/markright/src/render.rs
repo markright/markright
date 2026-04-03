@@ -107,11 +107,7 @@ pub fn to_html_with_options(doc: &Document, opts: &HtmlOptions) -> String {
 }
 
 pub fn write_html(doc: &Document, out: &mut dyn Write) -> fmt::Result {
-    let opts = HtmlOptions::default();
-    for block in &doc.children {
-        write_block(block, &opts, out)?;
-    }
-    Ok(())
+    write_html_with_options(doc, &HtmlOptions::default(), out)
 }
 
 pub fn write_html_with_options(
@@ -462,9 +458,14 @@ fn write_inline(node: &Inline, opts: &HtmlOptions, out: &mut dyn Write) -> fmt::
                 None => (*target).to_string(),
             };
             let resolved = opts.wikilinks.get(&lookup_key);
+            let default_class = if resolved.is_none() && !opts.wikilinks.is_empty() {
+                &opts.classes.wikilink_broken
+            } else {
+                &opts.classes.wikilink
+            };
             let class = resolved
                 .and_then(|r| r.class.as_deref())
-                .unwrap_or(&opts.classes.wikilink);
+                .unwrap_or(default_class);
             let href = resolved.and_then(|r| r.href.as_deref());
             let display = resolved.and_then(|r| r.display.as_deref());
 
