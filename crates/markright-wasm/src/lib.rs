@@ -60,6 +60,16 @@ pub fn extract_wikilinks(input: &str) -> Result<String, JsValue> {
 }
 
 #[wasm_bindgen]
+pub fn parse_front_matter(input: &str) -> String {
+    let bump = markright::Bump::new();
+    let doc = markright::parse(input, &bump);
+    match doc.front_matter {
+        Some(fm) => serde_json::to_string(&markright::parse_yaml(fm.raw)).unwrap(),
+        None => "{}".to_string(),
+    }
+}
+
+#[wasm_bindgen]
 pub fn is_markright_syntax(input: &str) -> bool {
     markright::is_markright_syntax(input)
 }

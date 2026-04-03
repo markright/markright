@@ -128,6 +128,25 @@ export function parse(input) {
  * @param {string} input
  * @returns {string}
  */
+export function parse_front_matter(input) {
+    let deferred2_0;
+    let deferred2_1;
+    try {
+        const ptr0 = passStringToWasm0(input, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+        const len0 = WASM_VECTOR_LEN;
+        const ret = wasm.parse_front_matter(ptr0, len0);
+        deferred2_0 = ret[0];
+        deferred2_1 = ret[1];
+        return getStringFromWasm0(ret[0], ret[1]);
+    } finally {
+        wasm.__wbindgen_free(deferred2_0, deferred2_1, 1);
+    }
+}
+
+/**
+ * @param {string} input
+ * @returns {string}
+ */
 export function parse_to_html(input) {
     let deferred2_0;
     let deferred2_1;

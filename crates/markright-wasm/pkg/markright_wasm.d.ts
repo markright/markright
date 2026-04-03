@@ -13,6 +13,8 @@ export function lint(input: string): string;
 
 export function parse(input: string): string;
 
+export function parse_front_matter(input: string): string;
+
 export function parse_to_html(input: string): string;
 
 export function parse_to_html_with_options(input: string, options: any): string;
@@ -29,6 +31,7 @@ export interface InitOutput {
     readonly is_markright_syntax: (a: number, b: number) => number;
     readonly lint: (a: number, b: number) => [number, number];
     readonly parse: (a: number, b: number) => [number, number, number, number];
+    readonly parse_front_matter: (a: number, b: number) => [number, number];
     readonly parse_to_html: (a: number, b: number) => [number, number];
     readonly parse_to_html_with_options: (a: number, b: number, c: any) => [number, number, number, number];
     readonly schema: () => [number, number];

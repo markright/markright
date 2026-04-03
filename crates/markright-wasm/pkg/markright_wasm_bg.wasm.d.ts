@@ -7,6 +7,7 @@ export const format: (a: number, b: number) => [number, number];
 export const is_markright_syntax: (a: number, b: number) => number;
 export const lint: (a: number, b: number) => [number, number];
 export const parse: (a: number, b: number) => [number, number, number, number];
+export const parse_front_matter: (a: number, b: number) => [number, number];
 export const parse_to_html: (a: number, b: number) => [number, number];
 export const parse_to_html_with_options: (a: number, b: number, c: any) => [number, number, number, number];
 export const schema: () => [number, number];
