@@ -1,16 +1,11 @@
+@~/Developer/configs/AGENTS.md
+
 # MarkRight
 
 A markup language that distills the best from 44 Markdown flavors into one unambiguous, formally specified language.
 
-## General
+## General (Project-Specific)
 
-- If the developer become mad, write down what mistake you made to this doc, in similar bullet style.
-- Be humble.
-- Odds are, you will not know everything, and your knowledge cutoff may be aggressive.
-- Always search the web whenever possible.
-- Never use em-dash.
-- NEVER ASSUME ANYTHING. You have an infinite exa, grep, context7 quota. Always online search.
-- Use CLI to install stuff so that you get the latest versions.
 - This application currently has no external installed user base; optimize for one canonical current-state implementation, not compatibility with historical local states.
 - Do not preserve or introduce compatibility bridges, migration shims, fallback paths, compact adapters, or dual behavior for old local states unless the user explicitly asks for that support.
 - Prefer:
@@ -79,13 +74,6 @@ A markup language that distills the best from 44 Markdown flavors into one unamb
 - Use Sunghyun Sans (https://github.com/anaclumos/sunghyun-sans) and JetBrains Mono
 - Use pnpm.
 - Use env.ts with zod and t3-oss/env for type-safe env vars.
-- Very selectively use cards. NEVER nest cards.
-- Never use vh, h-screen, etc. Use h-full with flex-1. Never use vw either.
-- Never use arbitrary Tailwind values (ones with brackets). Always use Tailwind default values.
-- Use es-toolkit for most lodash functions.
-- Use ky for fetching.
-- Better crashing than ducktaping `??` or `null`s.
-  - Use latest Zod patterns for child access, instead of chaining.
 
 ### Use TanStack CLIs for advanced informations
 
@@ -95,19 +83,10 @@ A markup language that distills the best from 44 Markdown flavors into one unamb
 - tanstack_search_docs: tanstack search-docs "server functions" --library start --json
 - tanstack_ecosystem: tanstack ecosystem --category database --json
 
-## MCPs and Skills
+## MCPs and Skills (Project-Specific)
 
-- You are encouraged to use MCPs and Skills whenever makes sense.
-- If you want new MCPs or Skills, ask first.
-  - All MCPs and Skills must be installed under this project; nothing should be installed globally.
 - All MCPs should be added to all of .mcp.json, opencode.json, and .codex/config.toml.
 - All Skills should be installed with `pnpx skills`.
-
-## Secrets
-
-- NEVER read or edit .env or .dev.vars directly!
-- Do not read them directly.
-- If you need to access them, either source the env and pass it as argument, or use cli to get the value.
 
 ## Types
 
