@@ -1,5 +1,3 @@
-@~/Developer/configs/AGENTS.md
-
 # MarkRight
 
 A markup language that distills the best from 44 Markdown flavors into one unambiguous, formally specified language.
